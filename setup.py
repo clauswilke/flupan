@@ -7,7 +7,5 @@ setup(name='flupan',
       author='Claire D. McWhite',
       author_email='claire.mcwhite@utexas.edu',
       license='MIT',
-      package_dir={'flupan':'src'},
-      install_requires=['Biopython'],
-      packages=['flupan']
+      install_requires=['Biopython']
      )

@@ -4,7 +4,4 @@ flupan.egg-info/SOURCES.txt
 flupan.egg-info/dependency_links.txt
 flupan.egg-info/requires.txt
 flupan.egg-info/top_level.txt
-src/draft.py
-src/formattingparser.py
-src/getpassage.py
-src/passageparser.py
+test/test_passage_analyzer.py
