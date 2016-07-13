@@ -1,8 +1,6 @@
 import sys
-sys.path.append('/usr/lib/python2.7/site-packages')
-
-from flupan import PassageAnalyzer
-
+sys.path.append('/home/claire2/flupan/src')
+import PassageAnalyzer
 
 
 def test():
@@ -10,7 +8,7 @@ def test():
     infile = "reduced_gisaid_sequences.fasta"
     test_fasta = SeqIO.parse(infile, "fasta")
     print type(test_fasta)
-    pa = PassageAnalyzer()
+    pa = PassageAnalyzer.PassageParser()
     pa.format_fasta(test_fasta)
     
 
