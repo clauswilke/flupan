@@ -1,3 +1,30 @@
+To do:
+
+download GISAID all sequences 
+get passage annotations
+add to generator script
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+OLD
+------------------
 #Columns for passaging annotations
 
 #passaged? transfer? single serial gen_cell cell_type rh_cell rh_cell_type species total_passages 
