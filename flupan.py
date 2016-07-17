@@ -13,9 +13,10 @@ class PassageParser:
         Compresses redundant series of underscores with a single underscore
         Replaces uninformative words 
         ''' 
-
-        record_strip = re.sub('[^A-Z0-9\|]', '_', ID)
-        record_strip = re.sub('PASSAGE_DETAILS_|_AND_|ST_PASSAGE|ND_PASSAGE|PASSAGING|_PASSAGE|_PASSAGES|_PASSAGE_|_PASSAGES_', '', record_strip)
+    
+        record_strip = ID.replace("-", "")
+        record_strip = re.sub('[^A-Z0-9\|]', '_', record_strip)
+        record_strip = re.sub('PASSAGE_DETAILS_|_AND_|ST_PASSAGE|ND_PASSAGE|PASSAGING|_PASSAGE|_PASSAGES|_PASSAGE_|_PASSAGES_|_CELLS', '', record_strip)
         record_strip = record_strip.replace("__", "_")
         record_strip = re.sub('01', '1', record_strip)
         if len(record_strip) > 0:
@@ -38,11 +39,23 @@ class PassageParser:
 
         return formatted_ID
 
+    def reformat_annotation(self, annotation_list):
+
+       reformatted_annotation_list = []
+       for annot in annotation_list:
+          reformatted_annotation_list.append(annot.replace("_", "")) 
+        
+          print(annot, reformatted_annotation_list)
+       reformatted_annotation = "_".join(reformatted_annotation_list)
+       return reformatted_annotation
+
+
+
     def make_annotation(self, annotation_list, lookuptable):
        '''
        This function take a list of passage IDs found in 
        the full passage ID, and then consolidates their annotations
-
+       THIS would be the place to make a consistent format
        '''
        general_passage = ""
        specific_passage = ""
@@ -74,6 +87,7 @@ class PassageParser:
                 specific_passage = "+".join([specific_passage, annot[1]])
        
             #Add up numbers of passages
+            #Some annotations don't have numbers, so can't be added
             if num_passages == "":
                 try:
                    num_passages = str(eval(annot[2]))
@@ -90,7 +104,9 @@ class PassageParser:
                    num_condition = "atleast"                
                    num_passages = str(eval(num_passages) + 1) 
 
-       annot =  [general_passage, specific_passage, num_condition, num_passages]
+       reformatted_annotation = self.reformat_annotation(annotation_list)
+
+       annot =  [reformatted_annotation, general_passage, specific_passage, num_condition, num_passages]
        print(annot)
        print("end function")
        return(annot)  
@@ -136,9 +152,9 @@ class PassageParser:
                prevlength = len(tmp_ID)
                longest_match = "" 
                print(tmp_ID)
-           
+           #If the full passage can't be parsed, return None           
            if len(tmp_ID.replace("_", "")) > 1:
-               annotation = "SEND TO REGEX" 
+               annotation = ["None", "None", "None", "None", "None"]  
            else:
                #Need to get ordering of matches
                print(matches)
@@ -174,7 +190,7 @@ class PassageParser:
         ID = ID.rstrip("\n")
         formatted_ID = self.format_ID(ID)
         annotation =  self.match_known_passage(formatted_ID)      
-        output = [ID, formatted_ID, annotation[0], annotation[1], annotation[2], annotation[3]] 
+        output = [ID, formatted_ID, annotation[0], annotation[1], annotation[2], annotation[3], annotation[4]] 
         return output
 
 
