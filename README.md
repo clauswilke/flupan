@@ -26,7 +26,7 @@ Example usage
 ```
 
 
-
+A single number that follows a previous passage type is given the identity of the previous passage type
 
 
 

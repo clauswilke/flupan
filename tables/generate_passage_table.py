@@ -12,26 +12,28 @@ def generate_generic():
     unknowncell = ["C", "X"]
     rhmk = ["RHMK", "RMK", "R", "PRHMK", "RII"]
     tmk = ["TMK"]
-    #vero = ["VERO", "V"]
-    vero= []
-    egg = ["NC", "SPFCK", "EGG", "E", "AM", "AMNIOTIC"]
+    vero = ["VERO", "V"]
+    #check source on NC meaning eggs
+    egg = ["NC", "AL", "ALLANTOIC", "EGG", "E", "AM", "AMNIOTIC"]
     pigcell = ["PTHYR"]
+    chickcell = ["SPFCK", "CK", "PCK"]
     unknown = ["UNKNOWN", "P"]
-
+    only_number = [""]
+    mix = ["R_MIX", "RMIX"]
 
     caninecell = siat + mdck
  
-    monkeycell = rhmk + tmk# + vero
-    all_cells = caninecell + monkeycell + unknowncell
+    monkeycell = rhmk + tmk + vero
+    all_cells = caninecell + monkeycell + unknowncell + chickcell + mix
 
-    all_passages = caninecell + monkeycell + egg + unknown + pigcell + unknowncell
+    all_passages = caninecell + monkeycell + egg + unknown + pigcell + unknowncell + chickcell + mix + only_number
 
 
 
 
   
     single_pass = {}
-    for num in ["1","2","3","4","5","6","7", "8", "9", "10", "X", ""]:
+    for num in ["0","1","2","3","4","5","6","7", "8", "9", "10", "X", ""]:
        for passage in all_passages:
           for sep in ["", "_"]:
               #forbidden combos         
@@ -39,7 +41,12 @@ def generate_generic():
                  continue
               if num == "" and sep=="_":
                  continue 
+              if num== "" and sep == "" and passage =="":
+                 continue
               if sep == "_" and num == "X":
+                 continue
+
+              if passage=="" and num=="":
                  continue
               #if passage in all_cells and num in ["6","7", "8", "9", "10"]:
               #   continue
@@ -77,6 +84,14 @@ def generate_generic():
                    specific_passage = "PTHYR"
                    general_passage = "PIGCELL"
 
+              elif passage in chickcell:
+                   specific_passage = "CK"
+                   general_passage = "CHICKCELL"
+
+              elif passage in mix:
+                   specific_passage = "RMIX"
+                   general_passage = "MIX"
+
               elif passage in unknowncell: 
                    specific_passage = "UNKNOWNCELL"
                    general_passage = "UNKNOWNCELL"
@@ -89,6 +104,10 @@ def generate_generic():
                    specific_passage = "EGG"
                    general_passage = "EGG" 
               
+              elif passage in only_number:
+                   specific_passage = "ONLYNUMBER"
+                   general_passage = "ONLYNUMBER" 
+
               passage_construct = "".join([passage,sep,num])
               if num == "" or num=="X":
                  num_passages="UNKNOWN"
@@ -106,7 +125,7 @@ def generate_generic():
 
 
 def generate_unpassaged():
-    unpassaged = ["OR", "ORIGINAL", "P0", "ISOLATED_DIRECTLY_FROM_HOST_NO_PASSAGE", "CLINICAL_SPECIMEN"]
+    unpassaged = ["ORIGINAL_SPECIMEN_UNCULTURED_IN_VTM","OR", "ORIGINAL", "P0", "ISOLATED_DIRECTLY_FROM_HOST_NO", "CLINICAL_SPECIMEN", "NO", "LUNG_1", "LUNG"]
     unpass_dict = {}
     annot  = ["UNPASSAGED", "UNPASSAGED", "0"]
 
@@ -117,42 +136,21 @@ def generate_unpassaged():
 
 
 def generate_nonconventional():
- 
-   egg2 = [""]
-   print("holder")
+
+    uncon_dict = {}
+
+    annot =["CANINECELL", "MDCK", "UNKNOWN"]    
+    uncon_dict["ND_MDCK"] = annot 
+
+    with open("unknown_passages.txt", "r") as completely_unknown:
+        annot = ["UNKNOWN", "UNKNOWN", "UNKNOWN"]
+        for passage in completely_unknown.readlines():
+            uncon_dict[passage.rstrip("\n")] = annot
 
 
-def second_pass(single):
-    double_pass = {}
-    for key1 in single.keys():
-       for key2 in single.keys():
-           for sep in ["", "_"]:
-                passage_construct=key1 + sep + key2
-                if single[key1][0] == single[key2][0]:
-                    general_passage = single[key1][0]
-                else:
-                    general_passage = "_".join([single[key1][0], single[key2][0]])
+    #print(unpass_dict)
+    return uncon_dict
 
-                if single[key1][1] == single[key2][1]:
-                    specific_passage = single[key1][1]
-                else:
-                    specific_passage = "_".join([single[key1][1], single[key2][1]])
-
-                try:
-                    num_passages = str(eval(single[key1][2]) + eval(single[key2][2]))               
-                    if eval(num_passages) > 11:
-                        continue
-                except Exception as e:
-                    num_passages = "_".join([single[key1][2], single[key2][2]])
-
-
-                               
-                annot =  [general_passage, specific_passage, num_passages]
-
-                double_pass[passage_construct]=annot
-    print(len(double_pass))
-  
-    return double_pass
 
 def merge_dicts(*dict_args):
    '''
@@ -173,21 +171,15 @@ if __name__ == "__main__":
     pass1 = generate_generic()
     #pass2 = second_pass(pass1)
     unpass = generate_unpassaged()
+    uncon = generate_nonconventional()
     #pass2 = second_pass(pass1)
     print(pass1)
-    #count=0
+    print(uncon)
+    full_list = merge_dicts(pass1, unpass, uncon) 
+    print(full_list)
+    for f in full_list.keys():
+       print(f, full_list[f])
 
-    #for key in pass2:
-    #    if count < 150:
-    #       print(key, pass2[key])
-    #    count = count + 1
-    #print(len(pass2))
-
-   #final_dict = dict(j for i in full_list for j in i.items())
-    #final_dict = {k: v for d in full_list for k, v in d.items()}
-    #final_dict =     #print(final_dict)
-    full_list = merge_dicts(pass1, unpass) 
-    #print(full_list)
     with open("passage_lookup.txt", "w") as outfile:
          outfile.write(str(full_list))
     #for annotation in full_list:
