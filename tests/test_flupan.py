@@ -2,7 +2,7 @@
 from __future__ import print_function
 #from unittest import TestCase
 import sys
-sys.path.append('/home/claire2/flupan/src')
+#sys.path.append('/home/claire2/flupan/src')
 import flupan
 
 
