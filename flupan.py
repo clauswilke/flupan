@@ -1,5 +1,7 @@
 from __future__ import print_function
 import re
+import sys
+import logging
 
 
 
@@ -112,7 +114,6 @@ class PassageParser:
 
        annot =  [reformatted_annotation, general_passage, specific_passage, num_condition, num_passages]
        print(annot)
-       print("end function")
        return(annot)  
 
 
@@ -123,6 +124,9 @@ class PassageParser:
         If the full passage can't be accounted for,
         the identifier is sent to regular expressions
         '''
+
+        log = open("flupan.out", "a")
+        sys.stdout = log
 
         with open("../tables/passage_lookup.txt", "r") as lookuptable_txt:
            lookuptable = eval(lookuptable_txt.read())
@@ -178,8 +182,7 @@ class PassageParser:
      
 
 
-
-           #print(lookuptable)
+           sys.stdout = sys.__stdout__
            return annotation
          
 

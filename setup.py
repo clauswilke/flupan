@@ -7,5 +7,5 @@ setup(name='flupan',
       author='Claire D. McWhite',
       author_email='claire.mcwhite@utexas.edu',
       license='MIT',
-      install_requires=['Biopython']
+      scripts=['src/convert_passage']
      )
