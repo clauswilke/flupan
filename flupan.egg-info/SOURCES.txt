@@ -6,4 +6,3 @@ flupan.egg-info/SOURCES.txt
 flupan.egg-info/dependency_links.txt
 flupan.egg-info/top_level.txt
 src/translate_passage
-src/translate_passage.py
