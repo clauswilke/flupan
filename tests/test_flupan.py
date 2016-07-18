@@ -1,12 +1,12 @@
 #!/usr/bin/env python3
 from __future__ import print_function
-from unittest import TestCase
+#from unittest import TestCase
 import sys
 sys.path.append('/home/claire2/flupan/src')
 import flupan
 
 
-class test_flupan(TestCase):
+class test_flupan():
   
     def __init__(self):
         pass
@@ -14,12 +14,12 @@ class test_flupan(TestCase):
     def test1(self):
         test_annot = pp.parse_passage("Mdcksiat2_E8")
         print(test_annot)    
-        self.assertTrue(isinstance(test_annot, list))
+        assert isinstance(test_annot, list)
 
     def test2(self):
         test_annot = pp.parse_passage("Mdcksiat2_E8")
         print(test_annot)    
-        self.assertTrue(test_annot == ['Mdcksiat2_E8', 'MDCKSIAT2_E8', 'MDCKSIAT2_E8', 'CANINECELL+EGG', 'SIAT+EGG', 'exactly', '10'])
+        assert test_annot == ['Mdcksiat2_E8', 'MDCKSIAT2_E8', 'SIAT2_E8', 'CANINECELL+EGG', 'SIAT+EGG', 'exactly', '10']
       
 
     def test3(self):

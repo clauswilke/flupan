@@ -41,10 +41,14 @@ class PassageParser:
 
     def reformat_annotation(self, annotation_list):
 
+
        reformatted_annotation_list = []
        for annot in annotation_list:
-          reformatted_annotation_list.append(annot.replace("_", "")) 
-        
+
+          reform = annot.replace("_", "")
+          reform = reform.replace("MDCKSIAT", "SIAT")
+          reformatted_annotation_list.append(reform) 
+                 
           print(annot, reformatted_annotation_list)
        reformatted_annotation = "_".join(reformatted_annotation_list)
        return reformatted_annotation

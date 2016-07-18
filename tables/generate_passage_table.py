@@ -142,14 +142,32 @@ def generate_unpassaged():
 def generate_nonconventional():
 
     uncon_dict = {}
+ 
+    with open("nonstandard_passages.txt", "r") as nonstandard:
+        for line in nonstandard.readlines():
+            i = line.rstrip("\n").split(",")
+            uncon_dict[i[0]] = i[1:]
+ 
 
-    annot =["CANINECELL", "MDCK", "X"]    
-    uncon_dict["ND_MDCK"] = annot 
+    #for i in ["1","2","3","4", "5"]:
+    #    annot =["CANINECELL", "MDCK", i]    
+        #passage = "P" + i + "_MDCK"
+        #uncon_dict[passage] = annot 
+
+
+    #annot =["CANINECELL", "MDCK", "X"]    
+    #uncon_dict["ND_MDCK"] = annot 
+
+    #annot =["EGG", "EGG", "X"]    
+    #uncon_dict["EGG_LOT_FT2187"] = annot 
+
 
     with open("unknown_passages.txt", "r") as completely_unknown:
         annot = ["None", "None", "None"]
         for passage in completely_unknown.readlines():
             uncon_dict[passage.rstrip("\n")] = annot
+
+
 
 
     #print(unpass_dict)
