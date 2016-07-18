@@ -5,4 +5,5 @@ flupan.egg-info/PKG-INFO
 flupan.egg-info/SOURCES.txt
 flupan.egg-info/dependency_links.txt
 flupan.egg-info/top_level.txt
-src/convert_passage
+src/translate_passage
+src/translate_passage.py

@@ -7,5 +7,5 @@ setup(name='flupan',
       author='Claire D. McWhite',
       author_email='claire.mcwhite@utexas.edu',
       license='MIT',
-      scripts=['src/convert_passage']
+      scripts=['src/translate_passage']
      )
