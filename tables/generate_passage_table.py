@@ -114,7 +114,7 @@ def generate_generic():
 
               passage_construct = "".join([passage,sep,num])
               if num == "" or num=="X":
-                 num_passages="UNKNOWN"
+                 num_passages=None
               else:
                  num_passages=num
               annot =  [general_passage, specific_passage, num_passages]

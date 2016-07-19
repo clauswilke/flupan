@@ -1,0 +1,253 @@
+('longest', 'MDCKSIAT')
+('longest', 'MDCKSIAT2')
+_E8
+('longest', 'E8')
+_
+['MDCKSIAT2', 'E8']
+[0, 10]
+ordering...
+[0, 10]
+['MDCKSIAT2', 'E8']
+done ordering
+('MDCKSIAT2', ['CANINECELL', 'SIAT', '2'])
+('E8', ['EGG', 'EGG', '8'])
+('MDCKSIAT2', ['SIAT2'])
+('E8', ['SIAT2', 'E8'])
+['SIAT2_E8', 'CANINECELL+EGG', 'SIAT+EGG', 'exactly', '10']
+('longest', 'MDCKSIAT')
+('longest', 'MDCKSIAT2')
+_E3
+('longest', 'E3')
+_
+['MDCKSIAT2', 'E3']
+[0, 10]
+ordering...
+[0, 10]
+['MDCKSIAT2', 'E3']
+done ordering
+('MDCKSIAT2', ['CANINECELL', 'SIAT', '2'])
+('E3', ['EGG', 'EGG', '3'])
+('MDCKSIAT2', ['SIAT2'])
+('E3', ['SIAT2', 'E3'])
+['SIAT2_E3', 'CANINECELL+EGG', 'SIAT+EGG', 'exactly', '5']
+('longest', 'MDCKSIAT')
+('longest', 'MDCKSIAT2')
+_E8
+('longest', 'E8')
+_
+['MDCKSIAT2', 'E8']
+[0, 10]
+ordering...
+[0, 10]
+['MDCKSIAT2', 'E8']
+done ordering
+('MDCKSIAT2', ['CANINECELL', 'SIAT', '2'])
+('E8', ['EGG', 'EGG', '8'])
+('MDCKSIAT2', ['SIAT2'])
+('E8', ['SIAT2', 'E8'])
+['SIAT2_E8', 'CANINECELL+EGG', 'SIAT+EGG', 'exactly', '10']
+('longest', 'MDCKSIAT')
+('longest', 'MDCKSIAT2')
+_E3
+('longest', 'E3')
+_
+['MDCKSIAT2', 'E3']
+[0, 10]
+ordering...
+[0, 10]
+['MDCKSIAT2', 'E3']
+done ordering
+('MDCKSIAT2', ['CANINECELL', 'SIAT', '2'])
+('E3', ['EGG', 'EGG', '3'])
+('MDCKSIAT2', ['SIAT2'])
+('E3', ['SIAT2', 'E3'])
+['SIAT2_E3', 'CANINECELL+EGG', 'SIAT+EGG', 'exactly', '5']
+('longest', 'M')
+('longest', 'C3')
+M1__E
+('longest', 'M')
+('longest', 'M1')
+__E
+('longest', 'E')
+__
+['C3', 'M1', 'E']
+[3, 0, 6]
+ordering...
+[3, 0, 6]
+['M1', 'C3', 'E']
+done ordering
+('M1', ['CANINECELL', 'MDCK', '1'])
+('C3', ['UNKNOWNCELL', 'UNKNOWNCELL', '3'])
+('E', ['EGG', 'EGG', 'UNKNOWN'])
+('M1', ['M1'])
+('C3', ['M1', 'C3'])
+('E', ['M1', 'C3', 'E'])
+['M1_C3_E', 'CANINECELL+UNKNOWNCELL+EGG', 'MDCK+UNKNOWNCELL+EGG', 'atleast', '5']
+('longest', 'M')
+('longest', 'C3')
+M1__E
+('longest', 'M')
+('longest', 'M1')
+__E
+('longest', 'E')
+__
+['C3', 'M1', 'E']
+[3, 0, 6]
+ordering...
+[3, 0, 6]
+['M1', 'C3', 'E']
+done ordering
+('M1', ['CANINECELL', 'MDCK', '1'])
+('C3', ['UNKNOWNCELL', 'UNKNOWNCELL', '3'])
+('E', ['EGG', 'EGG', None])
+('M1', ['M1'])
+('C3', ['M1', 'C3'])
+('E', ['M1', 'C3', 'E'])
+['M1_C3_E', 'CANINECELL+UNKNOWNCELL+EGG', 'MDCK+UNKNOWNCELL+EGG', 'atleast', '5']
+('longest', 'M')
+('longest', 'C3')
+M1__E
+('longest', 'M')
+('longest', 'M1')
+__E
+('longest', 'E')
+__
+['C3', 'M1', 'E']
+[3, 0, 6]
+ordering...
+[3, 0, 6]
+['M1', 'C3', 'E']
+done ordering
+('M1', ['CANINECELL', 'MDCK', '1'])
+('C3', ['UNKNOWNCELL', 'UNKNOWNCELL', '3'])
+('E', ['EGG', 'EGG', None])
+('M1', ['M1'])
+('C3', ['M1', 'C3'])
+('E', ['M1', 'C3', 'E'])
+['M1_C3_E', 'CANINECELL+UNKNOWNCELL+EGG', 'MDCK+UNKNOWNCELL+EGG', 'atleast', '5']
+('longest', 'M')
+('longest', 'C3')
+M1__E
+('longest', 'M')
+('longest', 'M1')
+__E
+('longest', 'E')
+__
+['C3', 'M1', 'E']
+[3, 0, 6]
+ordering...
+[3, 0, 6]
+['M1', 'C3', 'E']
+done ordering
+('M1', ['CANINECELL', 'MDCK', '1'])
+('C3', ['UNKNOWNCELL', 'UNKNOWNCELL', '3'])
+('E', ['EGG', 'EGG', None])
+('M1', ['M1'])
+('C3', ['M1', 'C3'])
+('E', ['M1', 'C3', 'E'])
+['M1_C3_E', 'CANINECELL+UNKNOWNCELL+EGG', 'MDCK+UNKNOWNCELL+EGG', 'atleast', '5']
+('longest', 'M')
+('longest', 'C3')
+M1__E
+('longest', 'M')
+('longest', 'M1')
+__E
+('longest', 'E')
+__
+['C3', 'M1', 'E']
+[3, 0, 6]
+ordering...
+[3, 0, 6]
+['M1', 'C3', 'E']
+done ordering
+('M1', ['CANINECELL', 'MDCK', '1'])
+('C3', ['UNKNOWNCELL', 'UNKNOWNCELL', '3'])
+('E', ['EGG', 'EGG', None])
+('M1', ['M1'])
+('C3', ['M1', 'C3'])
+('E', ['M1', 'C3', 'E'])
+['M1_C3_E', 'CANINECELL+UNKNOWNCELL+EGG', 'MDCK+UNKNOWNCELL+EGG', 'atleast', '5']
+('longest', 'M')
+('longest', 'C3')
+M1__E
+('longest', 'M')
+('longest', 'M1')
+__E
+('longest', 'E')
+__
+['C3', 'M1', 'E']
+[3, 0, 6]
+ordering...
+[3, 0, 6]
+['M1', 'C3', 'E']
+done ordering
+('M1', ['CANINECELL', 'MDCK', '1'])
+('C3', ['UNKNOWNCELL', 'UNKNOWNCELL', '3'])
+('E', ['EGG', 'EGG', None])
+('M1', ['M1'])
+('C3', ['M1', 'C3'])
+('E', ['M1', 'C3', 'E'])
+['M1_C3_E', 'CANINECELL+UNKNOWNCELL+EGG', 'MDCK+UNKNOWNCELL+EGG', 'atleast', '5']
+('longest', 'M')
+('longest', 'C3')
+M1__E
+('longest', 'M')
+('longest', 'M1')
+__E
+('longest', 'E')
+__
+['C3', 'M1', 'E']
+[3, 0, 6]
+ordering...
+[3, 0, 6]
+['M1', 'C3', 'E']
+done ordering
+('M1', ['CANINECELL', 'MDCK', '1'])
+('C3', ['UNKNOWNCELL', 'UNKNOWNCELL', '3'])
+('E', ['EGG', 'EGG', None])
+('M1', ['M1'])
+('C3', ['M1', 'C3'])
+('E', ['M1', 'C3', 'E'])
+['M1_C3_E', 'CANINECELL+UNKNOWNCELL+EGG', 'MDCK+UNKNOWNCELL+EGG', 'atleast', '5']
+('longest', 'M')
+('longest', 'C3')
+M1__E
+('longest', 'M')
+('longest', 'M1')
+__E
+('longest', 'E')
+__
+['C3', 'M1', 'E']
+[3, 0, 6]
+ordering...
+[3, 0, 6]
+['M1', 'C3', 'E']
+done ordering
+('M1', ['CANINECELL', 'MDCK', '1'])
+('C3', ['UNKNOWNCELL', 'UNKNOWNCELL', '3'])
+('E', ['EGG', 'EGG', None])
+('M1', ['M1'])
+('C3', ['M1', 'C3'])
+('E', ['M1', 'C3', 'E'])
+['M1_C3_E', 'CANINECELL+UNKNOWNCELL+EGG', 'MDCK+UNKNOWNCELL+EGG', 'atleast', '5']
+('longest', 'M')
+('longest', 'C3')
+M1__E
+('longest', 'M')
+('longest', 'M1')
+__E
+('longest', 'E')
+__
+['C3', 'M1', 'E']
+[3, 0, 6]
+ordering...
+[3, 0, 6]
+['M1', 'C3', 'E']
+done ordering
+('M1', ['CANINECELL', 'MDCK', '1'])
+('C3', ['UNKNOWNCELL', 'UNKNOWNCELL', '3'])
+('E', ['EGG', 'EGG', None])
+('M1', ['M1'])
+('C3', ['M1', 'C3'])
+('E', ['M1', 'C3', 'E'])
+['M1_C3_E', 'CANINECELL+UNKNOWNCELL+EGG', 'MDCK+UNKNOWNCELL+EGG', 'atleast', '5']

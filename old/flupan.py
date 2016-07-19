@@ -1,4 +1,4 @@
-from __future__ import print_function
+import __future__ 
 import re
 import sys
 import logging
@@ -6,14 +6,23 @@ import logging
 
 
 class PassageParser:
-    def __init__(self): 
-        pass
-  
+    def __init__(self, nth_passage=None): 
+        self.original = ""
+        self.plainformat = ""
+        self.coercedformat = ""
+        self.summary = []    
+        self.min_passages = None
+        self.total_passages = None
+        self.nth_passage = None
+        self.general_passages= []
+        self.specific_passages = []
+        self.passage_series = []
+      
     def spec_char_strip(self, ID):
         ''' 
         Replaces special characters with underscores
         Compresses redundant series of underscores with a single underscore
-        Replaces uninformative words 
+        Replaces unsummaryrmative words 
         ''' 
     
         record_strip = ID.replace("-", "")
@@ -42,18 +51,21 @@ class PassageParser:
         return formatted_ID
 
     def reformat_annotation(self, annotation_list):
+        '''
+        Removes underscores which occur inside a single annotation
+        also, replaces MDCKSIAT with the synonymous SIAT, since this confuses parsers
+        '''
+ 
+        reformatted_annotation_list = []
+        for annot in annotation_list:
 
-
-       reformatted_annotation_list = []
-       for annot in annotation_list:
-
-          reform = annot.replace("_", "")
-          reform = reform.replace("MDCKSIAT", "SIAT")
-          reformatted_annotation_list.append(reform) 
+            reform = annot.replace("_", "")
+            reform = reform.replace("MDCKSIAT", "SIAT")
+            reformatted_annotation_list.append(reform) 
                  
-          print(annot, reformatted_annotation_list)
-       reformatted_annotation = "_".join(reformatted_annotation_list)
-       return reformatted_annotation
+            print(annot, reformatted_annotation_list)
+        reformatted_annotation = "_".join(reformatted_annotation_list)
+        return reformatted_annotation
 
 
 
@@ -73,7 +85,7 @@ class PassageParser:
             print(passage, annot)
             
             tmp_passage = passage.replace("_", "")
-            #Consolidate the general passage info
+            #Consolidate the general passage summary
             if general_passage == "":
                 general_passage = annot[0]
             elif annot[0] in general_passage:
@@ -82,7 +94,7 @@ class PassageParser:
                 general_passage = general_passage
             else:
                 general_passage = "+".join([general_passage, annot[0]])
-            #Consolidate the specific passage info
+            #Consolidate the specific passage summary
             if specific_passage == "":
                 specific_passage = annot[1]
             elif annot[1] in specific_passage:
@@ -109,12 +121,50 @@ class PassageParser:
                 except:
                    num_condition = "atleast"                
                    num_passages = str(eval(num_passages) + 1) 
-
+ 
+       self.general_passages = general_passage.split("+")
+       self.specific_passages = specific_passage.split("+")
        reformatted_annotation = self.reformat_annotation(annotation_list)
+       self.coercedformat = reformatted_annotation
+       self.min_passages = eval(num_passages)
+       if  num_condition == "atleast":
+            self.total_passages = None
+       elif num_condition == "exactly":
+            self.total_passages = eval(num_passages)
 
        annot =  [reformatted_annotation, general_passage, specific_passage, num_condition, num_passages]
        print(annot)
        return(annot)  
+
+
+
+
+    def get_nth_passage(self, n):
+        if n != None:
+            if self.passage_series is not []:
+               for entry in self.passage_series:  
+                    if entry[0] == n:
+                        self.nth_passage = entry[1]
+
+
+    def get_series(self, annotation_list, lookuptable):
+       prev_annot = ""
+       prev_i = 0
+       for passage in annotation_list:
+            annot = lookuptable[passage]
+            
+            for i in range(1, eval(annot[2])+1):
+                
+               if annot[1] != None:
+                    self.passage_series.append([ i + prev_i, annot[1]])
+                    prev_annot = annot[1]
+               elif prev_annot != "":
+                    self.passage_series.append([i + prev_i, prev_annot])
+            prev_i = eval(annot[2])
+
+                                   
+
+
 
 
     def match_known_passage(self, formatted_ID):
@@ -128,7 +178,9 @@ class PassageParser:
         log = open("flupan.out", "a")
         sys.stdout = log
 
-        with open("../tables/passage_lookup.txt", "r") as lookuptable_txt:
+        
+
+        with open("tables/passage_lookup.txt", "r") as lookuptable_txt:
            lookuptable = eval(lookuptable_txt.read())
            tmp_ID = formatted_ID
            prevlength = 100
@@ -161,6 +213,9 @@ class PassageParser:
                longest_match = "" 
                print(tmp_ID)
            #If the full passage can't be parsed, return None           
+
+
+
            if len(tmp_ID.replace("_", "")) > 1:
                annotation = ["None", "None", "None", "None", "None"]  
            else:
@@ -176,6 +231,8 @@ class PassageParser:
                print(ordered_matches)
                print("done ordering")
                annotation = self.make_annotation(ordered_matches, lookuptable)
+               annot_series = self.get_series(ordered_matches, lookuptable)  
+
 
            #if len(matches) == 1:
            #    annotation = lookuptable[formatted_ID]
@@ -187,18 +244,30 @@ class PassageParser:
          
 
 
-    def regular_exp_identification(self, formatted_ID):
-        print("meh")
-
-    def parse_passage(self, ID):
+    def parse_passage(self, ID, n = None):
         '''
         control function 
         '''
         ID = ID.rstrip("\n")
+        self.original = ID
+
+        #Make the ID all caps, remove special characters
         formatted_ID = self.format_ID(ID)
-        annotation =  self.match_known_passage(formatted_ID)      
+
+        self.plainformat = formatted_ID
+      
+        #Match a formatted ID to its composite passage types
+        annotation =  self.match_known_passage(formatted_ID)
+      
+        #Convenience output list
         output = [ID, formatted_ID, annotation[0], annotation[1], annotation[2], annotation[3], annotation[4]] 
-        return output
+        self.summary = output
+
+        #Optional retrieval of the nth passage a sequence went through
+        
+        self.get_nth_passage(n)
+
+        return self        
 
 
 

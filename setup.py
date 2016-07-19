@@ -7,5 +7,7 @@ setup(name='flupan',
       author='Claire D. McWhite',
       author_email='claire.mcwhite@utexas.edu',
       license='MIT',
-      scripts=['src/translate_passage']
+      scripts=['src/translate_passage'],
+      test_suite='nose.collector',
+      tests_require=['nose']
      )
