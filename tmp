@@ -1,9 +1,0 @@
-running test
-running egg_info
-writing flupan.egg-info/PKG-INFO
-writing top-level names to flupan.egg-info/top_level.txt
-writing dependency_links to flupan.egg-info/dependency_links.txt
-reading manifest file 'flupan.egg-info/SOURCES.txt'
-reading manifest template 'MANIFEST.in'
-writing manifest file 'flupan.egg-info/SOURCES.txt'
-running build_ext

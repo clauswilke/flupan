@@ -1,7 +1,7 @@
 from setuptools import setup
 
 setup(name='flupan',
-      version='0.0.2',
+      version='0.0.3',
       description='Python library to parse influenza passaging annotations',
       url='http://github.com/clauswilke/flupan',
       author='Claire D. McWhite',
