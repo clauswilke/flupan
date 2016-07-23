@@ -5,9 +5,9 @@ get passage annotations
 add to generator script
 
 
+THE OUTPUT summary list is NOT working. Check it out
 
-
-
+UPDATE README
 
 
 

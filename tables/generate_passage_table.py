@@ -18,8 +18,8 @@ def generate_generic():
     egg = ["NC", "AL", "ALLANTOIC", "EGG", "E", "AM", "AMNIOTIC"]
     pigcell = ["PTHYR"]
     chickcell = ["SPFCK", "CK", "PCK"]
-    unknown = ["UNKNOWN", "P"]
-    only_number = [""]
+    unknown = ["UNKNOWN", "P", ""]
+    #only_number = [""]
     rmix = ["R_MIX", "RMIX"]
 
     minkcell = ["MV_1_LU", "MV1_LU", "MV1_LUNG"]
@@ -29,7 +29,7 @@ def generate_generic():
     monkeycell = rhmk + tmk + vero
     all_cells = caninecell + monkeycell + unknowncell + chickcell + rmix + minkcell
 
-    all_passages = caninecell + monkeycell + egg + unknown + pigcell + unknowncell + chickcell + rmix + only_number + minkcell
+    all_passages = caninecell + monkeycell + egg + unknown + pigcell + unknowncell + chickcell + rmix + minkcell #only_number + minkcell
 
 
 
@@ -44,13 +44,12 @@ def generate_generic():
                  continue
               if num == "" and sep=="_":
                  continue 
-              if num== "" and sep == "" and passage =="":
-                 continue
+              #if num== "" and sep == "" and passage =="":
+              #   continue
               if sep == "_" and num == "X":
                  continue
 
-              if passage=="" and num=="":
-                 continue
+               
               #if passage in all_cells and num in ["6","7", "8", "9", "10"]:
               #   continue
 
@@ -58,8 +57,11 @@ def generate_generic():
               #   continue
 
               #annotate specific passage category
-              specific_passage = ""
-              general_passage= ""
+              specific_passage = None
+              general_passage= None
+
+
+
               if passage in caninecell:
 
                   if passage in siat:
@@ -92,6 +94,10 @@ def generate_generic():
                    specific_passage = "CK"
                    general_passage = "CHICKCELL"
 
+              elif passage in pigcell:
+                   specific_passage = "PTHYR"
+                   general_passage = "PIGCELL"
+
               elif passage in rmix:
                    specific_passage = "RMIX"
                    general_passage = "RMIX"
@@ -100,17 +106,21 @@ def generate_generic():
                    specific_passage = "UNKNOWNCELL"
                    general_passage = "UNKNOWNCELL"
 
-              elif passage in unknown: 
-                   specific_passage = "UNKNOWN"
-                   general_passage = "UNKNOWN"
+              #elif passage in unknown: 
+              #     specific_passage = None
+              #     general_passage = None
 
               elif passage in egg: 
                    specific_passage = "EGG"
                    general_passage = "EGG" 
               
-              elif passage in only_number:
-                   specific_passage = "None"
-                   general_passage = "None" 
+              #elif passage in only_number:
+              #     specific_passage = None
+              #     general_passage = None 
+
+ 
+
+
 
               passage_construct = "".join([passage,sep,num])
               if num == "" or num=="X":
@@ -118,6 +128,9 @@ def generate_generic():
               else:
                  num_passages=num
               annot =  [general_passage, specific_passage, num_passages]
+
+              if annot == "":
+                  print("WHAT")
               single_pass[passage_construct]=annot
 
               #single_pass.append({passage_construct:annot})
@@ -163,7 +176,7 @@ def generate_nonconventional():
 
 
     with open("unknown_passages.txt", "r") as completely_unknown:
-        annot = ["None", "None", "None"]
+        annot = [None, None, None]
         for passage in completely_unknown.readlines():
             uncon_dict[passage.rstrip("\n")] = annot
 

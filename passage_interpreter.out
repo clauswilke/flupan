@@ -1,19 +1,46 @@
 ('longest', 'MDCKSIAT')
 ('longest', 'MDCKSIAT2')
-_E8
-('longest', 'E8')
+_E3
+('longest', 'E3')
 _
-['MDCKSIAT2', 'E8']
+['MDCKSIAT2', 'E3']
 [0, 10]
 ordering...
 [0, 10]
-['MDCKSIAT2', 'E8']
+['MDCKSIAT2', 'E3']
 done ordering
 ('MDCKSIAT2', ['CANINECELL', 'SIAT', '2'])
-('E8', ['EGG', 'EGG', '8'])
+('longest', 'MDCKSIAT')
+('longest', 'MDCKSIAT2')
+_E3
+('longest', 'E3')
+_
+['MDCKSIAT2', 'E3']
+[0, 10]
+ordering...
+[0, 10]
+['MDCKSIAT2', 'E3']
+done ordering
+('MDCKSIAT2', ['CANINECELL', 'SIAT', '2'])
+('', 'WHAT')
+('longest', 'MDCKSIAT')
+('longest', 'MDCKSIAT2')
+_E3
+('longest', 'E3')
+_
+['MDCKSIAT2', 'E3']
+[0, 10]
+ordering...
+[0, 10]
+['MDCKSIAT2', 'E3']
+done ordering
+('MDCKSIAT2', ['CANINECELL', 'SIAT', '2'])
+('E3', ['EGG', 'EGG', '3'])
 ('MDCKSIAT2', ['SIAT2'])
-('E8', ['SIAT2', 'E8'])
-['SIAT2_E8', 'CANINECELL+EGG', 'SIAT+EGG', 'exactly', '10']
+('E3', ['SIAT2', 'E3'])
+['SIAT2_E3', '+CANINECELL+EGG', '+SIAT+EGG', 'exactly', '5']
+2
+3
 ('longest', 'MDCKSIAT')
 ('longest', 'MDCKSIAT2')
 _E3
@@ -30,22 +57,8 @@ done ordering
 ('MDCKSIAT2', ['SIAT2'])
 ('E3', ['SIAT2', 'E3'])
 ['SIAT2_E3', 'CANINECELL+EGG', 'SIAT+EGG', 'exactly', '5']
-('longest', 'MDCKSIAT')
-('longest', 'MDCKSIAT2')
-_E8
-('longest', 'E8')
-_
-['MDCKSIAT2', 'E8']
-[0, 10]
-ordering...
-[0, 10]
-['MDCKSIAT2', 'E8']
-done ordering
-('MDCKSIAT2', ['CANINECELL', 'SIAT', '2'])
-('E8', ['EGG', 'EGG', '8'])
-('MDCKSIAT2', ['SIAT2'])
-('E8', ['SIAT2', 'E8'])
-['SIAT2_E8', 'CANINECELL+EGG', 'SIAT+EGG', 'exactly', '10']
+2
+3
 ('longest', 'MDCKSIAT')
 ('longest', 'MDCKSIAT2')
 _E3
@@ -62,192 +75,5661 @@ done ordering
 ('MDCKSIAT2', ['SIAT2'])
 ('E3', ['SIAT2', 'E3'])
 ['SIAT2_E3', 'CANINECELL+EGG', 'SIAT+EGG', 'exactly', '5']
-('longest', 'M')
-('longest', 'C3')
-M1__E
-('longest', 'M')
-('longest', 'M1')
-__E
-('longest', 'E')
-__
-['C3', 'M1', 'E']
-[3, 0, 6]
+2
+3
+('longest', 'MDCKSIAT')
+('longest', 'MDCKSIAT2')
+_E8
+('longest', 'E8')
+_
+['MDCKSIAT2', 'E8']
+[0, 10]
 ordering...
-[3, 0, 6]
-['M1', 'C3', 'E']
+[0, 10]
+['MDCKSIAT2', 'E8']
+done ordering
+('MDCKSIAT2', ['CANINECELL', 'SIAT', '2'])
+('E8', ['EGG', 'EGG', '8'])
+('MDCKSIAT2', ['SIAT2'])
+('E8', ['SIAT2', 'E8'])
+['SIAT2_E8', 'CANINECELL+EGG', 'SIAT+EGG', 'exactly', '10']
+2
+8
+('longest', 'MDCKSIAT')
+('longest', 'MDCKSIAT2')
+_E3
+('longest', 'E3')
+_
+['MDCKSIAT2', 'E3']
+[0, 10]
+ordering...
+[0, 10]
+['MDCKSIAT2', 'E3']
+done ordering
+('MDCKSIAT2', ['CANINECELL', 'SIAT', '2'])
+('E3', ['EGG', 'EGG', '3'])
+('MDCKSIAT2', ['SIAT2'])
+('E3', ['SIAT2', 'E3'])
+['SIAT2_E3', 'CANINECELL+EGG', 'SIAT+EGG', 'exactly', '5']
+2
+3
+('longest', 'MDCKSIAT')
+('longest', 'MDCKSIAT2')
+_E8
+('longest', 'E8')
+_
+['MDCKSIAT2', 'E8']
+[0, 10]
+ordering...
+[0, 10]
+['MDCKSIAT2', 'E8']
+done ordering
+('MDCKSIAT2', ['CANINECELL', 'SIAT', '2'])
+('E8', ['EGG', 'EGG', '8'])
+('MDCKSIAT2', ['SIAT2'])
+('E8', ['SIAT2', 'E8'])
+['SIAT2_E8', 'CANINECELL+EGG', 'SIAT+EGG', 'exactly', '10']
+2
+8
+('longest', 'MDCKSIAT')
+('longest', 'MDCKSIAT2')
+_E3
+('longest', 'E3')
+_
+['MDCKSIAT2', 'E3']
+[0, 10]
+ordering...
+[0, 10]
+['MDCKSIAT2', 'E3']
+done ordering
+('MDCKSIAT2', ['CANINECELL', 'SIAT', '2'])
+('E3', ['EGG', 'EGG', '3'])
+('MDCKSIAT2', ['SIAT2'])
+('E3', ['SIAT2', 'E3'])
+['SIAT2_E3', 'CANINECELL+EGG', 'SIAT+EGG', 'exactly', '5']
+2
+3
+('Input ID', 'MDCKSIAT2_E8')
+('longest match', 'MDCKSIAT')
+('longest match', 'MDCKSIAT2')
+('current ID', '_E8')
+('longest match', 'E8')
+('current ID', '_')
+['MDCKSIAT2', 'E8']
+[0, 10]
+ordering matches...
+('initial order', [0, 10])
+('final order', ['MDCKSIAT2', 'E8'])
+done ordering
+('MDCKSIAT2', ['CANINECELL', 'SIAT', '2'])
+('E8', ['EGG', 'EGG', '8'])
+('MDCKSIAT2', ['SIAT2'])
+('E8', ['SIAT2', 'E8'])
+['SIAT2_E8', 'CANINECELL+EGG', 'SIAT+EGG', 'exactly', '10']
+2
+8
+('Input ID', 'MDCKSIAT2_E3')
+('longest match', 'MDCKSIAT')
+('longest match', 'MDCKSIAT2')
+('current ID', '_E3')
+('longest match', 'E3')
+('current ID', '_')
+['MDCKSIAT2', 'E3']
+[0, 10]
+ordering matches...
+('initial order', [0, 10])
+('final order', ['MDCKSIAT2', 'E3'])
+done ordering
+('MDCKSIAT2', ['CANINECELL', 'SIAT', '2'])
+('E3', ['EGG', 'EGG', '3'])
+('MDCKSIAT2', ['SIAT2'])
+('E3', ['SIAT2', 'E3'])
+['SIAT2_E3', 'CANINECELL+EGG', 'SIAT+EGG', 'exactly', '5']
+2
+3
+('Input ID', 'XMDCK2')
+('longest match', 'M')
+('longest match', 'MDCK2')
+('current ID', 'X')
+('longest match', 'X')
+('current ID', '')
+['MDCK2', 'X']
+[1, 0]
+ordering matches...
+('initial order', [1, 0])
+('final order', ['X', 'MDCK2'])
+done ordering
+('X', ['UNKNOWNCELL', 'UNKNOWNCELL', None])
+('MDCK2', ['CANINECELL', 'MDCK', '2'])
+('X', ['X'])
+('MDCK2', ['X', 'MDCK2'])
+['X_MDCK2', 'UNKNOWNCELL+CANINECELL', 'UNKNOWNCELL+MDCK', 'atleast', '3']
+None
+('Input ID', 'C_3_1')
+('longest match', 'C_3')
+('current ID', '_1')
+('longest match', '_1')
+('current ID', '')
+['C_3', '_1']
+[0, 3]
+ordering matches...
+('initial order', [0, 3])
+('final order', ['C_3', '_1'])
+done ordering
+('C_3', ['UNKNOWNCELL', 'UNKNOWNCELL', '3'])
+('_1', [None, None, '1'])
+('Input ID', 'SIAT_1_SIAT_2_SIAT1')
+('longest match', '_2')
+('longest match', 'SIAT')
+('longest match', 'SIAT1')
+('longest match', 'SIAT_1')
+('current ID', '_SIAT_2_SIAT1')
+('longest match', '_2')
+('longest match', 'SIAT')
+('longest match', 'SIAT1')
+('longest match', 'SIAT_2')
+('current ID', '__SIAT1')
+('longest match', 'SIAT')
+('longest match', 'SIAT1')
+('current ID', '__')
+['SIAT_1', 'SIAT_2', 'SIAT1']
+[0, 7, 14]
+ordering matches...
+('initial order', [0, 7, 14])
+('final order', ['SIAT_1', 'SIAT_2', 'SIAT1'])
+done ordering
+('SIAT_1', ['CANINECELL', 'SIAT', '1'])
+('SIAT_2', ['CANINECELL', 'SIAT', '2'])
+('SIAT1', ['CANINECELL', 'SIAT', '1'])
+('SIAT_1', ['SIAT1'])
+('SIAT_2', ['SIAT1', 'SIAT2'])
+('SIAT1', ['SIAT1', 'SIAT2', 'SIAT1'])
+['SIAT1_SIAT2_SIAT1', 'CANINECELL', 'SIAT', 'exactly', '4']
+1
+2
+1
+('Input ID', 'E5_1')
+('longest match', '_1')
+('current ID', 'E5')
+('longest match', 'E5')
+('current ID', '')
+['_1', 'E5']
+[2, 0]
+ordering matches...
+('initial order', [2, 0])
+('final order', ['E5', '_1'])
+done ordering
+('E5', ['EGG', 'EGG', '5'])
+('_1', [None, None, '1'])
+('Input ID', 'MDCKSIAT2_E8')
+('longest match', 'MDCKSIAT')
+('longest match', 'MDCKSIAT2')
+('current ID', '_E8')
+('longest match', 'E8')
+('current ID', '_')
+['MDCKSIAT2', 'E8']
+[0, 10]
+ordering matches...
+('initial order', [0, 10])
+('final order', ['MDCKSIAT2', 'E8'])
+done ordering
+('MDCKSIAT2', ['CANINECELL', 'SIAT', '2'])
+('Input ID', 'MDCKSIAT2_E3')
+('longest match', 'MDCKSIAT')
+('longest match', 'MDCKSIAT2')
+('current ID', '_E3')
+('longest match', 'E3')
+('current ID', '_')
+['MDCKSIAT2', 'E3']
+[0, 10]
+ordering matches...
+('initial order', [0, 10])
+('final order', ['MDCKSIAT2', 'E3'])
+done ordering
+('MDCKSIAT2', ['CANINECELL', 'SIAT', '2'])
+('Input ID', 'XMDCK2')
+('longest match', 'M')
+('longest match', 'MDCK2')
+('current ID', 'X')
+('longest match', 'X')
+('current ID', '')
+['MDCK2', 'X']
+[1, 0]
+ordering matches...
+('initial order', [1, 0])
+('final order', ['X', 'MDCK2'])
+done ordering
+('X', ['UNKNOWNCELL', 'UNKNOWNCELL', None])
+('Input ID', 'SIAT_1_SIAT_2_SIAT1')
+('longest match', '_2')
+('longest match', 'SIAT')
+('longest match', 'SIAT1')
+('longest match', 'SIAT_1')
+('current ID', '_SIAT_2_SIAT1')
+('longest match', '_2')
+('longest match', 'SIAT')
+('longest match', 'SIAT1')
+('longest match', 'SIAT_2')
+('current ID', '__SIAT1')
+('longest match', 'SIAT')
+('longest match', 'SIAT1')
+('current ID', '__')
+['SIAT_1', 'SIAT_2', 'SIAT1']
+[0, 7, 14]
+ordering matches...
+('initial order', [0, 7, 14])
+('final order', ['SIAT_1', 'SIAT_2', 'SIAT1'])
+done ordering
+('SIAT_1', ['CANINECELL', 'SIAT', '1'])
+('Input ID', 'MDCKSIAT2_E8')
+('longest match', 'MDCKSIAT')
+('longest match', 'MDCKSIAT2')
+('current ID', '_E8')
+('longest match', 'E8')
+('current ID', '_')
+['MDCKSIAT2', 'E8']
+[0, 10]
+ordering matches...
+('initial order', [0, 10])
+('final order', ['MDCKSIAT2', 'E8'])
+done ordering
+('MDCKSIAT2', ['CANINECELL', 'SIAT', '2'])
+('E8', ['EGG', 'EGG', '8'])
+('Input ID', 'MDCKSIAT2_E3')
+('longest match', 'MDCKSIAT')
+('longest match', 'MDCKSIAT2')
+('current ID', '_E3')
+('longest match', 'E3')
+('current ID', '_')
+['MDCKSIAT2', 'E3']
+[0, 10]
+ordering matches...
+('initial order', [0, 10])
+('final order', ['MDCKSIAT2', 'E3'])
+done ordering
+('MDCKSIAT2', ['CANINECELL', 'SIAT', '2'])
+('E3', ['EGG', 'EGG', '3'])
+('Input ID', 'XMDCK2')
+('longest match', 'M')
+('longest match', 'MDCK2')
+('current ID', 'X')
+('longest match', 'X')
+('current ID', '')
+['MDCK2', 'X']
+[1, 0]
+ordering matches...
+('initial order', [1, 0])
+('final order', ['X', 'MDCK2'])
+done ordering
+('X', ['UNKNOWNCELL', 'UNKNOWNCELL', None])
+('MDCK2', ['CANINECELL', 'MDCK', '2'])
+('Input ID', 'SIAT_1_SIAT_2_SIAT1')
+('longest match', '_2')
+('longest match', 'SIAT')
+('longest match', 'SIAT1')
+('longest match', 'SIAT_1')
+('current ID', '_SIAT_2_SIAT1')
+('longest match', '_2')
+('longest match', 'SIAT')
+('longest match', 'SIAT1')
+('longest match', 'SIAT_2')
+('current ID', '__SIAT1')
+('longest match', 'SIAT')
+('longest match', 'SIAT1')
+('current ID', '__')
+['SIAT_1', 'SIAT_2', 'SIAT1']
+[0, 7, 14]
+ordering matches...
+('initial order', [0, 7, 14])
+('final order', ['SIAT_1', 'SIAT_2', 'SIAT1'])
+done ordering
+('SIAT_1', ['CANINECELL', 'SIAT', '1'])
+('SIAT_2', ['CANINECELL', 'SIAT', '2'])
+('SIAT1', ['CANINECELL', 'SIAT', '1'])
+('SIAT_1', ['SIAT1'])
+('SIAT_2', ['SIAT1', 'SIAT2'])
+('SIAT1', ['SIAT1', 'SIAT2', 'SIAT1'])
+['SIAT1_SIAT2_SIAT1', 'CANINECELL', 'SIAT', 'exactly', '4']
+1
+2
+1
+('Input ID', 'E5_1')
+('longest match', '_1')
+('current ID', 'E5')
+('longest match', 'E5')
+('current ID', '')
+['_1', 'E5']
+[2, 0]
+ordering matches...
+('initial order', [2, 0])
+('final order', ['E5', '_1'])
+done ordering
+('E5', ['EGG', 'EGG', '5'])
+('_1', [None, None, '1'])
+('E5', ['E5'])
+('_1', ['E5', '1'])
+['E5_1', '', '', 'exactly', '6']
+5
+1
+('Input ID', 'MDCK_4_SIAT2')
+('longest match', '_4')
+('longest match', 'CK_4')
+('longest match', 'SIAT2')
+('longest match', 'MDCK_4')
+('current ID', '_SIAT2')
+('longest match', 'SIAT')
+('longest match', 'SIAT2')
+('current ID', '_')
+['MDCK_4', 'SIAT2']
+[0, 7]
+ordering matches...
+('initial order', [0, 7])
+('final order', ['MDCK_4', 'SIAT2'])
+done ordering
+('MDCK_4', ['CANINECELL', 'MDCK', '4'])
+('SIAT2', ['CANINECELL', 'SIAT', '2'])
+('Input ID', 'MDCKSIAT2_E8')
+('longest match', 'MDCKSIAT')
+('longest match', 'MDCKSIAT2')
+('current ID', '_E8')
+('longest match', 'E8')
+('current ID', '_')
+['MDCKSIAT2', 'E8']
+[0, 10]
+ordering matches...
+('initial order', [0, 10])
+('final order', ['MDCKSIAT2', 'E8'])
+done ordering
+('MDCKSIAT2', ['CANINECELL', 'SIAT', '2'])
+('E8', ['EGG', 'EGG', '8'])
+('MDCKSIAT2', ['SIAT2'])
+('E8', ['SIAT2', 'E8'])
+['SIAT2_E8', 'CANINECELL+EGG', 'SIAT+EGG', 'exactly', '10']
+2
+8
+('Input ID', 'MDCKSIAT2_E3')
+('longest match', 'MDCKSIAT')
+('longest match', 'MDCKSIAT2')
+('current ID', '_E3')
+('longest match', 'E3')
+('current ID', '_')
+['MDCKSIAT2', 'E3']
+[0, 10]
+ordering matches...
+('initial order', [0, 10])
+('final order', ['MDCKSIAT2', 'E3'])
+done ordering
+('MDCKSIAT2', ['CANINECELL', 'SIAT', '2'])
+('E3', ['EGG', 'EGG', '3'])
+('MDCKSIAT2', ['SIAT2'])
+('E3', ['SIAT2', 'E3'])
+['SIAT2_E3', 'CANINECELL+EGG', 'SIAT+EGG', 'exactly', '5']
+2
+3
+('Input ID', 'XMDCK2')
+('longest match', 'M')
+('longest match', 'MDCK2')
+('current ID', 'X')
+('longest match', 'X')
+('current ID', '')
+['MDCK2', 'X']
+[1, 0]
+ordering matches...
+('initial order', [1, 0])
+('final order', ['X', 'MDCK2'])
+done ordering
+('X', ['UNKNOWNCELL', 'UNKNOWNCELL', None])
+('MDCK2', ['CANINECELL', 'MDCK', '2'])
+('X', ['X'])
+('MDCK2', ['X', 'MDCK2'])
+['X_MDCK2', 'UNKNOWNCELL+CANINECELL', 'UNKNOWNCELL+MDCK', 'exactly', '3']
+None
+('Input ID', 'C_3_1')
+('longest match', 'C_3')
+('current ID', '_1')
+('longest match', '_1')
+('current ID', '')
+['C_3', '_1']
+[0, 3]
+ordering matches...
+('initial order', [0, 3])
+('final order', ['C_3', '_1'])
+done ordering
+('C_3', ['UNKNOWNCELL', 'UNKNOWNCELL', '3'])
+('_1', [None, None, '1'])
+('C_3', ['C3'])
+('_1', ['C3', '1'])
+['C3_1', '', '', 'exactly', '4']
+3
+1
+('Input ID', 'C1S2')
+('longest match', 'S2')
+('current ID', 'C1')
+('longest match', 'C')
+('longest match', 'C1')
+('current ID', '')
+['S2', 'C1']
+[2, 0]
+ordering matches...
+('initial order', [2, 0])
+('final order', ['C1', 'S2'])
+done ordering
+('C1', ['UNKNOWNCELL', 'UNKNOWNCELL', '1'])
+('S2', ['CANINECELL', 'SIAT', '2'])
+('C1', ['C1'])
+('S2', ['C1', 'S2'])
+['C1_S2', 'UNKNOWNCELL+CANINECELL', 'UNKNOWNCELL+SIAT', 'exactly', '3']
+1
+2
+('Input ID', 'SIAT2_SIAT1')
+('longest match', 'SIAT')
+('longest match', 'SIAT1')
+('current ID', 'SIAT2_')
+('longest match', 'SIAT')
+('longest match', 'SIAT2')
+('current ID', '_')
+['SIAT1', 'SIAT2']
+[6, 0]
+ordering matches...
+('initial order', [6, 0])
+('final order', ['SIAT2', 'SIAT1'])
+done ordering
+('SIAT2', ['CANINECELL', 'SIAT', '2'])
+('SIAT1', ['CANINECELL', 'SIAT', '1'])
+('SIAT2', ['SIAT2'])
+('SIAT1', ['SIAT2', 'SIAT1'])
+['SIAT2_SIAT1', 'CANINECELL', 'SIAT', 'exactly', '3']
+2
+1
+('Input ID', 'MDCK3')
+('longest match', 'M')
+('longest match', 'MDCK3')
+('current ID', '')
+['MDCK3']
+[0]
+ordering matches...
+('initial order', [0])
+('final order', ['MDCK3'])
+done ordering
+('MDCK3', ['CANINECELL', 'MDCK', '3'])
+('MDCK3', ['MDCK3'])
+['MDCK3', 'CANINECELL', 'MDCK', 'exactly', '3']
+3
+('Input ID', 'MX_S2')
+('longest match', 'S2')
+('current ID', 'MX_')
+('longest match', 'M')
+('longest match', 'MX')
+('current ID', '_')
+['S2', 'MX']
+[3, 0]
+ordering matches...
+('initial order', [3, 0])
+('final order', ['MX', 'S2'])
+done ordering
+('MX', ['CANINECELL', 'MDCK', None])
+('S2', ['CANINECELL', 'SIAT', '2'])
+('MX', ['MX'])
+('S2', ['MX', 'S2'])
+['MX_S2', 'CANINECELL', 'MDCK+SIAT', 'exactly', '3']
+None
+('Input ID', 'X2_C2')
+('longest match', 'X2')
+('current ID', '_C2')
+('longest match', 'C')
+('longest match', 'C2')
+('current ID', '_')
+['X2', 'C2']
+[0, 3]
+ordering matches...
+('initial order', [0, 3])
+('final order', ['X2', 'C2'])
+done ordering
+('X2', ['UNKNOWNCELL', 'UNKNOWNCELL', '2'])
+('C2', ['UNKNOWNCELL', 'UNKNOWNCELL', '2'])
+('X2', ['X2'])
+('C2', ['X2', 'C2'])
+['X2_C2', 'UNKNOWNCELL', 'UNKNOWNCELL', 'exactly', '4']
+2
+2
+('Input ID', 'P3_MDCK')
+('longest match', 'M')
+('longest match', 'CK')
+('longest match', 'MDCK')
+('longest match', 'P3_MDCK')
+('current ID', '')
+['P3_MDCK']
+[0]
+ordering matches...
+('initial order', [0])
+('final order', ['P3_MDCK'])
+done ordering
+('P3_MDCK', ['CANINECELL', 'MDCK', 'X'])
+('P3_MDCK', ['P3MDCK'])
+['P3MDCK', 'CANINECELL', 'MDCK', 'exactly', '1']
+X
+('Input ID', 'C2')
+('longest match', 'C')
+('longest match', 'C2')
+('current ID', '')
+['C2']
+[0]
+ordering matches...
+('initial order', [0])
+('final order', ['C2'])
+done ordering
+('C2', ['UNKNOWNCELL', 'UNKNOWNCELL', '2'])
+('C2', ['C2'])
+['C2', 'UNKNOWNCELL', 'UNKNOWNCELL', 'exactly', '2']
+2
+('Input ID', 'C_2__SIAT1')
+('longest match', 'C_2')
+('longest match', 'SIAT')
+('longest match', 'SIAT1')
+('current ID', 'C_2__')
+('longest match', 'C_2')
+('current ID', '__')
+['SIAT1', 'C_2']
+[5, 0]
+ordering matches...
+('initial order', [5, 0])
+('final order', ['C_2', 'SIAT1'])
+done ordering
+('C_2', ['UNKNOWNCELL', 'UNKNOWNCELL', '2'])
+('SIAT1', ['CANINECELL', 'SIAT', '1'])
+('C_2', ['C2'])
+('SIAT1', ['C2', 'SIAT1'])
+['C2_SIAT1', 'UNKNOWNCELL+CANINECELL', 'UNKNOWNCELL+SIAT', 'exactly', '3']
+2
+1
+('Input ID', 'X_C2')
+('longest match', 'X')
+('longest match', 'C2')
+('current ID', 'X_')
+('longest match', 'X')
+('current ID', '_')
+['C2', 'X']
+[2, 0]
+ordering matches...
+('initial order', [2, 0])
+('final order', ['X', 'C2'])
+done ordering
+('X', ['UNKNOWNCELL', 'UNKNOWNCELL', None])
+('C2', ['UNKNOWNCELL', 'UNKNOWNCELL', '2'])
+('X', ['X'])
+('C2', ['X', 'C2'])
+['X_C2', 'UNKNOWNCELL', 'UNKNOWNCELL', 'exactly', '3']
+None
+('Input ID', 'S4')
+('longest match', 'S4')
+('current ID', '')
+['S4']
+[0]
+ordering matches...
+('initial order', [0])
+('final order', ['S4'])
+done ordering
+('S4', ['CANINECELL', 'SIAT', '4'])
+('S4', ['S4'])
+['S4', 'CANINECELL', 'SIAT', 'exactly', '4']
+4
+('Input ID', 'CX_S2')
+('longest match', 'S2')
+('current ID', 'CX_')
+('longest match', 'X')
+('longest match', 'CX')
+('current ID', '_')
+['S2', 'CX']
+[3, 0]
+ordering matches...
+('initial order', [3, 0])
+('final order', ['CX', 'S2'])
+done ordering
+('CX', ['UNKNOWNCELL', 'UNKNOWNCELL', None])
+('S2', ['CANINECELL', 'SIAT', '2'])
+('CX', ['CX'])
+('S2', ['CX', 'S2'])
+['CX_S2', 'UNKNOWNCELL+CANINECELL', 'UNKNOWNCELL+SIAT', 'exactly', '3']
+None
+('Input ID', 'M3_C2')
+('longest match', 'M')
+('longest match', 'C2')
+('current ID', 'M3_')
+('longest match', 'M')
+('longest match', 'M3')
+('current ID', '_')
+['C2', 'M3']
+[3, 0]
+ordering matches...
+('initial order', [3, 0])
+('final order', ['M3', 'C2'])
+done ordering
+('M3', ['CANINECELL', 'MDCK', '3'])
+('C2', ['UNKNOWNCELL', 'UNKNOWNCELL', '2'])
+('M3', ['M3'])
+('C2', ['M3', 'C2'])
+['M3_C2', 'CANINECELL+UNKNOWNCELL', 'MDCK+UNKNOWNCELL', 'exactly', '5']
+3
+2
+('Input ID', 'X_S1')
+('longest match', 'S1')
+('current ID', 'X_')
+('longest match', 'X')
+('current ID', '_')
+['S1', 'X']
+[2, 0]
+ordering matches...
+('initial order', [2, 0])
+('final order', ['X', 'S1'])
+done ordering
+('X', ['UNKNOWNCELL', 'UNKNOWNCELL', None])
+('S1', ['CANINECELL', 'SIAT', '1'])
+('X', ['X'])
+('S1', ['X', 'S1'])
+['X_S1', 'UNKNOWNCELL+CANINECELL', 'UNKNOWNCELL+SIAT', 'exactly', '2']
+None
+('Input ID', 'MDCK4')
+('longest match', 'M')
+('longest match', 'MDCK4')
+('current ID', '')
+['MDCK4']
+[0]
+ordering matches...
+('initial order', [0])
+('final order', ['MDCK4'])
+done ordering
+('MDCK4', ['CANINECELL', 'MDCK', '4'])
+('MDCK4', ['MDCK4'])
+['MDCK4', 'CANINECELL', 'MDCK', 'exactly', '4']
+4
+('Input ID', 'M1_C2S1')
+('longest match', 'S1')
+('current ID', 'M1_C2')
+('longest match', 'M')
+('longest match', 'C2')
+('current ID', 'M1_')
+('longest match', 'M')
+('longest match', 'M1')
+('current ID', '_')
+['S1', 'C2', 'M1']
+[5, 3, 0]
+ordering matches...
+('initial order', [5, 3, 0])
+('final order', ['M1', 'C2', 'S1'])
+done ordering
+('M1', ['CANINECELL', 'MDCK', '1'])
+('C2', ['UNKNOWNCELL', 'UNKNOWNCELL', '2'])
+('S1', ['CANINECELL', 'SIAT', '1'])
+('M1', ['M1'])
+('C2', ['M1', 'C2'])
+('S1', ['M1', 'C2', 'S1'])
+['M1_C2_S1', 'CANINECELL+UNKNOWNCELL', 'MDCK+UNKNOWNCELL+SIAT', 'exactly', '4']
+1
+2
+1
+('Input ID', 'C3_C1')
+('longest match', 'C')
+('longest match', 'C3')
+('current ID', '_C1')
+('longest match', 'C')
+('longest match', 'C1')
+('current ID', '_')
+['C3', 'C1']
+[0, 3]
+ordering matches...
+('initial order', [0, 3])
+('final order', ['C3', 'C1'])
+done ordering
+('C3', ['UNKNOWNCELL', 'UNKNOWNCELL', '3'])
+('C1', ['UNKNOWNCELL', 'UNKNOWNCELL', '1'])
+('C3', ['C3'])
+('C1', ['C3', 'C1'])
+['C3_C1', 'UNKNOWNCELL', 'UNKNOWNCELL', 'exactly', '4']
+3
+1
+('Input ID', 'MX_S3')
+('longest match', 'S3')
+('current ID', 'MX_')
+('longest match', 'M')
+('longest match', 'MX')
+('current ID', '_')
+['S3', 'MX']
+[3, 0]
+ordering matches...
+('initial order', [3, 0])
+('final order', ['MX', 'S3'])
+done ordering
+('MX', ['CANINECELL', 'MDCK', None])
+('S3', ['CANINECELL', 'SIAT', '3'])
+('MX', ['MX'])
+('S3', ['MX', 'S3'])
+['MX_S3', 'CANINECELL', 'MDCK+SIAT', 'exactly', '4']
+None
+('Input ID', 'SIAT3_SIAT1')
+('longest match', 'SIAT')
+('longest match', 'SIAT1')
+('current ID', 'SIAT3_')
+('longest match', 'SIAT')
+('longest match', 'SIAT3')
+('current ID', '_')
+['SIAT1', 'SIAT3']
+[6, 0]
+ordering matches...
+('initial order', [6, 0])
+('final order', ['SIAT3', 'SIAT1'])
+done ordering
+('SIAT3', ['CANINECELL', 'SIAT', '3'])
+('SIAT1', ['CANINECELL', 'SIAT', '1'])
+('SIAT3', ['SIAT3'])
+('SIAT1', ['SIAT3', 'SIAT1'])
+['SIAT3_SIAT1', 'CANINECELL', 'SIAT', 'exactly', '4']
+3
+1
+('Input ID', 'M1_S3')
+('longest match', 'S3')
+('current ID', 'M1_')
+('longest match', 'M')
+('longest match', 'M1')
+('current ID', '_')
+['S3', 'M1']
+[3, 0]
+ordering matches...
+('initial order', [3, 0])
+('final order', ['M1', 'S3'])
+done ordering
+('M1', ['CANINECELL', 'MDCK', '1'])
+('S3', ['CANINECELL', 'SIAT', '3'])
+('M1', ['M1'])
+('S3', ['M1', 'S3'])
+['M1_S3', 'CANINECELL', 'MDCK+SIAT', 'exactly', '4']
+1
+3
+('Input ID', 'C1_S3')
+('longest match', 'S3')
+('current ID', 'C1_')
+('longest match', 'C')
+('longest match', 'C1')
+('current ID', '_')
+['S3', 'C1']
+[3, 0]
+ordering matches...
+('initial order', [3, 0])
+('final order', ['C1', 'S3'])
+done ordering
+('C1', ['UNKNOWNCELL', 'UNKNOWNCELL', '1'])
+('S3', ['CANINECELL', 'SIAT', '3'])
+('C1', ['C1'])
+('S3', ['C1', 'S3'])
+['C1_S3', 'UNKNOWNCELL+CANINECELL', 'UNKNOWNCELL+SIAT', 'exactly', '4']
+1
+3
+('Input ID', 'CX')
+('longest match', 'X')
+('longest match', 'CX')
+('current ID', '')
+['CX']
+[0]
+ordering matches...
+('initial order', [0])
+('final order', ['CX'])
+done ordering
+('CX', ['UNKNOWNCELL', 'UNKNOWNCELL', None])
+('CX', ['CX'])
+['CX', 'UNKNOWNCELL', 'UNKNOWNCELL', 'exactly', '1']
+None
+('Input ID', 'X2')
+('longest match', 'X2')
+('current ID', '')
+['X2']
+[0]
+ordering matches...
+('initial order', [0])
+('final order', ['X2'])
+done ordering
+('X2', ['UNKNOWNCELL', 'UNKNOWNCELL', '2'])
+('X2', ['X2'])
+['X2', 'UNKNOWNCELL', 'UNKNOWNCELL', 'exactly', '2']
+2
+('Input ID', 'X1_C3')
+('longest match', 'X1')
+('current ID', '_C3')
+('longest match', 'C')
+('longest match', 'C3')
+('current ID', '_')
+['X1', 'C3']
+[0, 3]
+ordering matches...
+('initial order', [0, 3])
+('final order', ['X1', 'C3'])
+done ordering
+('X1', ['UNKNOWNCELL', 'UNKNOWNCELL', '1'])
+('C3', ['UNKNOWNCELL', 'UNKNOWNCELL', '3'])
+('X1', ['X1'])
+('C3', ['X1', 'C3'])
+['X1_C3', 'UNKNOWNCELL', 'UNKNOWNCELL', 'exactly', '4']
+1
+3
+('Input ID', 'C2_SIAT2')
+('longest match', 'C')
+('longest match', 'C2')
+('longest match', 'SIAT')
+('longest match', 'SIAT2')
+('current ID', 'C2_')
+('longest match', 'C')
+('longest match', 'C2')
+('current ID', '_')
+['SIAT2', 'C2']
+[3, 0]
+ordering matches...
+('initial order', [3, 0])
+('final order', ['C2', 'SIAT2'])
+done ordering
+('C2', ['UNKNOWNCELL', 'UNKNOWNCELL', '2'])
+('SIAT2', ['CANINECELL', 'SIAT', '2'])
+('C2', ['C2'])
+('SIAT2', ['C2', 'SIAT2'])
+['C2_SIAT2', 'UNKNOWNCELL+CANINECELL', 'UNKNOWNCELL+SIAT', 'exactly', '4']
+2
+2
+('Input ID', 'MDCK_1')
+('longest match', '_1')
+('longest match', 'CK_1')
+('longest match', 'MDCK_1')
+('current ID', '')
+['MDCK_1']
+[0]
+ordering matches...
+('initial order', [0])
+('final order', ['MDCK_1'])
+done ordering
+('MDCK_1', ['CANINECELL', 'MDCK', '1'])
+('MDCK_1', ['MDCK1'])
+['MDCK1', 'CANINECELL', 'MDCK', 'exactly', '1']
+1
+('Input ID', 'X1_S1')
+('longest match', 'S1')
+('current ID', 'X1_')
+('longest match', 'X1')
+('current ID', '_')
+['S1', 'X1']
+[3, 0]
+ordering matches...
+('initial order', [3, 0])
+('final order', ['X1', 'S1'])
+done ordering
+('X1', ['UNKNOWNCELL', 'UNKNOWNCELL', '1'])
+('S1', ['CANINECELL', 'SIAT', '1'])
+('X1', ['X1'])
+('S1', ['X1', 'S1'])
+['X1_S1', 'UNKNOWNCELL+CANINECELL', 'UNKNOWNCELL+SIAT', 'exactly', '2']
+1
+1
+('Input ID', 'M_1_C_2__SIAT1')
+('longest match', 'C_2')
+('longest match', 'SIAT')
+('longest match', 'SIAT1')
+('current ID', 'M_1_C_2__')
+('longest match', 'C_2')
+('current ID', 'M_1___')
+('longest match', '_1')
+('longest match', 'M_1')
+('current ID', '___')
+['SIAT1', 'C_2', 'M_1']
+[9, 4, 0]
+ordering matches...
+('initial order', [9, 4, 0])
+('final order', ['M_1', 'C_2', 'SIAT1'])
+done ordering
+('M_1', ['CANINECELL', 'MDCK', '1'])
+('C_2', ['UNKNOWNCELL', 'UNKNOWNCELL', '2'])
+('SIAT1', ['CANINECELL', 'SIAT', '1'])
+('M_1', ['M1'])
+('C_2', ['M1', 'C2'])
+('SIAT1', ['M1', 'C2', 'SIAT1'])
+['M1_C2_SIAT1', 'CANINECELL+UNKNOWNCELL', 'MDCK+UNKNOWNCELL+SIAT', 'exactly', '4']
+1
+2
+1
+('Input ID', 'M2_C1')
+('longest match', 'M')
+('longest match', 'C1')
+('current ID', 'M2_')
+('longest match', 'M')
+('longest match', 'M2')
+('current ID', '_')
+['C1', 'M2']
+[3, 0]
+ordering matches...
+('initial order', [3, 0])
+('final order', ['M2', 'C1'])
+done ordering
+('M2', ['CANINECELL', 'MDCK', '2'])
+('C1', ['UNKNOWNCELL', 'UNKNOWNCELL', '1'])
+('M2', ['M2'])
+('C1', ['M2', 'C1'])
+['M2_C1', 'CANINECELL+UNKNOWNCELL', 'MDCK+UNKNOWNCELL', 'exactly', '3']
+2
+1
+('Input ID', 'MDCK1')
+('longest match', 'M')
+('longest match', 'MDCK1')
+('current ID', '')
+['MDCK1']
+[0]
+ordering matches...
+('initial order', [0])
+('final order', ['MDCK1'])
+done ordering
+('MDCK1', ['CANINECELL', 'MDCK', '1'])
+('MDCK1', ['MDCK1'])
+['MDCK1', 'CANINECELL', 'MDCK', 'exactly', '1']
+1
+('Input ID', 'M2')
+('longest match', 'M')
+('longest match', 'M2')
+('current ID', '')
+['M2']
+[0]
+ordering matches...
+('initial order', [0])
+('final order', ['M2'])
+done ordering
+('M2', ['CANINECELL', 'MDCK', '2'])
+('M2', ['M2'])
+['M2', 'CANINECELL', 'MDCK', 'exactly', '2']
+2
+('Input ID', 'MDCK')
+('longest match', 'M')
+('longest match', 'CK')
+('longest match', 'MDCK')
+('current ID', '')
+['MDCK']
+[0]
+ordering matches...
+('initial order', [0])
+('final order', ['MDCK'])
+done ordering
+('MDCK', ['CANINECELL', 'MDCK', None])
+('MDCK', ['MDCK'])
+['MDCK', 'CANINECELL', 'MDCK', 'exactly', '1']
+None
+('Input ID', 'C4')
+('longest match', 'C')
+('longest match', 'C4')
+('current ID', '')
+['C4']
+[0]
+ordering matches...
+('initial order', [0])
+('final order', ['C4'])
+done ordering
+('C4', ['UNKNOWNCELL', 'UNKNOWNCELL', '4'])
+('C4', ['C4'])
+['C4', 'UNKNOWNCELL', 'UNKNOWNCELL', 'exactly', '4']
+4
+('Input ID', 'C_2_1')
+('longest match', 'C_2')
+('current ID', '_1')
+('longest match', '_1')
+('current ID', '')
+['C_2', '_1']
+[0, 3]
+ordering matches...
+('initial order', [0, 3])
+('final order', ['C_2', '_1'])
+done ordering
+('C_2', ['UNKNOWNCELL', 'UNKNOWNCELL', '2'])
+('_1', [None, None, '1'])
+('C_2', ['C2'])
+('_1', ['C2', '1'])
+['C2_1', '', '', 'exactly', '3']
+2
+1
+('Input ID', 'C2_S1')
+('longest match', 'S1')
+('current ID', 'C2_')
+('longest match', 'C')
+('longest match', 'C2')
+('current ID', '_')
+['S1', 'C2']
+[3, 0]
+ordering matches...
+('initial order', [3, 0])
+('final order', ['C2', 'S1'])
+done ordering
+('C2', ['UNKNOWNCELL', 'UNKNOWNCELL', '2'])
+('S1', ['CANINECELL', 'SIAT', '1'])
+('C2', ['C2'])
+('S1', ['C2', 'S1'])
+['C2_S1', 'UNKNOWNCELL+CANINECELL', 'UNKNOWNCELL+SIAT', 'exactly', '3']
+2
+1
+('Input ID', 'MDCKMV1_LU')
+('longest match', 'V')
+('longest match', 'CK')
+('longest match', 'MDCK')
+('longest match', 'MV1_LU')
+('current ID', 'MDCK')
+('longest match', 'M')
+('longest match', 'CK')
+('longest match', 'MDCK')
+('current ID', '')
+['MV1_LU', 'MDCK']
+[4, 0]
+ordering matches...
+('initial order', [4, 0])
+('final order', ['MDCK', 'MV1_LU'])
+done ordering
+('MDCK', ['CANINECELL', 'MDCK', None])
+('MV1_LU', ['MINKCELL', 'MV1LU', None])
+('MDCK', ['MDCK'])
+('MV1_LU', ['MDCK', 'MV1LU'])
+['MDCK_MV1LU', 'CANINECELL+MINKCELL', 'MDCK+MV1LU', 'exactly', '2']
+None
+('Input ID', 'C3_C2')
+('longest match', 'C')
+('longest match', 'C3')
+('current ID', '_C2')
+('longest match', 'C')
+('longest match', 'C2')
+('current ID', '_')
+['C3', 'C2']
+[0, 3]
+ordering matches...
+('initial order', [0, 3])
+('final order', ['C3', 'C2'])
+done ordering
+('C3', ['UNKNOWNCELL', 'UNKNOWNCELL', '3'])
+('C2', ['UNKNOWNCELL', 'UNKNOWNCELL', '2'])
+('C3', ['C3'])
+('C2', ['C3', 'C2'])
+['C3_C2', 'UNKNOWNCELL', 'UNKNOWNCELL', 'exactly', '5']
+3
+2
+('Input ID', 'C3_S1')
+('longest match', 'S1')
+('current ID', 'C3_')
+('longest match', 'C')
+('longest match', 'C3')
+('current ID', '_')
+['S1', 'C3']
+[3, 0]
+ordering matches...
+('initial order', [3, 0])
+('final order', ['C3', 'S1'])
+done ordering
+('C3', ['UNKNOWNCELL', 'UNKNOWNCELL', '3'])
+('S1', ['CANINECELL', 'SIAT', '1'])
+('C3', ['C3'])
+('S1', ['C3', 'S1'])
+['C3_S1', 'UNKNOWNCELL+CANINECELL', 'UNKNOWNCELL+SIAT', 'exactly', '4']
+3
+1
+('Input ID', 'M1C2')
+('longest match', 'M')
+('longest match', 'C2')
+('current ID', 'M1')
+('longest match', 'M')
+('longest match', 'M1')
+('current ID', '')
+['C2', 'M1']
+[2, 0]
+ordering matches...
+('initial order', [2, 0])
+('final order', ['M1', 'C2'])
+done ordering
+('M1', ['CANINECELL', 'MDCK', '1'])
+('C2', ['UNKNOWNCELL', 'UNKNOWNCELL', '2'])
+('M1', ['M1'])
+('C2', ['M1', 'C2'])
+['M1_C2', 'CANINECELL+UNKNOWNCELL', 'MDCK+UNKNOWNCELL', 'exactly', '3']
+1
+2
+('Input ID', 'X2_S1')
+('longest match', 'S1')
+('current ID', 'X2_')
+('longest match', 'X2')
+('current ID', '_')
+['S1', 'X2']
+[3, 0]
+ordering matches...
+('initial order', [3, 0])
+('final order', ['X2', 'S1'])
+done ordering
+('X2', ['UNKNOWNCELL', 'UNKNOWNCELL', '2'])
+('S1', ['CANINECELL', 'SIAT', '1'])
+('X2', ['X2'])
+('S1', ['X2', 'S1'])
+['X2_S1', 'UNKNOWNCELL+CANINECELL', 'UNKNOWNCELL+SIAT', 'exactly', '3']
+2
+1
+('Input ID', 'C1_C4')
+('longest match', 'C')
+('longest match', 'C1')
+('current ID', '_C4')
+('longest match', 'C')
+('longest match', 'C4')
+('current ID', '_')
+['C1', 'C4']
+[0, 3]
+ordering matches...
+('initial order', [0, 3])
+('final order', ['C1', 'C4'])
+done ordering
+('C1', ['UNKNOWNCELL', 'UNKNOWNCELL', '1'])
+('C4', ['UNKNOWNCELL', 'UNKNOWNCELL', '4'])
+('C1', ['C1'])
+('C4', ['C1', 'C4'])
+['C1_C4', 'UNKNOWNCELL', 'UNKNOWNCELL', 'exactly', '5']
+1
+4
+('Input ID', 'M1M1_C1')
+('longest match', 'M')
+('longest match', 'C1')
+('current ID', 'M1M1_')
+('longest match', 'M')
+('longest match', 'M1')
+('current ID', '_')
+['C1', 'M1']
+[5, 0]
+ordering matches...
+('initial order', [5, 0])
+('final order', ['M1', 'C1'])
+done ordering
+('M1', ['CANINECELL', 'MDCK', '1'])
+('C1', ['UNKNOWNCELL', 'UNKNOWNCELL', '1'])
+('M1', ['M1'])
+('C1', ['M1', 'C1'])
+['M1_C1', 'CANINECELL+UNKNOWNCELL', 'MDCK+UNKNOWNCELL', 'exactly', '2']
+1
+1
+('Input ID', 'MX_S1')
+('longest match', 'S1')
+('current ID', 'MX_')
+('longest match', 'M')
+('longest match', 'MX')
+('current ID', '_')
+['S1', 'MX']
+[3, 0]
+ordering matches...
+('initial order', [3, 0])
+('final order', ['MX', 'S1'])
+done ordering
+('MX', ['CANINECELL', 'MDCK', None])
+('S1', ['CANINECELL', 'SIAT', '1'])
+('MX', ['MX'])
+('S1', ['MX', 'S1'])
+['MX_S1', 'CANINECELL', 'MDCK+SIAT', 'exactly', '2']
+None
+('Input ID', 'X1_C2')
+('longest match', 'X1')
+('current ID', '_C2')
+('longest match', 'C')
+('longest match', 'C2')
+('current ID', '_')
+['X1', 'C2']
+[0, 3]
+ordering matches...
+('initial order', [0, 3])
+('final order', ['X1', 'C2'])
+done ordering
+('X1', ['UNKNOWNCELL', 'UNKNOWNCELL', '1'])
+('C2', ['UNKNOWNCELL', 'UNKNOWNCELL', '2'])
+('X1', ['X1'])
+('C2', ['X1', 'C2'])
+['X1_C2', 'UNKNOWNCELL', 'UNKNOWNCELL', 'exactly', '3']
+1
+2
+('Input ID', 'M2_S2')
+('longest match', 'S2')
+('current ID', 'M2_')
+('longest match', 'M')
+('longest match', 'M2')
+('current ID', '_')
+['S2', 'M2']
+[3, 0]
+ordering matches...
+('initial order', [3, 0])
+('final order', ['M2', 'S2'])
+done ordering
+('M2', ['CANINECELL', 'MDCK', '2'])
+('S2', ['CANINECELL', 'SIAT', '2'])
+('M2', ['M2'])
+('S2', ['M2', 'S2'])
+['M2_S2', 'CANINECELL', 'MDCK+SIAT', 'exactly', '4']
+2
+2
+('Input ID', 'C2_SIAT1')
+('longest match', 'C')
+('longest match', 'C2')
+('longest match', 'SIAT')
+('longest match', 'SIAT1')
+('current ID', 'C2_')
+('longest match', 'C')
+('longest match', 'C2')
+('current ID', '_')
+['SIAT1', 'C2']
+[3, 0]
+ordering matches...
+('initial order', [3, 0])
+('final order', ['C2', 'SIAT1'])
+done ordering
+('C2', ['UNKNOWNCELL', 'UNKNOWNCELL', '2'])
+('SIAT1', ['CANINECELL', 'SIAT', '1'])
+('C2', ['C2'])
+('SIAT1', ['C2', 'SIAT1'])
+['C2_SIAT1', 'UNKNOWNCELL+CANINECELL', 'UNKNOWNCELL+SIAT', 'exactly', '3']
+2
+1
+('Input ID', 'MDCK2')
+('longest match', 'M')
+('longest match', 'MDCK2')
+('current ID', '')
+['MDCK2']
+[0]
+ordering matches...
+('initial order', [0])
+('final order', ['MDCK2'])
+done ordering
+('MDCK2', ['CANINECELL', 'MDCK', '2'])
+('MDCK2', ['MDCK2'])
+['MDCK2', 'CANINECELL', 'MDCK', 'exactly', '2']
+2
+('Input ID', 'C1_S1')
+('longest match', 'S1')
+('current ID', 'C1_')
+('longest match', 'C')
+('longest match', 'C1')
+('current ID', '_')
+['S1', 'C1']
+[3, 0]
+ordering matches...
+('initial order', [3, 0])
+('final order', ['C1', 'S1'])
+done ordering
+('C1', ['UNKNOWNCELL', 'UNKNOWNCELL', '1'])
+('S1', ['CANINECELL', 'SIAT', '1'])
+('C1', ['C1'])
+('S1', ['C1', 'S1'])
+['C1_S1', 'UNKNOWNCELL+CANINECELL', 'UNKNOWNCELL+SIAT', 'exactly', '2']
+1
+1
+('Input ID', 'MX')
+('longest match', 'M')
+('longest match', 'MX')
+('current ID', '')
+['MX']
+[0]
+ordering matches...
+('initial order', [0])
+('final order', ['MX'])
+done ordering
+('MX', ['CANINECELL', 'MDCK', None])
+('MX', ['MX'])
+['MX', 'CANINECELL', 'MDCK', 'exactly', '1']
+None
+('Input ID', 'C5')
+('longest match', 'C')
+('longest match', 'C5')
+('current ID', '')
+['C5']
+[0]
+ordering matches...
+('initial order', [0])
+('final order', ['C5'])
+done ordering
+('C5', ['UNKNOWNCELL', 'UNKNOWNCELL', '5'])
+('C5', ['C5'])
+['C5', 'UNKNOWNCELL', 'UNKNOWNCELL', 'exactly', '5']
+5
+('Input ID', 'M1M2_C1')
+('longest match', 'M')
+('longest match', 'C1')
+('current ID', 'M1M2_')
+('longest match', 'M')
+('longest match', 'M1')
+('current ID', 'M2_')
+('longest match', 'M')
+('longest match', 'M2')
+('current ID', '_')
+['C1', 'M1', 'M2']
+[5, 0, 2]
+ordering matches...
+('initial order', [5, 0, 2])
+('final order', ['M1', 'M2', 'C1'])
+done ordering
+('M1', ['CANINECELL', 'MDCK', '1'])
+('M2', ['CANINECELL', 'MDCK', '2'])
+('C1', ['UNKNOWNCELL', 'UNKNOWNCELL', '1'])
+('M1', ['M1'])
+('M2', ['M1', 'M2'])
+('C1', ['M1', 'M2', 'C1'])
+['M1_M2_C1', 'CANINECELL+UNKNOWNCELL', 'MDCK+UNKNOWNCELL', 'exactly', '4']
+1
+2
+1
+('Input ID', 'C2_S2')
+('longest match', 'S2')
+('current ID', 'C2_')
+('longest match', 'C')
+('longest match', 'C2')
+('current ID', '_')
+['S2', 'C2']
+[3, 0]
+ordering matches...
+('initial order', [3, 0])
+('final order', ['C2', 'S2'])
+done ordering
+('C2', ['UNKNOWNCELL', 'UNKNOWNCELL', '2'])
+('S2', ['CANINECELL', 'SIAT', '2'])
+('C2', ['C2'])
+('S2', ['C2', 'S2'])
+['C2_S2', 'UNKNOWNCELL+CANINECELL', 'UNKNOWNCELL+SIAT', 'exactly', '4']
+2
+2
+('Input ID', 'CX_C1')
+('longest match', 'X')
+('longest match', 'C1')
+('current ID', 'CX_')
+('longest match', 'X')
+('longest match', 'CX')
+('current ID', '_')
+['C1', 'CX']
+[3, 0]
+ordering matches...
+('initial order', [3, 0])
+('final order', ['CX', 'C1'])
+done ordering
+('CX', ['UNKNOWNCELL', 'UNKNOWNCELL', None])
+('C1', ['UNKNOWNCELL', 'UNKNOWNCELL', '1'])
+('CX', ['CX'])
+('C1', ['CX', 'C1'])
+['CX_C1', 'UNKNOWNCELL', 'UNKNOWNCELL', 'exactly', '2']
+None
+('Input ID', 'XMDCK1')
+('longest match', 'M')
+('longest match', 'MDCK1')
+('current ID', 'X')
+('longest match', 'X')
+('current ID', '')
+['MDCK1', 'X']
+[1, 0]
+ordering matches...
+('initial order', [1, 0])
+('final order', ['X', 'MDCK1'])
+done ordering
+('X', ['UNKNOWNCELL', 'UNKNOWNCELL', None])
+('MDCK1', ['CANINECELL', 'MDCK', '1'])
+('X', ['X'])
+('MDCK1', ['X', 'MDCK1'])
+['X_MDCK1', 'UNKNOWNCELL+CANINECELL', 'UNKNOWNCELL+MDCK', 'exactly', '2']
+None
+('Input ID', 'MDCK1')
+('longest match', 'M')
+('longest match', 'MDCK1')
+('current ID', '')
+['MDCK1']
+[0]
+ordering matches...
+('initial order', [0])
+('final order', ['MDCK1'])
+done ordering
+('MDCK1', ['CANINECELL', 'MDCK', '1'])
+('MDCK1', ['MDCK1'])
+['MDCK1', 'CANINECELL', 'MDCK', 'exactly', '1']
+1
+('Input ID', 'MDCK_3')
+('longest match', '_3')
+('longest match', 'CK_3')
+('longest match', 'MDCK_3')
+('current ID', '')
+['MDCK_3']
+[0]
+ordering matches...
+('initial order', [0])
+('final order', ['MDCK_3'])
+done ordering
+('MDCK_3', ['CANINECELL', 'MDCK', '3'])
+('MDCK_3', ['MDCK3'])
+['MDCK3', 'CANINECELL', 'MDCK', 'exactly', '3']
+3
+('Input ID', 'X1_S3')
+('longest match', 'S3')
+('current ID', 'X1_')
+('longest match', 'X1')
+('current ID', '_')
+['S3', 'X1']
+[3, 0]
+ordering matches...
+('initial order', [3, 0])
+('final order', ['X1', 'S3'])
+done ordering
+('X1', ['UNKNOWNCELL', 'UNKNOWNCELL', '1'])
+('S3', ['CANINECELL', 'SIAT', '3'])
+('X1', ['X1'])
+('S3', ['X1', 'S3'])
+['X1_S3', 'UNKNOWNCELL+CANINECELL', 'UNKNOWNCELL+SIAT', 'exactly', '4']
+1
+3
+('Input ID', 'CX_C2')
+('longest match', 'X')
+('longest match', 'C2')
+('current ID', 'CX_')
+('longest match', 'X')
+('longest match', 'CX')
+('current ID', '_')
+['C2', 'CX']
+[3, 0]
+ordering matches...
+('initial order', [3, 0])
+('final order', ['CX', 'C2'])
+done ordering
+('CX', ['UNKNOWNCELL', 'UNKNOWNCELL', None])
+('C2', ['UNKNOWNCELL', 'UNKNOWNCELL', '2'])
+('CX', ['CX'])
+('C2', ['CX', 'C2'])
+['CX_C2', 'UNKNOWNCELL', 'UNKNOWNCELL', 'exactly', '3']
+None
+('Input ID', 'MX_C2')
+('longest match', 'M')
+('longest match', 'C2')
+('current ID', 'MX_')
+('longest match', 'M')
+('longest match', 'MX')
+('current ID', '_')
+['C2', 'MX']
+[3, 0]
+ordering matches...
+('initial order', [3, 0])
+('final order', ['MX', 'C2'])
+done ordering
+('MX', ['CANINECELL', 'MDCK', None])
+('C2', ['UNKNOWNCELL', 'UNKNOWNCELL', '2'])
+('MX', ['MX'])
+('C2', ['MX', 'C2'])
+['MX_C2', 'CANINECELL+UNKNOWNCELL', 'MDCK+UNKNOWNCELL', 'exactly', '3']
+None
+('Input ID', 'MK1_MDCK2')
+('longest match', 'MK1')
+('longest match', 'MDCK2')
+('current ID', 'MK1_')
+('longest match', 'MK1')
+('current ID', '_')
+['MDCK2', 'MK1']
+[4, 0]
+ordering matches...
+('initial order', [4, 0])
+('final order', ['MK1', 'MDCK2'])
+done ordering
+('MK1', ['CANINECELL', 'MDCK', '1'])
+('MDCK2', ['CANINECELL', 'MDCK', '2'])
+('MK1', ['MK1'])
+('MDCK2', ['MK1', 'MDCK2'])
+['MK1_MDCK2', 'CANINECELL', 'MDCK', 'exactly', '3']
+1
+2
+('Input ID', 'M2_C3')
+('longest match', 'M')
+('longest match', 'C3')
+('current ID', 'M2_')
+('longest match', 'M')
+('longest match', 'M2')
+('current ID', '_')
+['C3', 'M2']
+[3, 0]
+ordering matches...
+('initial order', [3, 0])
+('final order', ['M2', 'C3'])
+done ordering
+('M2', ['CANINECELL', 'MDCK', '2'])
+('C3', ['UNKNOWNCELL', 'UNKNOWNCELL', '3'])
+('M2', ['M2'])
+('C3', ['M2', 'C3'])
+['M2_C3', 'CANINECELL+UNKNOWNCELL', 'MDCK+UNKNOWNCELL', 'exactly', '5']
+2
+3
+('Input ID', 'C4_C1')
+('longest match', 'C')
+('longest match', 'C1')
+('current ID', 'C4_')
+('longest match', 'C')
+('longest match', 'C4')
+('current ID', '_')
+['C1', 'C4']
+[3, 0]
+ordering matches...
+('initial order', [3, 0])
+('final order', ['C4', 'C1'])
+done ordering
+('C4', ['UNKNOWNCELL', 'UNKNOWNCELL', '4'])
+('C1', ['UNKNOWNCELL', 'UNKNOWNCELL', '1'])
+('C4', ['C4'])
+('C1', ['C4', 'C1'])
+['C4_C1', 'UNKNOWNCELL', 'UNKNOWNCELL', 'exactly', '5']
+4
+1
+('Input ID', 'M1')
+('longest match', 'M')
+('longest match', 'M1')
+('current ID', '')
+['M1']
+[0]
+ordering matches...
+('initial order', [0])
+('final order', ['M1'])
+done ordering
+('M1', ['CANINECELL', 'MDCK', '1'])
+('M1', ['M1'])
+['M1', 'CANINECELL', 'MDCK', 'exactly', '1']
+1
+('Input ID', 'C2S2')
+('longest match', 'S2')
+('current ID', 'C2')
+('longest match', 'C')
+('longest match', 'C2')
+('current ID', '')
+['S2', 'C2']
+[2, 0]
+ordering matches...
+('initial order', [2, 0])
+('final order', ['C2', 'S2'])
+done ordering
+('C2', ['UNKNOWNCELL', 'UNKNOWNCELL', '2'])
+('S2', ['CANINECELL', 'SIAT', '2'])
+('C2', ['C2'])
+('S2', ['C2', 'S2'])
+['C2_S2', 'UNKNOWNCELL+CANINECELL', 'UNKNOWNCELL+SIAT', 'exactly', '4']
+2
+2
+('Input ID', 'P1_MDCK')
+('longest match', 'M')
+('longest match', 'CK')
+('longest match', 'MDCK')
+('longest match', 'P1_MDCK')
+('current ID', '')
+['P1_MDCK']
+[0]
+ordering matches...
+('initial order', [0])
+('final order', ['P1_MDCK'])
+done ordering
+('P1_MDCK', ['CANINECELL', 'MDCK', 'X'])
+('P1_MDCK', ['P1MDCK'])
+['P1MDCK', 'CANINECELL', 'MDCK', 'exactly', '1']
+X
+('Input ID', 'M1_C2')
+('longest match', 'M')
+('longest match', 'C2')
+('current ID', 'M1_')
+('longest match', 'M')
+('longest match', 'M1')
+('current ID', '_')
+['C2', 'M1']
+[3, 0]
+ordering matches...
+('initial order', [3, 0])
+('final order', ['M1', 'C2'])
+done ordering
+('M1', ['CANINECELL', 'MDCK', '1'])
+('C2', ['UNKNOWNCELL', 'UNKNOWNCELL', '2'])
+('M1', ['M1'])
+('C2', ['M1', 'C2'])
+['M1_C2', 'CANINECELL+UNKNOWNCELL', 'MDCK+UNKNOWNCELL', 'exactly', '3']
+1
+2
+('Input ID', 'C2_SIAT1')
+('longest match', 'C')
+('longest match', 'C2')
+('longest match', 'SIAT')
+('longest match', 'SIAT1')
+('current ID', 'C2_')
+('longest match', 'C')
+('longest match', 'C2')
+('current ID', '_')
+['SIAT1', 'C2']
+[3, 0]
+ordering matches...
+('initial order', [3, 0])
+('final order', ['C2', 'SIAT1'])
+done ordering
+('C2', ['UNKNOWNCELL', 'UNKNOWNCELL', '2'])
+('SIAT1', ['CANINECELL', 'SIAT', '1'])
+('C2', ['C2'])
+('SIAT1', ['C2', 'SIAT1'])
+['C2_SIAT1', 'UNKNOWNCELL+CANINECELL', 'UNKNOWNCELL+SIAT', 'exactly', '3']
+2
+1
+('Input ID', 'S1')
+('longest match', 'S1')
+('current ID', '')
+['S1']
+[0]
+ordering matches...
+('initial order', [0])
+('final order', ['S1'])
+done ordering
+('S1', ['CANINECELL', 'SIAT', '1'])
+('S1', ['S1'])
+['S1', 'CANINECELL', 'SIAT', 'exactly', '1']
+1
+('Input ID', 'C2_C2')
+('longest match', 'C')
+('longest match', 'C2')
+('current ID', '_')
+['C2']
+[0]
+ordering matches...
+('initial order', [0])
+('final order', ['C2'])
+done ordering
+('C2', ['UNKNOWNCELL', 'UNKNOWNCELL', '2'])
+('C2', ['C2'])
+['C2', 'UNKNOWNCELL', 'UNKNOWNCELL', 'exactly', '2']
+2
+('Input ID', 'MDCK_2')
+('longest match', '_2')
+('longest match', 'CK_2')
+('longest match', 'MDCK_2')
+('current ID', '')
+['MDCK_2']
+[0]
+ordering matches...
+('initial order', [0])
+('final order', ['MDCK_2'])
+done ordering
+('MDCK_2', ['CANINECELL', 'MDCK', '2'])
+('MDCK_2', ['MDCK2'])
+['MDCK2', 'CANINECELL', 'MDCK', 'exactly', '2']
+2
+('Input ID', 'X')
+('longest match', 'X')
+('current ID', '')
+['X']
+[0]
+ordering matches...
+('initial order', [0])
+('final order', ['X'])
+done ordering
+('X', ['UNKNOWNCELL', 'UNKNOWNCELL', None])
+('X', ['X'])
+['X', 'UNKNOWNCELL', 'UNKNOWNCELL', 'exactly', '1']
+None
+('Input ID', 'C1_C2')
+('longest match', 'C')
+('longest match', 'C2')
+('current ID', 'C1_')
+('longest match', 'C')
+('longest match', 'C1')
+('current ID', '_')
+['C2', 'C1']
+[3, 0]
+ordering matches...
+('initial order', [3, 0])
+('final order', ['C1', 'C2'])
+done ordering
+('C1', ['UNKNOWNCELL', 'UNKNOWNCELL', '1'])
+('C2', ['UNKNOWNCELL', 'UNKNOWNCELL', '2'])
+('C1', ['C1'])
+('C2', ['C1', 'C2'])
+['C1_C2', 'UNKNOWNCELL', 'UNKNOWNCELL', 'exactly', '3']
+1
+2
+('Input ID', 'X_C1')
+('longest match', 'X')
+('longest match', 'C1')
+('current ID', 'X_')
+('longest match', 'X')
+('current ID', '_')
+['C1', 'X']
+[2, 0]
+ordering matches...
+('initial order', [2, 0])
+('final order', ['X', 'C1'])
+done ordering
+('X', ['UNKNOWNCELL', 'UNKNOWNCELL', None])
+('C1', ['UNKNOWNCELL', 'UNKNOWNCELL', '1'])
+('X', ['X'])
+('C1', ['X', 'C1'])
+['X_C1', 'UNKNOWNCELL', 'UNKNOWNCELL', 'exactly', '2']
+None
+('Input ID', 'M1_C1')
+('longest match', 'M')
+('longest match', 'C1')
+('current ID', 'M1_')
+('longest match', 'M')
+('longest match', 'M1')
+('current ID', '_')
+['C1', 'M1']
+[3, 0]
+ordering matches...
+('initial order', [3, 0])
+('final order', ['M1', 'C1'])
+done ordering
+('M1', ['CANINECELL', 'MDCK', '1'])
+('C1', ['UNKNOWNCELL', 'UNKNOWNCELL', '1'])
+('M1', ['M1'])
+('C1', ['M1', 'C1'])
+['M1_C1', 'CANINECELL+UNKNOWNCELL', 'MDCK+UNKNOWNCELL', 'exactly', '2']
+1
+1
+('Input ID', 'C1_C1')
+('longest match', 'C')
+('longest match', 'C1')
+('current ID', '_')
+['C1']
+[0]
+ordering matches...
+('initial order', [0])
+('final order', ['C1'])
+done ordering
+('C1', ['UNKNOWNCELL', 'UNKNOWNCELL', '1'])
+('C1', ['C1'])
+['C1', 'UNKNOWNCELL', 'UNKNOWNCELL', 'exactly', '1']
+1
+('Input ID', 'X2_C1')
+('longest match', 'X2')
+('current ID', '_C1')
+('longest match', 'C')
+('longest match', 'C1')
+('current ID', '_')
+['X2', 'C1']
+[0, 3]
+ordering matches...
+('initial order', [0, 3])
+('final order', ['X2', 'C1'])
+done ordering
+('X2', ['UNKNOWNCELL', 'UNKNOWNCELL', '2'])
+('C1', ['UNKNOWNCELL', 'UNKNOWNCELL', '1'])
+('X2', ['X2'])
+('C1', ['X2', 'C1'])
+['X2_C1', 'UNKNOWNCELL', 'UNKNOWNCELL', 'exactly', '3']
+2
+1
+('Input ID', 'X1_C1')
+('longest match', 'X1')
+('current ID', '_C1')
+('longest match', 'C')
+('longest match', 'C1')
+('current ID', '_')
+['X1', 'C1']
+[0, 3]
+ordering matches...
+('initial order', [0, 3])
+('final order', ['X1', 'C1'])
+done ordering
+('X1', ['UNKNOWNCELL', 'UNKNOWNCELL', '1'])
+('C1', ['UNKNOWNCELL', 'UNKNOWNCELL', '1'])
+('X1', ['X1'])
+('C1', ['X1', 'C1'])
+['X1_C1', 'UNKNOWNCELL', 'UNKNOWNCELL', 'exactly', '2']
+1
+1
+('Input ID', 'M1_S2')
+('longest match', 'S2')
+('current ID', 'M1_')
+('longest match', 'M')
+('longest match', 'M1')
+('current ID', '_')
+['S2', 'M1']
+[3, 0]
+ordering matches...
+('initial order', [3, 0])
+('final order', ['M1', 'S2'])
+done ordering
+('M1', ['CANINECELL', 'MDCK', '1'])
+('S2', ['CANINECELL', 'SIAT', '2'])
+('M1', ['M1'])
+('S2', ['M1', 'S2'])
+['M1_S2', 'CANINECELL', 'MDCK+SIAT', 'exactly', '3']
+1
+2
+('Input ID', 'C2_C1')
+('longest match', 'C')
+('longest match', 'C2')
+('current ID', '_C1')
+('longest match', 'C')
+('longest match', 'C1')
+('current ID', '_')
+['C2', 'C1']
+[0, 3]
+ordering matches...
+('initial order', [0, 3])
+('final order', ['C2', 'C1'])
+done ordering
+('C2', ['UNKNOWNCELL', 'UNKNOWNCELL', '2'])
+('C1', ['UNKNOWNCELL', 'UNKNOWNCELL', '1'])
+('C2', ['C2'])
+('C1', ['C2', 'C1'])
+['C2_C1', 'UNKNOWNCELL', 'UNKNOWNCELL', 'exactly', '3']
+2
+1
+('Input ID', 'X_C4')
+('longest match', 'X')
+('longest match', 'C4')
+('current ID', 'X_')
+('longest match', 'X')
+('current ID', '_')
+['C4', 'X']
+[2, 0]
+ordering matches...
+('initial order', [2, 0])
+('final order', ['X', 'C4'])
+done ordering
+('X', ['UNKNOWNCELL', 'UNKNOWNCELL', None])
+('C4', ['UNKNOWNCELL', 'UNKNOWNCELL', '4'])
+('X', ['X'])
+('C4', ['X', 'C4'])
+['X_C4', 'UNKNOWNCELL', 'UNKNOWNCELL', 'exactly', '5']
+None
+('Input ID', 'C1_S2')
+('longest match', 'S2')
+('current ID', 'C1_')
+('longest match', 'C')
+('longest match', 'C1')
+('current ID', '_')
+['S2', 'C1']
+[3, 0]
+ordering matches...
+('initial order', [3, 0])
+('final order', ['C1', 'S2'])
+done ordering
+('C1', ['UNKNOWNCELL', 'UNKNOWNCELL', '1'])
+('S2', ['CANINECELL', 'SIAT', '2'])
+('C1', ['C1'])
+('S2', ['C1', 'S2'])
+['C1_S2', 'UNKNOWNCELL+CANINECELL', 'UNKNOWNCELL+SIAT', 'exactly', '3']
+1
+2
+('Input ID', 'M1_C1S2')
+('longest match', 'S2')
+('current ID', 'M1_C1')
+('longest match', 'M')
+('longest match', 'C1')
+('current ID', 'M1_')
+('longest match', 'M')
+('longest match', 'M1')
+('current ID', '_')
+['S2', 'C1', 'M1']
+[5, 3, 0]
+ordering matches...
+('initial order', [5, 3, 0])
+('final order', ['M1', 'C1', 'S2'])
+done ordering
+('M1', ['CANINECELL', 'MDCK', '1'])
+('C1', ['UNKNOWNCELL', 'UNKNOWNCELL', '1'])
+('S2', ['CANINECELL', 'SIAT', '2'])
+('M1', ['M1'])
+('C1', ['M1', 'C1'])
+('S2', ['M1', 'C1', 'S2'])
+['M1_C1_S2', 'CANINECELL+UNKNOWNCELL', 'MDCK+UNKNOWNCELL+SIAT', 'exactly', '4']
+1
+1
+2
+('Input ID', 'M1M2_S2')
+('longest match', 'S2')
+('current ID', 'M1M2_')
+('longest match', 'M')
+('longest match', 'M1')
+('current ID', 'M2_')
+('longest match', 'M')
+('longest match', 'M2')
+('current ID', '_')
+['S2', 'M1', 'M2']
+[5, 0, 2]
+ordering matches...
+('initial order', [5, 0, 2])
+('final order', ['M1', 'M2', 'S2'])
+done ordering
+('M1', ['CANINECELL', 'MDCK', '1'])
+('M2', ['CANINECELL', 'MDCK', '2'])
+('S2', ['CANINECELL', 'SIAT', '2'])
+('M1', ['M1'])
+('M2', ['M1', 'M2'])
+('S2', ['M1', 'M2', 'S2'])
+['M1_M2_S2', 'CANINECELL', 'MDCK+SIAT', 'exactly', '5']
+1
+2
+2
+('Input ID', 'X1')
+('longest match', 'X1')
+('current ID', '')
+['X1']
+[0]
+ordering matches...
+('initial order', [0])
+('final order', ['X1'])
+done ordering
+('X1', ['UNKNOWNCELL', 'UNKNOWNCELL', '1'])
+('X1', ['X1'])
+['X1', 'UNKNOWNCELL', 'UNKNOWNCELL', 'exactly', '1']
+1
+('Input ID', 'C1')
+('longest match', 'C')
+('longest match', 'C1')
+('current ID', '')
+['C1']
+[0]
+ordering matches...
+('initial order', [0])
+('final order', ['C1'])
+done ordering
+('C1', ['UNKNOWNCELL', 'UNKNOWNCELL', '1'])
+('C1', ['C1'])
+['C1', 'UNKNOWNCELL', 'UNKNOWNCELL', 'exactly', '1']
+1
+('Input ID', 'S2')
+('longest match', 'S2')
+('current ID', '')
+['S2']
+[0]
+ordering matches...
+('initial order', [0])
+('final order', ['S2'])
+done ordering
+('S2', ['CANINECELL', 'SIAT', '2'])
+('S2', ['S2'])
+['S2', 'CANINECELL', 'SIAT', 'exactly', '2']
+2
+('Input ID', 'ND_MDCK')
+('longest match', 'M')
+('longest match', 'ND_MDCK')
+('current ID', '')
+['ND_MDCK']
+[0]
+ordering matches...
+('initial order', [0])
+('final order', ['ND_MDCK'])
+done ordering
+('ND_MDCK', ['CANINECELL', 'MDCK', 'X'])
+('ND_MDCK', ['NDMDCK'])
+['NDMDCK', 'CANINECELL', 'MDCK', 'exactly', '1']
+X
+('Input ID', 'S3')
+('longest match', 'S3')
+('current ID', '')
+['S3']
+[0]
+ordering matches...
+('initial order', [0])
+('final order', ['S3'])
+done ordering
+('S3', ['CANINECELL', 'SIAT', '3'])
+('S3', ['S3'])
+['S3', 'CANINECELL', 'SIAT', 'exactly', '3']
+3
+('Input ID', 'MX_C1')
+('longest match', 'M')
+('longest match', 'C1')
+('current ID', 'MX_')
+('longest match', 'M')
+('longest match', 'MX')
+('current ID', '_')
+['C1', 'MX']
+[3, 0]
+ordering matches...
+('initial order', [3, 0])
+('final order', ['MX', 'C1'])
+done ordering
+('MX', ['CANINECELL', 'MDCK', None])
+('C1', ['UNKNOWNCELL', 'UNKNOWNCELL', '1'])
+('MX', ['MX'])
+('C1', ['MX', 'C1'])
+['MX_C1', 'CANINECELL+UNKNOWNCELL', 'MDCK+UNKNOWNCELL', 'exactly', '2']
+None
+('Input ID', 'X1_S2')
+('longest match', 'S2')
+('current ID', 'X1_')
+('longest match', 'X1')
+('current ID', '_')
+['S2', 'X1']
+[3, 0]
+ordering matches...
+('initial order', [3, 0])
+('final order', ['X1', 'S2'])
+done ordering
+('X1', ['UNKNOWNCELL', 'UNKNOWNCELL', '1'])
+('S2', ['CANINECELL', 'SIAT', '2'])
+('X1', ['X1'])
+('S2', ['X1', 'S2'])
+['X1_S2', 'UNKNOWNCELL+CANINECELL', 'UNKNOWNCELL+SIAT', 'exactly', '3']
+1
+2
+('Input ID', 'CX_S1')
+('longest match', 'S1')
+('current ID', 'CX_')
+('longest match', 'X')
+('longest match', 'CX')
+('current ID', '_')
+['S1', 'CX']
+[3, 0]
+ordering matches...
+('initial order', [3, 0])
+('final order', ['CX', 'S1'])
+done ordering
+('CX', ['UNKNOWNCELL', 'UNKNOWNCELL', None])
+('S1', ['CANINECELL', 'SIAT', '1'])
+('CX', ['CX'])
+('S1', ['CX', 'S1'])
+['CX_S1', 'UNKNOWNCELL+CANINECELL', 'UNKNOWNCELL+SIAT', 'exactly', '2']
+None
+('Input ID', 'M2_C2')
+('longest match', 'M')
+('longest match', 'C2')
+('current ID', 'M2_')
+('longest match', 'M')
+('longest match', 'M2')
+('current ID', '_')
+['C2', 'M2']
+[3, 0]
+ordering matches...
+('initial order', [3, 0])
+('final order', ['M2', 'C2'])
+done ordering
+('M2', ['CANINECELL', 'MDCK', '2'])
+('C2', ['UNKNOWNCELL', 'UNKNOWNCELL', '2'])
+('M2', ['M2'])
+('C2', ['M2', 'C2'])
+['M2_C2', 'CANINECELL+UNKNOWNCELL', 'MDCK+UNKNOWNCELL', 'exactly', '4']
+2
+2
+('Input ID', 'P0_MDCK')
+('longest match', 'M')
+('longest match', 'CK')
+('longest match', 'MDCK')
+('current ID', 'P0_')
+('longest match', '0')
+('longest match', 'P0')
+('current ID', '_')
+['MDCK', 'P0']
+[3, 0]
+ordering matches...
+('initial order', [3, 0])
+('final order', ['P0', 'MDCK'])
+done ordering
+('P0', ['UNPASSAGED', 'UNPASSAGED', '0'])
+('MDCK', ['CANINECELL', 'MDCK', None])
+('P0', ['P0'])
+('MDCK', ['P0', 'MDCK'])
+['P0_MDCK', 'UNPASSAGED+CANINECELL', 'UNPASSAGED+MDCK', 'exactly', '1']
+0
+None
+('Input ID', 'M1_C1S1')
+('longest match', 'S1')
+('current ID', 'M1_C1')
+('longest match', 'M')
+('longest match', 'C1')
+('current ID', 'M1_')
+('longest match', 'M')
+('longest match', 'M1')
+('current ID', '_')
+['S1', 'C1', 'M1']
+[5, 3, 0]
+ordering matches...
+('initial order', [5, 3, 0])
+('final order', ['M1', 'C1', 'S1'])
+done ordering
+('M1', ['CANINECELL', 'MDCK', '1'])
+('C1', ['UNKNOWNCELL', 'UNKNOWNCELL', '1'])
+('S1', ['CANINECELL', 'SIAT', '1'])
+('M1', ['M1'])
+('C1', ['M1', 'C1'])
+('S1', ['M1', 'C1', 'S1'])
+['M1_C1_S1', 'CANINECELL+UNKNOWNCELL', 'MDCK+UNKNOWNCELL+SIAT', 'exactly', '3']
+1
+1
+1
+('Input ID', 'MDCK1_SIAT1_SIAT1')
+('longest match', 'M')
+('longest match', 'MDCK1')
+('current ID', '_SIAT1_SIAT1')
+('longest match', 'SIAT')
+('longest match', 'SIAT1')
+('current ID', '__')
+['MDCK1', 'SIAT1']
+[0, 6]
+ordering matches...
+('initial order', [0, 6])
+('final order', ['MDCK1', 'SIAT1'])
+done ordering
+('MDCK1', ['CANINECELL', 'MDCK', '1'])
+('SIAT1', ['CANINECELL', 'SIAT', '1'])
+('MDCK1', ['MDCK1'])
+('SIAT1', ['MDCK1', 'SIAT1'])
+['MDCK1_SIAT1', 'CANINECELL', 'MDCK+SIAT', 'exactly', '2']
+1
+1
+('Input ID', 'C1S1')
+('longest match', 'S1')
+('current ID', 'C1')
+('longest match', 'C')
+('longest match', 'C1')
+('current ID', '')
+['S1', 'C1']
+[2, 0]
+ordering matches...
+('initial order', [2, 0])
+('final order', ['C1', 'S1'])
+done ordering
+('C1', ['UNKNOWNCELL', 'UNKNOWNCELL', '1'])
+('S1', ['CANINECELL', 'SIAT', '1'])
+('C1', ['C1'])
+('S1', ['C1', 'S1'])
+['C1_S1', 'UNKNOWNCELL+CANINECELL', 'UNKNOWNCELL+SIAT', 'exactly', '2']
+1
+1
+('Input ID', 'M2_S1')
+('longest match', 'S1')
+('current ID', 'M2_')
+('longest match', 'M')
+('longest match', 'M2')
+('current ID', '_')
+['S1', 'M2']
+[3, 0]
+ordering matches...
+('initial order', [3, 0])
+('final order', ['M2', 'S1'])
+done ordering
+('M2', ['CANINECELL', 'MDCK', '2'])
+('S1', ['CANINECELL', 'SIAT', '1'])
+('M2', ['M2'])
+('S1', ['M2', 'S1'])
+['M2_S1', 'CANINECELL', 'MDCK+SIAT', 'exactly', '3']
+2
+1
+('Input ID', 'X3_C2')
+('longest match', 'X')
+('longest match', 'X3')
+('current ID', '_C2')
+('longest match', 'C')
+('longest match', 'C2')
+('current ID', '_')
+['X3', 'C2']
+[0, 3]
+ordering matches...
+('initial order', [0, 3])
+('final order', ['X3', 'C2'])
+done ordering
+('X3', ['UNKNOWNCELL', 'UNKNOWNCELL', '3'])
+('C2', ['UNKNOWNCELL', 'UNKNOWNCELL', '2'])
+('X3', ['X3'])
+('C2', ['X3', 'C2'])
+['X3_C2', 'UNKNOWNCELL', 'UNKNOWNCELL', 'exactly', '5']
+3
+2
+('Input ID', 'X3_C1')
+('longest match', 'X')
+('longest match', 'X3')
+('current ID', '_C1')
+('longest match', 'C')
+('longest match', 'C1')
+('current ID', '_')
+['X3', 'C1']
+[0, 3]
+ordering matches...
+('initial order', [0, 3])
+('final order', ['X3', 'C1'])
+done ordering
+('X3', ['UNKNOWNCELL', 'UNKNOWNCELL', '3'])
+('C1', ['UNKNOWNCELL', 'UNKNOWNCELL', '1'])
+('X3', ['X3'])
+('C1', ['X3', 'C1'])
+['X3_C1', 'UNKNOWNCELL', 'UNKNOWNCELL', 'exactly', '4']
+3
+1
+('Input ID', 'M1_S1')
+('longest match', 'S1')
+('current ID', 'M1_')
+('longest match', 'M')
+('longest match', 'M1')
+('current ID', '_')
+['S1', 'M1']
+[3, 0]
+ordering matches...
+('initial order', [3, 0])
+('final order', ['M1', 'S1'])
+done ordering
+('M1', ['CANINECELL', 'MDCK', '1'])
+('S1', ['CANINECELL', 'SIAT', '1'])
+('M1', ['M1'])
+('S1', ['M1', 'S1'])
+['M1_S1', 'CANINECELL', 'MDCK+SIAT', 'exactly', '2']
+1
+1
+('Input ID', 'M1_C3')
+('longest match', 'M')
+('longest match', 'C3')
+('current ID', 'M1_')
+('longest match', 'M')
+('longest match', 'M1')
+('current ID', '_')
+['C3', 'M1']
+[3, 0]
+ordering matches...
+('initial order', [3, 0])
+('final order', ['M1', 'C3'])
 done ordering
 ('M1', ['CANINECELL', 'MDCK', '1'])
 ('C3', ['UNKNOWNCELL', 'UNKNOWNCELL', '3'])
-('E', ['EGG', 'EGG', 'UNKNOWN'])
 ('M1', ['M1'])
 ('C3', ['M1', 'C3'])
-('E', ['M1', 'C3', 'E'])
-['M1_C3_E', 'CANINECELL+UNKNOWNCELL+EGG', 'MDCK+UNKNOWNCELL+EGG', 'atleast', '5']
-('longest', 'M')
-('longest', 'C3')
-M1__E
-('longest', 'M')
-('longest', 'M1')
-__E
-('longest', 'E')
-__
-['C3', 'M1', 'E']
-[3, 0, 6]
-ordering...
-[3, 0, 6]
-['M1', 'C3', 'E']
+['M1_C3', 'CANINECELL+UNKNOWNCELL', 'MDCK+UNKNOWNCELL', 'exactly', '4']
+1
+3
+('Input ID', 'C3')
+('longest match', 'C')
+('longest match', 'C3')
+('current ID', '')
+['C3']
+[0]
+ordering matches...
+('initial order', [0])
+('final order', ['C3'])
+done ordering
+('C3', ['UNKNOWNCELL', 'UNKNOWNCELL', '3'])
+('C3', ['C3'])
+['C3', 'UNKNOWNCELL', 'UNKNOWNCELL', 'exactly', '3']
+3
+('Input ID', 'MDCK1_MDCK2')
+('longest match', 'M')
+('longest match', 'MDCK2')
+('current ID', 'MDCK1_')
+('longest match', 'M')
+('longest match', 'MDCK1')
+('current ID', '_')
+['MDCK2', 'MDCK1']
+[6, 0]
+ordering matches...
+('initial order', [6, 0])
+('final order', ['MDCK1', 'MDCK2'])
+done ordering
+('MDCK1', ['CANINECELL', 'MDCK', '1'])
+('MDCK2', ['CANINECELL', 'MDCK', '2'])
+('MDCK1', ['MDCK1'])
+('MDCK2', ['MDCK1', 'MDCK2'])
+['MDCK1_MDCK2', 'CANINECELL', 'MDCK', 'exactly', '3']
+1
+2
+('Input ID', 'E5_E1')
+('longest match', 'E5')
+('current ID', '_E1')
+('longest match', 'E1')
+('current ID', '_')
+['E5', 'E1']
+[0, 3]
+ordering matches...
+('initial order', [0, 3])
+('final order', ['E5', 'E1'])
+done ordering
+('E5', ['EGG', 'EGG', '5'])
+('E1', ['EGG', 'EGG', '1'])
+('E5', ['E5'])
+('E1', ['E5', 'E1'])
+['E5_E1', 'EGG', 'EGG', 'exactly', '6']
+5
+1
+('Input ID', 'E4E8_E1_1')
+('longest match', '_1')
+('current ID', 'E4E8_E1')
+('longest match', 'E8')
+('current ID', 'E4_E1')
+('longest match', 'E4')
+('current ID', '_E1')
+('longest match', 'E1')
+('current ID', '_')
+['_1', 'E8', 'E4', 'E1']
+[7, 2, 0, 5]
+ordering matches...
+('initial order', [7, 2, 0, 5])
+('final order', ['E4', 'E8', 'E1', '_1'])
+done ordering
+('E4', ['EGG', 'EGG', '4'])
+('E8', ['EGG', 'EGG', '8'])
+('E1', ['EGG', 'EGG', '1'])
+('_1', [None, None, '1'])
+('E4', ['E4'])
+('E8', ['E4', 'E8'])
+('E1', ['E4', 'E8', 'E1'])
+('_1', ['E4', 'E8', 'E1', '1'])
+['E4_E8_E1_1', '', '', 'exactly', '14']
+4
+8
+1
+1
+('Input ID', 'AM1')
+('longest match', 'M')
+('longest match', 'AM')
+('longest match', 'AM1')
+('current ID', '')
+['AM1']
+[0]
+ordering matches...
+('initial order', [0])
+('final order', ['AM1'])
+done ordering
+('AM1', ['EGG', 'EGG', '1'])
+('AM1', ['AM1'])
+['AM1', 'EGG', 'EGG', 'exactly', '1']
+1
+('Input ID', 'E4_E1')
+('longest match', 'E4')
+('current ID', '_E1')
+('longest match', 'E1')
+('current ID', '_')
+['E4', 'E1']
+[0, 3]
+ordering matches...
+('initial order', [0, 3])
+('final order', ['E4', 'E1'])
+done ordering
+('E4', ['EGG', 'EGG', '4'])
+('E1', ['EGG', 'EGG', '1'])
+('E4', ['E4'])
+('E1', ['E4', 'E1'])
+['E4_E1', 'EGG', 'EGG', 'exactly', '5']
+4
+1
+('Input ID', 'E6_E2')
+('longest match', '6')
+('longest match', 'E6')
+('current ID', '_E2')
+('longest match', 'E2')
+('current ID', '_')
+['E6', 'E2']
+[0, 3]
+ordering matches...
+('initial order', [0, 3])
+('final order', ['E6', 'E2'])
+done ordering
+('E6', ['EGG', 'EGG', '6'])
+('E2', ['EGG', 'EGG', '2'])
+('E6', ['E6'])
+('E2', ['E6', 'E2'])
+['E6_E2', 'EGG', 'EGG', 'exactly', '8']
+6
+2
+('Input ID', 'EX')
+('longest match', 'EX')
+('current ID', '')
+['EX']
+[0]
+ordering matches...
+('initial order', [0])
+('final order', ['EX'])
+done ordering
+('EX', ['EGG', 'EGG', None])
+('EX', ['EX'])
+['EX', 'EGG', 'EGG', 'exactly', '1']
+None
+('Input ID', 'E3_E2')
+('longest match', 'E3')
+('current ID', '_E2')
+('longest match', 'E2')
+('current ID', '_')
+['E3', 'E2']
+[0, 3]
+ordering matches...
+('initial order', [0, 3])
+('final order', ['E3', 'E2'])
+done ordering
+('E3', ['EGG', 'EGG', '3'])
+('E2', ['EGG', 'EGG', '2'])
+('E3', ['E3'])
+('E2', ['E3', 'E2'])
+['E3_E2', 'EGG', 'EGG', 'exactly', '5']
+3
+2
+('Input ID', 'EX_E1')
+('longest match', 'E1')
+('current ID', 'EX_')
+('longest match', 'EX')
+('current ID', '_')
+['E1', 'EX']
+[3, 0]
+ordering matches...
+('initial order', [3, 0])
+('final order', ['EX', 'E1'])
+done ordering
+('EX', ['EGG', 'EGG', None])
+('E1', ['EGG', 'EGG', '1'])
+('EX', ['EX'])
+('E1', ['EX', 'E1'])
+['EX_E1', 'EGG', 'EGG', 'exactly', '2']
+None
+('Input ID', 'E2')
+('longest match', 'E2')
+('current ID', '')
+['E2']
+[0]
+ordering matches...
+('initial order', [0])
+('final order', ['E2'])
+done ordering
+('E2', ['EGG', 'EGG', '2'])
+('E2', ['E2'])
+['E2', 'EGG', 'EGG', 'exactly', '2']
+2
+('Input ID', 'E4')
+('longest match', 'E4')
+('current ID', '')
+['E4']
+[0]
+ordering matches...
+('initial order', [0])
+('final order', ['E4'])
+done ordering
+('E4', ['EGG', 'EGG', '4'])
+('E4', ['E4'])
+['E4', 'EGG', 'EGG', 'exactly', '4']
+4
+('Input ID', 'SPFCK2E3')
+('longest match', 'SPFCK')
+('longest match', 'SPFCK2')
+('current ID', 'E3')
+('longest match', 'E3')
+('current ID', '')
+['SPFCK2', 'E3']
+[0, 6]
+ordering matches...
+('initial order', [0, 6])
+('final order', ['SPFCK2', 'E3'])
+done ordering
+('SPFCK2', ['CHICKCELL', 'CK', '2'])
+('E3', ['EGG', 'EGG', '3'])
+('SPFCK2', ['SPFCK2'])
+('E3', ['SPFCK2', 'E3'])
+['SPFCK2_E3', 'CHICKCELL+EGG', 'CK+EGG', 'exactly', '5']
+2
+3
+('Input ID', 'CK3_E6')
+('longest match', '6')
+('longest match', 'E6')
+('longest match', 'CK3')
+('current ID', '_E6')
+('longest match', '6')
+('longest match', 'E6')
+('current ID', '_')
+['CK3', 'E6']
+[0, 4]
+ordering matches...
+('initial order', [0, 4])
+('final order', ['CK3', 'E6'])
+done ordering
+('CK3', ['CHICKCELL', 'CK', '3'])
+('E6', ['EGG', 'EGG', '6'])
+('CK3', ['CK3'])
+('E6', ['CK3', 'E6'])
+['CK3_E6', 'CHICKCELL+EGG', 'CK+EGG', 'exactly', '9']
+3
+6
+('Input ID', 'E6')
+('longest match', '6')
+('longest match', 'E6')
+('current ID', '')
+['E6']
+[0]
+ordering matches...
+('initial order', [0])
+('final order', ['E6'])
+done ordering
+('E6', ['EGG', 'EGG', '6'])
+('E6', ['E6'])
+['E6', 'EGG', 'EGG', 'exactly', '6']
+6
+('Input ID', 'E4E8_E1')
+('longest match', 'E8')
+('current ID', 'E4_E1')
+('longest match', 'E4')
+('current ID', '_E1')
+('longest match', 'E1')
+('current ID', '_')
+['E8', 'E4', 'E1']
+[2, 0, 5]
+ordering matches...
+('initial order', [2, 0, 5])
+('final order', ['E4', 'E8', 'E1'])
+done ordering
+('E4', ['EGG', 'EGG', '4'])
+('E8', ['EGG', 'EGG', '8'])
+('E1', ['EGG', 'EGG', '1'])
+('E4', ['E4'])
+('E8', ['E4', 'E8'])
+('E1', ['E4', 'E8', 'E1'])
+['E4_E8_E1', 'EGG', 'EGG', 'exactly', '13']
+4
+8
+1
+('Input ID', 'E4_E2_E1')
+('longest match', 'E4')
+('current ID', '_E2_E1')
+('longest match', 'E1')
+('current ID', '_E2_')
+('longest match', 'E2')
+('current ID', '__')
+['E4', 'E1', 'E2']
+[0, 6, 3]
+ordering matches...
+('initial order', [0, 6, 3])
+('final order', ['E4', 'E2', 'E1'])
+done ordering
+('E4', ['EGG', 'EGG', '4'])
+('E2', ['EGG', 'EGG', '2'])
+('E1', ['EGG', 'EGG', '1'])
+('E4', ['E4'])
+('E2', ['E4', 'E2'])
+('E1', ['E4', 'E2', 'E1'])
+['E4_E2_E1', 'EGG', 'EGG', 'exactly', '7']
+4
+2
+1
+('Input ID', 'SPFCK3E3')
+('longest match', 'SPFCK')
+('longest match', 'SPFCK3')
+('current ID', 'E3')
+('longest match', 'E3')
+('current ID', '')
+['SPFCK3', 'E3']
+[0, 6]
+ordering matches...
+('initial order', [0, 6])
+('final order', ['SPFCK3', 'E3'])
+done ordering
+('SPFCK3', ['CHICKCELL', 'CK', '3'])
+('E3', ['EGG', 'EGG', '3'])
+('SPFCK3', ['SPFCK3'])
+('E3', ['SPFCK3', 'E3'])
+['SPFCK3_E3', 'CHICKCELL+EGG', 'CK+EGG', 'exactly', '6']
+3
+3
+('Input ID', 'EGG')
+('longest match', 'E')
+('longest match', 'EGG')
+('current ID', '')
+['EGG']
+[0]
+ordering matches...
+('initial order', [0])
+('final order', ['EGG'])
+done ordering
+('EGG', ['EGG', 'EGG', None])
+('EGG', ['EGG'])
+['EGG', 'EGG', 'EGG', 'exactly', '1']
+None
+('Input ID', 'E5_E2')
+('longest match', 'E5')
+('current ID', '_E2')
+('longest match', 'E2')
+('current ID', '_')
+['E5', 'E2']
+[0, 3]
+ordering matches...
+('initial order', [0, 3])
+('final order', ['E5', 'E2'])
+done ordering
+('E5', ['EGG', 'EGG', '5'])
+('E2', ['EGG', 'EGG', '2'])
+('E5', ['E5'])
+('E2', ['E5', 'E2'])
+['E5_E2', 'EGG', 'EGG', 'exactly', '7']
+5
+2
+('Input ID', 'E5')
+('longest match', 'E5')
+('current ID', '')
+['E5']
+[0]
+ordering matches...
+('initial order', [0])
+('final order', ['E5'])
+done ordering
+('E5', ['EGG', 'EGG', '5'])
+('E5', ['E5'])
+['E5', 'EGG', 'EGG', 'exactly', '5']
+5
+('Input ID', 'EGG')
+('longest match', 'E')
+('longest match', 'EGG')
+('current ID', '')
+['EGG']
+[0]
+ordering matches...
+('initial order', [0])
+('final order', ['EGG'])
+done ordering
+('EGG', ['EGG', 'EGG', None])
+('EGG', ['EGG'])
+['EGG', 'EGG', 'EGG', 'exactly', '1']
+None
+('Input ID', 'AM_2')
+('longest match', '_2')
+('longest match', 'M_2')
+('longest match', 'AM_2')
+('current ID', '')
+['AM_2']
+[0]
+ordering matches...
+('initial order', [0])
+('final order', ['AM_2'])
+done ordering
+('AM_2', ['EGG', 'EGG', '2'])
+('AM_2', ['AM2'])
+['AM2', 'EGG', 'EGG', 'exactly', '2']
+2
+('Input ID', 'SPFCK2E2')
+('longest match', 'SPFCK')
+('longest match', 'SPFCK2')
+('current ID', 'E2')
+('longest match', 'E2')
+('current ID', '')
+['SPFCK2', 'E2']
+[0, 6]
+ordering matches...
+('initial order', [0, 6])
+('final order', ['SPFCK2', 'E2'])
+done ordering
+('SPFCK2', ['CHICKCELL', 'CK', '2'])
+('E2', ['EGG', 'EGG', '2'])
+('SPFCK2', ['SPFCK2'])
+('E2', ['SPFCK2', 'E2'])
+['SPFCK2_E2', 'CHICKCELL+EGG', 'CK+EGG', 'exactly', '4']
+2
+2
+('Input ID', 'E1')
+('longest match', 'E1')
+('current ID', '')
+['E1']
+[0]
+ordering matches...
+('initial order', [0])
+('final order', ['E1'])
+done ordering
+('E1', ['EGG', 'EGG', '1'])
+('E1', ['E1'])
+['E1', 'EGG', 'EGG', 'exactly', '1']
+1
+('Input ID', 'E3')
+('longest match', 'E3')
+('current ID', '')
+['E3']
+[0]
+ordering matches...
+('initial order', [0])
+('final order', ['E3'])
+done ordering
+('E3', ['EGG', 'EGG', '3'])
+('E3', ['E3'])
+['E3', 'EGG', 'EGG', 'exactly', '3']
+3
+('Input ID', 'SPFCK2E4')
+('longest match', 'SPFCK')
+('longest match', 'SPFCK2')
+('current ID', 'E4')
+('longest match', 'E4')
+('current ID', '')
+['SPFCK2', 'E4']
+[0, 6]
+ordering matches...
+('initial order', [0, 6])
+('final order', ['SPFCK2', 'E4'])
+done ordering
+('SPFCK2', ['CHICKCELL', 'CK', '2'])
+('E4', ['EGG', 'EGG', '4'])
+('SPFCK2', ['SPFCK2'])
+('E4', ['SPFCK2', 'E4'])
+['SPFCK2_E4', 'CHICKCELL+EGG', 'CK+EGG', 'exactly', '6']
+2
+4
+('Input ID', 'E3_E1')
+('longest match', 'E1')
+('current ID', 'E3_')
+('longest match', 'E3')
+('current ID', '_')
+['E1', 'E3']
+[3, 0]
+ordering matches...
+('initial order', [3, 0])
+('final order', ['E3', 'E1'])
+done ordering
+('E3', ['EGG', 'EGG', '3'])
+('E1', ['EGG', 'EGG', '1'])
+('E3', ['E3'])
+('E1', ['E3', 'E1'])
+['E3_E1', 'EGG', 'EGG', 'exactly', '4']
+3
+1
+('Input ID', 'E3_E7')
+('longest match', '7')
+('longest match', 'E7')
+('current ID', 'E3_')
+('longest match', 'E3')
+('current ID', '_')
+['E7', 'E3']
+[3, 0]
+ordering matches...
+('initial order', [3, 0])
+('final order', ['E3', 'E7'])
+done ordering
+('E3', ['EGG', 'EGG', '3'])
+('E7', ['EGG', 'EGG', '7'])
+('E3', ['E3'])
+('E7', ['E3', 'E7'])
+['E3_E7', 'EGG', 'EGG', 'exactly', '10']
+3
+7
+('Input ID', 'E5')
+('longest match', 'E5')
+('current ID', '')
+['E5']
+[0]
+ordering matches...
+('initial order', [0])
+('final order', ['E5'])
+done ordering
+('E5', ['EGG', 'EGG', '5'])
+('E5', ['E5'])
+['E5', 'EGG', 'EGG', 'exactly', '5']
+5
+('Input ID', 'PRHMK_2')
+('longest match', '_2')
+('longest match', 'RHMK')
+('longest match', 'PRHMK_2')
+('current ID', '')
+['PRHMK_2']
+[0]
+ordering matches...
+('initial order', [0])
+('final order', ['PRHMK_2'])
+done ordering
+('PRHMK_2', ['MONKEYCELL', 'RHMK', '2'])
+('PRHMK_2', ['PRHMK2'])
+['PRHMK2', 'MONKEYCELL', 'RHMK', 'exactly', '2']
+2
+('Input ID', 'R_MIX_1_RHMK_1')
+('longest match', '_1')
+('longest match', 'X_1')
+('longest match', 'RHMK')
+('longest match', 'RHMK_1')
+('longest match', 'R_MIX_1')
+('current ID', '_RHMK_1')
+('longest match', '_1')
+('longest match', 'RHMK')
+('longest match', 'RHMK_1')
+('current ID', '_')
+['R_MIX_1', 'RHMK_1']
+[0, 8]
+ordering matches...
+('initial order', [0, 8])
+('final order', ['R_MIX_1', 'RHMK_1'])
+done ordering
+('R_MIX_1', ['RMIX', 'RMIX', '1'])
+('RHMK_1', ['MONKEYCELL', 'RHMK', '1'])
+('R_MIX_1', ['RMIX1'])
+('RHMK_1', ['RMIX1', 'RHMK1'])
+['RMIX1_RHMK1', 'RMIX+MONKEYCELL', 'RMIX+RHMK', 'exactly', '2']
+1
+1
+('Input ID', 'PRHMK_3')
+('longest match', '_3')
+('longest match', 'RHMK')
+('longest match', 'PRHMK_3')
+('current ID', '')
+['PRHMK_3']
+[0]
+ordering matches...
+('initial order', [0])
+('final order', ['PRHMK_3'])
+done ordering
+('PRHMK_3', ['MONKEYCELL', 'RHMK', '3'])
+('PRHMK_3', ['PRHMK3'])
+['PRHMK3', 'MONKEYCELL', 'RHMK', 'exactly', '3']
+3
+('Input ID', 'RMK_1')
+('longest match', '_1')
+('longest match', 'RMK')
+('longest match', 'RMK_1')
+('current ID', '')
+['RMK_1']
+[0]
+ordering matches...
+('initial order', [0])
+('final order', ['RMK_1'])
+done ordering
+('RMK_1', ['MONKEYCELL', 'RHMK', '1'])
+('RMK_1', ['RMK1'])
+['RMK1', 'MONKEYCELL', 'RHMK', 'exactly', '1']
+1
+('Input ID', 'RHMK_5')
+('longest match', '_5')
+('longest match', 'RHMK')
+('longest match', 'RHMK_5')
+('current ID', '')
+['RHMK_5']
+[0]
+ordering matches...
+('initial order', [0])
+('final order', ['RHMK_5'])
+done ordering
+('RHMK_5', ['MONKEYCELL', 'RHMK', '5'])
+('RHMK_5', ['RHMK5'])
+['RHMK5', 'MONKEYCELL', 'RHMK', 'exactly', '5']
+5
+('Input ID', 'RMK1')
+('longest match', 'RMK')
+('longest match', 'RMK1')
+('current ID', '')
+['RMK1']
+[0]
+ordering matches...
+('initial order', [0])
+('final order', ['RMK1'])
+done ordering
+('RMK1', ['MONKEYCELL', 'RHMK', '1'])
+('RMK1', ['RMK1'])
+['RMK1', 'MONKEYCELL', 'RHMK', 'exactly', '1']
+1
+('Input ID', 'RHMK1')
+('longest match', 'MK1')
+('longest match', 'RHMK')
+('longest match', 'RHMK1')
+('current ID', '')
+['RHMK1']
+[0]
+ordering matches...
+('initial order', [0])
+('final order', ['RHMK1'])
+done ordering
+('RHMK1', ['MONKEYCELL', 'RHMK', '1'])
+('RHMK1', ['RHMK1'])
+['RHMK1', 'MONKEYCELL', 'RHMK', 'exactly', '1']
+1
+('Input ID', 'R1')
+('longest match', '1')
+('longest match', 'R1')
+('current ID', '')
+['R1']
+[0]
+ordering matches...
+('initial order', [0])
+('final order', ['R1'])
+done ordering
+('R1', ['MONKEYCELL', 'RHMK', '1'])
+('R1', ['R1'])
+['R1', 'MONKEYCELL', 'RHMK', 'exactly', '1']
+1
+('Input ID', 'RII')
+('longest match', 'RII')
+('current ID', '')
+['RII']
+[0]
+ordering matches...
+('initial order', [0])
+('final order', ['RII'])
+done ordering
+('RII', ['MONKEYCELL', 'RHMK', None])
+('RII', ['RII'])
+['RII', 'MONKEYCELL', 'RHMK', 'exactly', '1']
+None
+('Input ID', 'PRHMK_1')
+('longest match', '_1')
+('longest match', 'RHMK')
+('longest match', 'PRHMK_1')
+('current ID', '')
+['PRHMK_1']
+[0]
+ordering matches...
+('initial order', [0])
+('final order', ['PRHMK_1'])
+done ordering
+('PRHMK_1', ['MONKEYCELL', 'RHMK', '1'])
+('PRHMK_1', ['PRHMK1'])
+['PRHMK1', 'MONKEYCELL', 'RHMK', 'exactly', '1']
+1
+('Input ID', 'PMK01')
+('longest match', 'M')
+('longest match', 'MK')
+('longest match', 'MK0')
+('current ID', 'P1')
+('longest match', 'P')
+('longest match', 'P1')
+('current ID', '')
+['MK0', 'P1']
+[1, -1]
+ordering matches...
+('initial order', [1, -1])
+('final order', ['P1', 'MK0'])
+done ordering
+('P1', [None, None, '1'])
+('MK0', ['CANINECELL', 'MDCK', '0'])
+('P1', ['P1'])
+('MK0', ['P1', 'MK0'])
+['P1_MK0', 'CANINECELL', 'MDCK', 'exactly', '1']
+1
+0
+('Input ID', 'RHMK_1')
+('longest match', '_1')
+('longest match', 'RHMK')
+('longest match', 'RHMK_1')
+('current ID', '')
+['RHMK_1']
+[0]
+ordering matches...
+('initial order', [0])
+('final order', ['RHMK_1'])
+done ordering
+('RHMK_1', ['MONKEYCELL', 'RHMK', '1'])
+('RHMK_1', ['RHMK1'])
+['RHMK1', 'MONKEYCELL', 'RHMK', 'exactly', '1']
+1
+('Input ID', 'PMK1')
+('longest match', 'MK1')
+('current ID', 'P')
+('longest match', 'P')
+('current ID', '')
+['MK1', 'P']
+[1, 0]
+ordering matches...
+('initial order', [1, 0])
+('final order', ['P', 'MK1'])
+done ordering
+('P', [None, None, None])
+('MK1', ['CANINECELL', 'MDCK', '1'])
+('P', ['P'])
+('MK1', ['P', 'MK1'])
+['P_MK1', 'CANINECELL', 'MDCK', 'exactly', '2']
+None
+('Input ID', 'PRHMK_5')
+('longest match', 'PRHMK_5')
+('current ID', '')
+['PRHMK_5']
+[0]
+ordering matches...
+('initial order', [0])
+('final order', ['PRHMK_5'])
+done ordering
+('PRHMK_5', ['MONKEYCELL', 'RHMK', '5'])
+('PRHMK_5', ['PRHMK5'])
+['PRHMK5', 'MONKEYCELL', 'RHMK', 'exactly', '5']
+5
+('Input ID', 'PRHMK_4')
+('longest match', '_4')
+('longest match', 'RHMK')
+('longest match', 'PRHMK_4')
+('current ID', '')
+['PRHMK_4']
+[0]
+ordering matches...
+('initial order', [0])
+('final order', ['PRHMK_4'])
+done ordering
+('PRHMK_4', ['MONKEYCELL', 'RHMK', '4'])
+('PRHMK_4', ['PRHMK4'])
+['PRHMK4', 'MONKEYCELL', 'RHMK', 'exactly', '4']
+4
+('Input ID', 'RHMK_3')
+('longest match', '_3')
+('longest match', 'RHMK')
+('longest match', 'RHMK_3')
+('current ID', '')
+['RHMK_3']
+[0]
+ordering matches...
+('initial order', [0])
+('final order', ['RHMK_3'])
+done ordering
+('RHMK_3', ['MONKEYCELL', 'RHMK', '3'])
+('RHMK_3', ['RHMK3'])
+['RHMK3', 'MONKEYCELL', 'RHMK', 'exactly', '3']
+3
+('Input ID', 'RHMK_2')
+('longest match', '_2')
+('longest match', 'RHMK')
+('longest match', 'RHMK_2')
+('current ID', '')
+['RHMK_2']
+[0]
+ordering matches...
+('initial order', [0])
+('final order', ['RHMK_2'])
+done ordering
+('RHMK_2', ['MONKEYCELL', 'RHMK', '2'])
+('RHMK_2', ['RHMK2'])
+['RHMK2', 'MONKEYCELL', 'RHMK', 'exactly', '2']
+2
+('Input ID', 'MDCK_3')
+('longest match', '_3')
+('longest match', 'CK_3')
+('longest match', 'MDCK_3')
+('current ID', '')
+['MDCK_3']
+[0]
+ordering matches...
+('initial order', [0])
+('final order', ['MDCK_3'])
+done ordering
+('MDCK_3', ['CANINECELL', 'MDCK', '3'])
+('MDCK_3', ['MDCK3'])
+['MDCK3', 'CANINECELL', 'MDCK', 'exactly', '3']
+3
+('Input ID', 'XMDCK2')
+('longest match', 'M')
+('longest match', 'MDCK2')
+('current ID', 'X')
+('longest match', 'X')
+('current ID', '')
+['MDCK2', 'X']
+[1, 0]
+ordering matches...
+('initial order', [1, 0])
+('final order', ['X', 'MDCK2'])
+done ordering
+('X', ['UNKNOWNCELL', 'UNKNOWNCELL', None])
+('MDCK2', ['CANINECELL', 'MDCK', '2'])
+('X', ['X'])
+('MDCK2', ['X', 'MDCK2'])
+['X_MDCK2', 'UNKNOWNCELL+CANINECELL', 'UNKNOWNCELL+MDCK', 'exactly', '3']
+None
+('Input ID', 'C_3_1')
+('longest match', 'C_3')
+('current ID', '_1')
+('longest match', '_1')
+('current ID', '')
+['C_3', '_1']
+[0, 3]
+ordering matches...
+('initial order', [0, 3])
+('final order', ['C_3', '_1'])
+done ordering
+('C_3', ['UNKNOWNCELL', 'UNKNOWNCELL', '3'])
+('_1', [None, None, '1'])
+('C_3', ['C3'])
+('_1', ['C3', '1'])
+['C3_1', '', '', 'exactly', '4']
+3
+1
+('Input ID', 'P1_MDCK')
+('longest match', 'M')
+('longest match', 'CK')
+('longest match', 'MDCK')
+('longest match', 'P1_MDCK')
+('current ID', '')
+['P1_MDCK']
+[0]
+ordering matches...
+('initial order', [0])
+('final order', ['P1_MDCK'])
+done ordering
+('P1_MDCK', ['CANINECELL', 'MDCK', 'X'])
+('P1_MDCK', ['P1MDCK'])
+['P1MDCK', 'CANINECELL', 'MDCK', 'exactly', '1']
+X
+('Input ID', 'MDCK_1')
+('longest match', '_1')
+('longest match', 'CK_1')
+('longest match', 'MDCK_1')
+('current ID', '')
+['MDCK_1']
+[0]
+ordering matches...
+('initial order', [0])
+('final order', ['MDCK_1'])
+done ordering
+('MDCK_1', ['CANINECELL', 'MDCK', '1'])
+('MDCK_1', ['MDCK1'])
+['MDCK1', 'CANINECELL', 'MDCK', 'exactly', '1']
+1
+('Input ID', 'MX_C2')
+('longest match', 'M')
+('longest match', 'C2')
+('current ID', 'MX_')
+('longest match', 'M')
+('longest match', 'MX')
+('current ID', '_')
+['C2', 'MX']
+[3, 0]
+ordering matches...
+('initial order', [3, 0])
+('final order', ['MX', 'C2'])
+done ordering
+('MX', ['CANINECELL', 'MDCK', None])
+('C2', ['UNKNOWNCELL', 'UNKNOWNCELL', '2'])
+('MX', ['MX'])
+('C2', ['MX', 'C2'])
+['MX_C2', 'CANINECELL+UNKNOWNCELL', 'MDCK+UNKNOWNCELL', 'exactly', '3']
+None
+('Input ID', 'C_2_1')
+('longest match', 'C_2')
+('current ID', '_1')
+('longest match', '_1')
+('current ID', '')
+['C_2', '_1']
+[0, 3]
+ordering matches...
+('initial order', [0, 3])
+('final order', ['C_2', '_1'])
+done ordering
+('C_2', ['UNKNOWNCELL', 'UNKNOWNCELL', '2'])
+('_1', [None, None, '1'])
+('C_2', ['C2'])
+('_1', ['C2', '1'])
+['C2_1', '', '', 'exactly', '3']
+2
+1
+('Input ID', 'C1_C1')
+('longest match', 'C')
+('longest match', 'C1')
+('current ID', '_')
+['C1']
+[0]
+ordering matches...
+('initial order', [0])
+('final order', ['C1'])
+done ordering
+('C1', ['UNKNOWNCELL', 'UNKNOWNCELL', '1'])
+('C1', ['C1'])
+['C1', 'UNKNOWNCELL', 'UNKNOWNCELL', 'exactly', '1']
+1
+('Input ID', 'M2_C1')
+('longest match', 'M')
+('longest match', 'C1')
+('current ID', 'M2_')
+('longest match', 'M')
+('longest match', 'M2')
+('current ID', '_')
+['C1', 'M2']
+[3, 0]
+ordering matches...
+('initial order', [3, 0])
+('final order', ['M2', 'C1'])
+done ordering
+('M2', ['CANINECELL', 'MDCK', '2'])
+('C1', ['UNKNOWNCELL', 'UNKNOWNCELL', '1'])
+('M2', ['M2'])
+('C1', ['M2', 'C1'])
+['M2_C1', 'CANINECELL+UNKNOWNCELL', 'MDCK+UNKNOWNCELL', 'exactly', '3']
+2
+1
+('Input ID', 'MK1_MDCK2')
+('longest match', 'MK1')
+('longest match', 'MDCK2')
+('current ID', 'MK1_')
+('longest match', 'MK1')
+('current ID', '_')
+['MDCK2', 'MK1']
+[4, 0]
+ordering matches...
+('initial order', [4, 0])
+('final order', ['MK1', 'MDCK2'])
+done ordering
+('MK1', ['CANINECELL', 'MDCK', '1'])
+('MDCK2', ['CANINECELL', 'MDCK', '2'])
+('MK1', ['MK1'])
+('MDCK2', ['MK1', 'MDCK2'])
+['MK1_MDCK2', 'CANINECELL', 'MDCK', 'exactly', '3']
+1
+2
+('Input ID', 'X1_C3')
+('longest match', 'X1')
+('current ID', '_C3')
+('longest match', 'C')
+('longest match', 'C3')
+('current ID', '_')
+['X1', 'C3']
+[0, 3]
+ordering matches...
+('initial order', [0, 3])
+('final order', ['X1', 'C3'])
+done ordering
+('X1', ['UNKNOWNCELL', 'UNKNOWNCELL', '1'])
+('C3', ['UNKNOWNCELL', 'UNKNOWNCELL', '3'])
+('X1', ['X1'])
+('C3', ['X1', 'C3'])
+['X1_C3', 'UNKNOWNCELL', 'UNKNOWNCELL', 'exactly', '4']
+1
+3
+('Input ID', 'M2_C3')
+('longest match', 'M')
+('longest match', 'C3')
+('current ID', 'M2_')
+('longest match', 'M')
+('longest match', 'M2')
+('current ID', '_')
+['C3', 'M2']
+[3, 0]
+ordering matches...
+('initial order', [3, 0])
+('final order', ['M2', 'C3'])
+done ordering
+('M2', ['CANINECELL', 'MDCK', '2'])
+('C3', ['UNKNOWNCELL', 'UNKNOWNCELL', '3'])
+('M2', ['M2'])
+('C3', ['M2', 'C3'])
+['M2_C3', 'CANINECELL+UNKNOWNCELL', 'MDCK+UNKNOWNCELL', 'exactly', '5']
+2
+3
+('Input ID', 'C4_C1')
+('longest match', 'C')
+('longest match', 'C1')
+('current ID', 'C4_')
+('longest match', 'C')
+('longest match', 'C4')
+('current ID', '_')
+['C1', 'C4']
+[3, 0]
+ordering matches...
+('initial order', [3, 0])
+('final order', ['C4', 'C1'])
+done ordering
+('C4', ['UNKNOWNCELL', 'UNKNOWNCELL', '4'])
+('C1', ['UNKNOWNCELL', 'UNKNOWNCELL', '1'])
+('C4', ['C4'])
+('C1', ['C4', 'C1'])
+['C4_C1', 'UNKNOWNCELL', 'UNKNOWNCELL', 'exactly', '5']
+4
+1
+('Input ID', 'X1_C1')
+('longest match', 'X1')
+('current ID', '_C1')
+('longest match', 'C')
+('longest match', 'C1')
+('current ID', '_')
+['X1', 'C1']
+[0, 3]
+ordering matches...
+('initial order', [0, 3])
+('final order', ['X1', 'C1'])
+done ordering
+('X1', ['UNKNOWNCELL', 'UNKNOWNCELL', '1'])
+('C1', ['UNKNOWNCELL', 'UNKNOWNCELL', '1'])
+('X1', ['X1'])
+('C1', ['X1', 'C1'])
+['X1_C1', 'UNKNOWNCELL', 'UNKNOWNCELL', 'exactly', '2']
+1
+1
+('Input ID', 'M1')
+('longest match', 'M')
+('longest match', 'M1')
+('current ID', '')
+['M1']
+[0]
+ordering matches...
+('initial order', [0])
+('final order', ['M1'])
+done ordering
+('M1', ['CANINECELL', 'MDCK', '1'])
+('M1', ['M1'])
+['M1', 'CANINECELL', 'MDCK', 'exactly', '1']
+1
+('Input ID', 'X2_C2')
+('longest match', 'X2')
+('current ID', '_C2')
+('longest match', 'C')
+('longest match', 'C2')
+('current ID', '_')
+['X2', 'C2']
+[0, 3]
+ordering matches...
+('initial order', [0, 3])
+('final order', ['X2', 'C2'])
+done ordering
+('X2', ['UNKNOWNCELL', 'UNKNOWNCELL', '2'])
+('C2', ['UNKNOWNCELL', 'UNKNOWNCELL', '2'])
+('X2', ['X2'])
+('C2', ['X2', 'C2'])
+['X2_C2', 'UNKNOWNCELL', 'UNKNOWNCELL', 'exactly', '4']
+2
+2
+('Input ID', 'M2')
+('longest match', 'M')
+('longest match', 'M2')
+('current ID', '')
+['M2']
+[0]
+ordering matches...
+('initial order', [0])
+('final order', ['M2'])
+done ordering
+('M2', ['CANINECELL', 'MDCK', '2'])
+('M2', ['M2'])
+['M2', 'CANINECELL', 'MDCK', 'exactly', '2']
+2
+('Input ID', 'C3_C1')
+('longest match', 'C')
+('longest match', 'C3')
+('current ID', '_C1')
+('longest match', 'C')
+('longest match', 'C1')
+('current ID', '_')
+['C3', 'C1']
+[0, 3]
+ordering matches...
+('initial order', [0, 3])
+('final order', ['C3', 'C1'])
+done ordering
+('C3', ['UNKNOWNCELL', 'UNKNOWNCELL', '3'])
+('C1', ['UNKNOWNCELL', 'UNKNOWNCELL', '1'])
+('C3', ['C3'])
+('C1', ['C3', 'C1'])
+['C3_C1', 'UNKNOWNCELL', 'UNKNOWNCELL', 'exactly', '4']
+3
+1
+('Input ID', 'P3_MDCK')
+('longest match', 'M')
+('longest match', 'CK')
+('longest match', 'MDCK')
+('longest match', 'P3_MDCK')
+('current ID', '')
+['P3_MDCK']
+[0]
+ordering matches...
+('initial order', [0])
+('final order', ['P3_MDCK'])
+done ordering
+('P3_MDCK', ['CANINECELL', 'MDCK', 'X'])
+('P3_MDCK', ['P3MDCK'])
+['P3MDCK', 'CANINECELL', 'MDCK', 'exactly', '1']
+X
+('Input ID', 'C2_C1')
+('longest match', 'C')
+('longest match', 'C2')
+('current ID', '_C1')
+('longest match', 'C')
+('longest match', 'C1')
+('current ID', '_')
+['C2', 'C1']
+[0, 3]
+ordering matches...
+('initial order', [0, 3])
+('final order', ['C2', 'C1'])
+done ordering
+('C2', ['UNKNOWNCELL', 'UNKNOWNCELL', '2'])
+('C1', ['UNKNOWNCELL', 'UNKNOWNCELL', '1'])
+('C2', ['C2'])
+('C1', ['C2', 'C1'])
+['C2_C1', 'UNKNOWNCELL', 'UNKNOWNCELL', 'exactly', '3']
+2
+1
+('Input ID', 'X_C4')
+('longest match', 'X')
+('longest match', 'C4')
+('current ID', 'X_')
+('longest match', 'X')
+('current ID', '_')
+['C4', 'X']
+[2, 0]
+ordering matches...
+('initial order', [2, 0])
+('final order', ['X', 'C4'])
+done ordering
+('X', ['UNKNOWNCELL', 'UNKNOWNCELL', None])
+('C4', ['UNKNOWNCELL', 'UNKNOWNCELL', '4'])
+('X', ['X'])
+('C4', ['X', 'C4'])
+['X_C4', 'UNKNOWNCELL', 'UNKNOWNCELL', 'exactly', '5']
+None
+('Input ID', 'MDCK')
+('longest match', 'M')
+('longest match', 'CK')
+('longest match', 'MDCK')
+('current ID', '')
+['MDCK']
+[0]
+ordering matches...
+('initial order', [0])
+('final order', ['MDCK'])
+done ordering
+('MDCK', ['CANINECELL', 'MDCK', None])
+('MDCK', ['MDCK'])
+['MDCK', 'CANINECELL', 'MDCK', 'exactly', '1']
+None
+('Input ID', 'C4')
+('longest match', 'C')
+('longest match', 'C4')
+('current ID', '')
+['C4']
+[0]
+ordering matches...
+('initial order', [0])
+('final order', ['C4'])
+done ordering
+('C4', ['UNKNOWNCELL', 'UNKNOWNCELL', '4'])
+('C4', ['C4'])
+['C4', 'UNKNOWNCELL', 'UNKNOWNCELL', 'exactly', '4']
+4
+('Input ID', 'CX_C2')
+('longest match', 'X')
+('longest match', 'C2')
+('current ID', 'CX_')
+('longest match', 'X')
+('longest match', 'CX')
+('current ID', '_')
+['C2', 'CX']
+[3, 0]
+ordering matches...
+('initial order', [3, 0])
+('final order', ['CX', 'C2'])
+done ordering
+('CX', ['UNKNOWNCELL', 'UNKNOWNCELL', None])
+('C2', ['UNKNOWNCELL', 'UNKNOWNCELL', '2'])
+('CX', ['CX'])
+('C2', ['CX', 'C2'])
+['CX_C2', 'UNKNOWNCELL', 'UNKNOWNCELL', 'exactly', '3']
+None
+('Input ID', 'C2')
+('longest match', 'C')
+('longest match', 'C2')
+('current ID', '')
+['C2']
+[0]
+ordering matches...
+('initial order', [0])
+('final order', ['C2'])
+done ordering
+('C2', ['UNKNOWNCELL', 'UNKNOWNCELL', '2'])
+('C2', ['C2'])
+['C2', 'UNKNOWNCELL', 'UNKNOWNCELL', 'exactly', '2']
+2
+('Input ID', 'MDCK3')
+('longest match', 'M')
+('longest match', 'MDCK3')
+('current ID', '')
+['MDCK3']
+[0]
+ordering matches...
+('initial order', [0])
+('final order', ['MDCK3'])
+done ordering
+('MDCK3', ['CANINECELL', 'MDCK', '3'])
+('MDCK3', ['MDCK3'])
+['MDCK3', 'CANINECELL', 'MDCK', 'exactly', '3']
+3
+('Input ID', 'M1_C2')
+('longest match', 'M')
+('longest match', 'C2')
+('current ID', 'M1_')
+('longest match', 'M')
+('longest match', 'M1')
+('current ID', '_')
+['C2', 'M1']
+[3, 0]
+ordering matches...
+('initial order', [3, 0])
+('final order', ['M1', 'C2'])
+done ordering
+('M1', ['CANINECELL', 'MDCK', '1'])
+('C2', ['UNKNOWNCELL', 'UNKNOWNCELL', '2'])
+('M1', ['M1'])
+('C2', ['M1', 'C2'])
+['M1_C2', 'CANINECELL+UNKNOWNCELL', 'MDCK+UNKNOWNCELL', 'exactly', '3']
+1
+2
+('Input ID', 'X1')
+('longest match', 'X1')
+('current ID', '')
+['X1']
+[0]
+ordering matches...
+('initial order', [0])
+('final order', ['X1'])
+done ordering
+('X1', ['UNKNOWNCELL', 'UNKNOWNCELL', '1'])
+('X1', ['X1'])
+['X1', 'UNKNOWNCELL', 'UNKNOWNCELL', 'exactly', '1']
+1
+('Input ID', 'M1_C3')
+('longest match', 'M')
+('longest match', 'C3')
+('current ID', 'M1_')
+('longest match', 'M')
+('longest match', 'M1')
+('current ID', '_')
+['C3', 'M1']
+[3, 0]
+ordering matches...
+('initial order', [3, 0])
+('final order', ['M1', 'C3'])
 done ordering
 ('M1', ['CANINECELL', 'MDCK', '1'])
 ('C3', ['UNKNOWNCELL', 'UNKNOWNCELL', '3'])
-('E', ['EGG', 'EGG', None])
 ('M1', ['M1'])
 ('C3', ['M1', 'C3'])
-('E', ['M1', 'C3', 'E'])
-['M1_C3_E', 'CANINECELL+UNKNOWNCELL+EGG', 'MDCK+UNKNOWNCELL+EGG', 'atleast', '5']
-('longest', 'M')
-('longest', 'C3')
-M1__E
-('longest', 'M')
-('longest', 'M1')
-__E
-('longest', 'E')
-__
-['C3', 'M1', 'E']
-[3, 0, 6]
-ordering...
-[3, 0, 6]
-['M1', 'C3', 'E']
+['M1_C3', 'CANINECELL+UNKNOWNCELL', 'MDCK+UNKNOWNCELL', 'exactly', '4']
+1
+3
+('Input ID', 'X_C2')
+('longest match', 'X')
+('longest match', 'C2')
+('current ID', 'X_')
+('longest match', 'X')
+('current ID', '_')
+['C2', 'X']
+[2, 0]
+ordering matches...
+('initial order', [2, 0])
+('final order', ['X', 'C2'])
+done ordering
+('X', ['UNKNOWNCELL', 'UNKNOWNCELL', None])
+('C2', ['UNKNOWNCELL', 'UNKNOWNCELL', '2'])
+('X', ['X'])
+('C2', ['X', 'C2'])
+['X_C2', 'UNKNOWNCELL', 'UNKNOWNCELL', 'exactly', '3']
+None
+('Input ID', 'C3_C2')
+('longest match', 'C')
+('longest match', 'C3')
+('current ID', '_C2')
+('longest match', 'C')
+('longest match', 'C2')
+('current ID', '_')
+['C3', 'C2']
+[0, 3]
+ordering matches...
+('initial order', [0, 3])
+('final order', ['C3', 'C2'])
+done ordering
+('C3', ['UNKNOWNCELL', 'UNKNOWNCELL', '3'])
+('C2', ['UNKNOWNCELL', 'UNKNOWNCELL', '2'])
+('C3', ['C3'])
+('C2', ['C3', 'C2'])
+['C3_C2', 'UNKNOWNCELL', 'UNKNOWNCELL', 'exactly', '5']
+3
+2
+('Input ID', 'M3_C2')
+('longest match', 'M')
+('longest match', 'C2')
+('current ID', 'M3_')
+('longest match', 'M')
+('longest match', 'M3')
+('current ID', '_')
+['C2', 'M3']
+[3, 0]
+ordering matches...
+('initial order', [3, 0])
+('final order', ['M3', 'C2'])
+done ordering
+('M3', ['CANINECELL', 'MDCK', '3'])
+('C2', ['UNKNOWNCELL', 'UNKNOWNCELL', '2'])
+('M3', ['M3'])
+('C2', ['M3', 'C2'])
+['M3_C2', 'CANINECELL+UNKNOWNCELL', 'MDCK+UNKNOWNCELL', 'exactly', '5']
+3
+2
+('Input ID', 'ND_MDCK')
+('longest match', 'M')
+('longest match', 'ND_MDCK')
+('current ID', '')
+['ND_MDCK']
+[0]
+ordering matches...
+('initial order', [0])
+('final order', ['ND_MDCK'])
+done ordering
+('ND_MDCK', ['CANINECELL', 'MDCK', 'X'])
+('ND_MDCK', ['NDMDCK'])
+['NDMDCK', 'CANINECELL', 'MDCK', 'exactly', '1']
+X
+('Input ID', 'MX_C1')
+('longest match', 'M')
+('longest match', 'C1')
+('current ID', 'MX_')
+('longest match', 'M')
+('longest match', 'MX')
+('current ID', '_')
+['C1', 'MX']
+[3, 0]
+ordering matches...
+('initial order', [3, 0])
+('final order', ['MX', 'C1'])
+done ordering
+('MX', ['CANINECELL', 'MDCK', None])
+('C1', ['UNKNOWNCELL', 'UNKNOWNCELL', '1'])
+('MX', ['MX'])
+('C1', ['MX', 'C1'])
+['MX_C1', 'CANINECELL+UNKNOWNCELL', 'MDCK+UNKNOWNCELL', 'exactly', '2']
+None
+('Input ID', 'X2')
+('longest match', 'X2')
+('current ID', '')
+['X2']
+[0]
+ordering matches...
+('initial order', [0])
+('final order', ['X2'])
+done ordering
+('X2', ['UNKNOWNCELL', 'UNKNOWNCELL', '2'])
+('X2', ['X2'])
+['X2', 'UNKNOWNCELL', 'UNKNOWNCELL', 'exactly', '2']
+2
+('Input ID', 'M2_C2')
+('longest match', 'M')
+('longest match', 'C2')
+('current ID', 'M2_')
+('longest match', 'M')
+('longest match', 'M2')
+('current ID', '_')
+['C2', 'M2']
+[3, 0]
+ordering matches...
+('initial order', [3, 0])
+('final order', ['M2', 'C2'])
+done ordering
+('M2', ['CANINECELL', 'MDCK', '2'])
+('C2', ['UNKNOWNCELL', 'UNKNOWNCELL', '2'])
+('M2', ['M2'])
+('C2', ['M2', 'C2'])
+['M2_C2', 'CANINECELL+UNKNOWNCELL', 'MDCK+UNKNOWNCELL', 'exactly', '4']
+2
+2
+('Input ID', 'M1C2')
+('longest match', 'M')
+('longest match', 'C2')
+('current ID', 'M1')
+('longest match', 'M')
+('longest match', 'M1')
+('current ID', '')
+['C2', 'M1']
+[2, 0]
+ordering matches...
+('initial order', [2, 0])
+('final order', ['M1', 'C2'])
 done ordering
 ('M1', ['CANINECELL', 'MDCK', '1'])
-('C3', ['UNKNOWNCELL', 'UNKNOWNCELL', '3'])
-('E', ['EGG', 'EGG', None])
+('C2', ['UNKNOWNCELL', 'UNKNOWNCELL', '2'])
 ('M1', ['M1'])
-('C3', ['M1', 'C3'])
-('E', ['M1', 'C3', 'E'])
-['M1_C3_E', 'CANINECELL+UNKNOWNCELL+EGG', 'MDCK+UNKNOWNCELL+EGG', 'atleast', '5']
-('longest', 'M')
-('longest', 'C3')
-M1__E
-('longest', 'M')
-('longest', 'M1')
-__E
-('longest', 'E')
-__
-['C3', 'M1', 'E']
-[3, 0, 6]
-ordering...
-[3, 0, 6]
-['M1', 'C3', 'E']
+('C2', ['M1', 'C2'])
+['M1_C2', 'CANINECELL+UNKNOWNCELL', 'MDCK+UNKNOWNCELL', 'exactly', '3']
+1
+2
+('Input ID', 'C1_C4')
+('longest match', 'C')
+('longest match', 'C1')
+('current ID', '_C4')
+('longest match', 'C')
+('longest match', 'C4')
+('current ID', '_')
+['C1', 'C4']
+[0, 3]
+ordering matches...
+('initial order', [0, 3])
+('final order', ['C1', 'C4'])
+done ordering
+('C1', ['UNKNOWNCELL', 'UNKNOWNCELL', '1'])
+('C4', ['UNKNOWNCELL', 'UNKNOWNCELL', '4'])
+('C1', ['C1'])
+('C4', ['C1', 'C4'])
+['C1_C4', 'UNKNOWNCELL', 'UNKNOWNCELL', 'exactly', '5']
+1
+4
+('Input ID', 'X3_C2')
+('longest match', 'X')
+('longest match', 'X3')
+('current ID', '_C2')
+('longest match', 'C')
+('longest match', 'C2')
+('current ID', '_')
+['X3', 'C2']
+[0, 3]
+ordering matches...
+('initial order', [0, 3])
+('final order', ['X3', 'C2'])
+done ordering
+('X3', ['UNKNOWNCELL', 'UNKNOWNCELL', '3'])
+('C2', ['UNKNOWNCELL', 'UNKNOWNCELL', '2'])
+('X3', ['X3'])
+('C2', ['X3', 'C2'])
+['X3_C2', 'UNKNOWNCELL', 'UNKNOWNCELL', 'exactly', '5']
+3
+2
+('Input ID', 'MDCK_2')
+('longest match', '_2')
+('longest match', 'CK_2')
+('longest match', 'MDCK_2')
+('current ID', '')
+['MDCK_2']
+[0]
+ordering matches...
+('initial order', [0])
+('final order', ['MDCK_2'])
+done ordering
+('MDCK_2', ['CANINECELL', 'MDCK', '2'])
+('MDCK_2', ['MDCK2'])
+['MDCK2', 'CANINECELL', 'MDCK', 'exactly', '2']
+2
+('Input ID', 'P0_MDCK')
+('longest match', 'M')
+('longest match', 'CK')
+('longest match', 'MDCK')
+('current ID', 'P0_')
+('longest match', '0')
+('longest match', 'P0')
+('current ID', '_')
+['MDCK', 'P0']
+[3, 0]
+ordering matches...
+('initial order', [3, 0])
+('final order', ['P0', 'MDCK'])
+done ordering
+('P0', ['UNPASSAGED', 'UNPASSAGED', '0'])
+('MDCK', ['CANINECELL', 'MDCK', None])
+('P0', ['P0'])
+('MDCK', ['P0', 'MDCK'])
+['P0_MDCK', 'UNPASSAGED+CANINECELL', 'UNPASSAGED+MDCK', 'exactly', '1']
+0
+None
+('Input ID', 'M1M1_C1')
+('longest match', 'M')
+('longest match', 'C1')
+('current ID', 'M1M1_')
+('longest match', 'M')
+('longest match', 'M1')
+('current ID', '_')
+['C1', 'M1']
+[5, 0]
+ordering matches...
+('initial order', [5, 0])
+('final order', ['M1', 'C1'])
 done ordering
 ('M1', ['CANINECELL', 'MDCK', '1'])
-('C3', ['UNKNOWNCELL', 'UNKNOWNCELL', '3'])
-('E', ['EGG', 'EGG', None])
+('C1', ['UNKNOWNCELL', 'UNKNOWNCELL', '1'])
 ('M1', ['M1'])
-('C3', ['M1', 'C3'])
-('E', ['M1', 'C3', 'E'])
-['M1_C3_E', 'CANINECELL+UNKNOWNCELL+EGG', 'MDCK+UNKNOWNCELL+EGG', 'atleast', '5']
-('longest', 'M')
-('longest', 'C3')
-M1__E
-('longest', 'M')
-('longest', 'M1')
-__E
-('longest', 'E')
-__
-['C3', 'M1', 'E']
-[3, 0, 6]
-ordering...
-[3, 0, 6]
-['M1', 'C3', 'E']
+('C1', ['M1', 'C1'])
+['M1_C1', 'CANINECELL+UNKNOWNCELL', 'MDCK+UNKNOWNCELL', 'exactly', '2']
+1
+1
+('Input ID', 'X1_C2')
+('longest match', 'X1')
+('current ID', '_C2')
+('longest match', 'C')
+('longest match', 'C2')
+('current ID', '_')
+['X1', 'C2']
+[0, 3]
+ordering matches...
+('initial order', [0, 3])
+('final order', ['X1', 'C2'])
+done ordering
+('X1', ['UNKNOWNCELL', 'UNKNOWNCELL', '1'])
+('C2', ['UNKNOWNCELL', 'UNKNOWNCELL', '2'])
+('X1', ['X1'])
+('C2', ['X1', 'C2'])
+['X1_C2', 'UNKNOWNCELL', 'UNKNOWNCELL', 'exactly', '3']
+1
+2
+('Input ID', 'X')
+('longest match', 'X')
+('current ID', '')
+['X']
+[0]
+ordering matches...
+('initial order', [0])
+('final order', ['X'])
+done ordering
+('X', ['UNKNOWNCELL', 'UNKNOWNCELL', None])
+('X', ['X'])
+['X', 'UNKNOWNCELL', 'UNKNOWNCELL', 'exactly', '1']
+None
+('Input ID', 'MDCKMV1_LU')
+('longest match', 'V')
+('longest match', 'CK')
+('longest match', 'MDCK')
+('longest match', 'MV1_LU')
+('current ID', 'MDCK')
+('longest match', 'M')
+('longest match', 'CK')
+('longest match', 'MDCK')
+('current ID', '')
+['MV1_LU', 'MDCK']
+[4, 0]
+ordering matches...
+('initial order', [4, 0])
+('final order', ['MDCK', 'MV1_LU'])
+done ordering
+('MDCK', ['CANINECELL', 'MDCK', None])
+('MV1_LU', ['MINKCELL', 'MV1LU', None])
+('MDCK', ['MDCK'])
+('MV1_LU', ['MDCK', 'MV1LU'])
+['MDCK_MV1LU', 'CANINECELL+MINKCELL', 'MDCK+MV1LU', 'exactly', '2']
+None
+('Input ID', 'MDCK4')
+('longest match', 'M')
+('longest match', 'MDCK4')
+('current ID', '')
+['MDCK4']
+[0]
+ordering matches...
+('initial order', [0])
+('final order', ['MDCK4'])
+done ordering
+('MDCK4', ['CANINECELL', 'MDCK', '4'])
+('MDCK4', ['MDCK4'])
+['MDCK4', 'CANINECELL', 'MDCK', 'exactly', '4']
+4
+('Input ID', 'C1_C2')
+('longest match', 'C')
+('longest match', 'C2')
+('current ID', 'C1_')
+('longest match', 'C')
+('longest match', 'C1')
+('current ID', '_')
+['C2', 'C1']
+[3, 0]
+ordering matches...
+('initial order', [3, 0])
+('final order', ['C1', 'C2'])
+done ordering
+('C1', ['UNKNOWNCELL', 'UNKNOWNCELL', '1'])
+('C2', ['UNKNOWNCELL', 'UNKNOWNCELL', '2'])
+('C1', ['C1'])
+('C2', ['C1', 'C2'])
+['C1_C2', 'UNKNOWNCELL', 'UNKNOWNCELL', 'exactly', '3']
+1
+2
+('Input ID', 'X2_C1')
+('longest match', 'X2')
+('current ID', '_C1')
+('longest match', 'C')
+('longest match', 'C1')
+('current ID', '_')
+['X2', 'C1']
+[0, 3]
+ordering matches...
+('initial order', [0, 3])
+('final order', ['X2', 'C1'])
+done ordering
+('X2', ['UNKNOWNCELL', 'UNKNOWNCELL', '2'])
+('C1', ['UNKNOWNCELL', 'UNKNOWNCELL', '1'])
+('X2', ['X2'])
+('C1', ['X2', 'C1'])
+['X2_C1', 'UNKNOWNCELL', 'UNKNOWNCELL', 'exactly', '3']
+2
+1
+('Input ID', 'MDCK2')
+('longest match', 'M')
+('longest match', 'MDCK2')
+('current ID', '')
+['MDCK2']
+[0]
+ordering matches...
+('initial order', [0])
+('final order', ['MDCK2'])
+done ordering
+('MDCK2', ['CANINECELL', 'MDCK', '2'])
+('MDCK2', ['MDCK2'])
+['MDCK2', 'CANINECELL', 'MDCK', 'exactly', '2']
+2
+('Input ID', 'MX')
+('longest match', 'M')
+('longest match', 'MX')
+('current ID', '')
+['MX']
+[0]
+ordering matches...
+('initial order', [0])
+('final order', ['MX'])
+done ordering
+('MX', ['CANINECELL', 'MDCK', None])
+('MX', ['MX'])
+['MX', 'CANINECELL', 'MDCK', 'exactly', '1']
+None
+('Input ID', 'C2_C2')
+('longest match', 'C')
+('longest match', 'C2')
+('current ID', '_')
+['C2']
+[0]
+ordering matches...
+('initial order', [0])
+('final order', ['C2'])
+done ordering
+('C2', ['UNKNOWNCELL', 'UNKNOWNCELL', '2'])
+('C2', ['C2'])
+['C2', 'UNKNOWNCELL', 'UNKNOWNCELL', 'exactly', '2']
+2
+('Input ID', 'MDCK1')
+('longest match', 'M')
+('longest match', 'MDCK1')
+('current ID', '')
+['MDCK1']
+[0]
+ordering matches...
+('initial order', [0])
+('final order', ['MDCK1'])
+done ordering
+('MDCK1', ['CANINECELL', 'MDCK', '1'])
+('MDCK1', ['MDCK1'])
+['MDCK1', 'CANINECELL', 'MDCK', 'exactly', '1']
+1
+('Input ID', 'C5')
+('longest match', 'C')
+('longest match', 'C5')
+('current ID', '')
+['C5']
+[0]
+ordering matches...
+('initial order', [0])
+('final order', ['C5'])
+done ordering
+('C5', ['UNKNOWNCELL', 'UNKNOWNCELL', '5'])
+('C5', ['C5'])
+['C5', 'UNKNOWNCELL', 'UNKNOWNCELL', 'exactly', '5']
+5
+('Input ID', 'X3_C1')
+('longest match', 'X')
+('longest match', 'X3')
+('current ID', '_C1')
+('longest match', 'C')
+('longest match', 'C1')
+('current ID', '_')
+['X3', 'C1']
+[0, 3]
+ordering matches...
+('initial order', [0, 3])
+('final order', ['X3', 'C1'])
+done ordering
+('X3', ['UNKNOWNCELL', 'UNKNOWNCELL', '3'])
+('C1', ['UNKNOWNCELL', 'UNKNOWNCELL', '1'])
+('X3', ['X3'])
+('C1', ['X3', 'C1'])
+['X3_C1', 'UNKNOWNCELL', 'UNKNOWNCELL', 'exactly', '4']
+3
+1
+('Input ID', 'M1M2_C1')
+('longest match', 'M')
+('longest match', 'C1')
+('current ID', 'M1M2_')
+('longest match', 'M')
+('longest match', 'M1')
+('current ID', 'M2_')
+('longest match', 'M')
+('longest match', 'M2')
+('current ID', '_')
+['C1', 'M1', 'M2']
+[5, 0, 2]
+ordering matches...
+('initial order', [5, 0, 2])
+('final order', ['M1', 'M2', 'C1'])
 done ordering
 ('M1', ['CANINECELL', 'MDCK', '1'])
-('C3', ['UNKNOWNCELL', 'UNKNOWNCELL', '3'])
-('E', ['EGG', 'EGG', None])
+('M2', ['CANINECELL', 'MDCK', '2'])
+('C1', ['UNKNOWNCELL', 'UNKNOWNCELL', '1'])
 ('M1', ['M1'])
-('C3', ['M1', 'C3'])
-('E', ['M1', 'C3', 'E'])
-['M1_C3_E', 'CANINECELL+UNKNOWNCELL+EGG', 'MDCK+UNKNOWNCELL+EGG', 'atleast', '5']
-('longest', 'M')
-('longest', 'C3')
-M1__E
-('longest', 'M')
-('longest', 'M1')
-__E
-('longest', 'E')
-__
-['C3', 'M1', 'E']
-[3, 0, 6]
-ordering...
-[3, 0, 6]
-['M1', 'C3', 'E']
+('M2', ['M1', 'M2'])
+('C1', ['M1', 'M2', 'C1'])
+['M1_M2_C1', 'CANINECELL+UNKNOWNCELL', 'MDCK+UNKNOWNCELL', 'exactly', '4']
+1
+2
+1
+('Input ID', 'CX')
+('longest match', 'X')
+('longest match', 'CX')
+('current ID', '')
+['CX']
+[0]
+ordering matches...
+('initial order', [0])
+('final order', ['CX'])
+done ordering
+('CX', ['UNKNOWNCELL', 'UNKNOWNCELL', None])
+('CX', ['CX'])
+['CX', 'UNKNOWNCELL', 'UNKNOWNCELL', 'exactly', '1']
+None
+('Input ID', 'C3')
+('longest match', 'C')
+('longest match', 'C3')
+('current ID', '')
+['C3']
+[0]
+ordering matches...
+('initial order', [0])
+('final order', ['C3'])
+done ordering
+('C3', ['UNKNOWNCELL', 'UNKNOWNCELL', '3'])
+('C3', ['C3'])
+['C3', 'UNKNOWNCELL', 'UNKNOWNCELL', 'exactly', '3']
+3
+('Input ID', 'X_C1')
+('longest match', 'X')
+('longest match', 'C1')
+('current ID', 'X_')
+('longest match', 'X')
+('current ID', '_')
+['C1', 'X']
+[2, 0]
+ordering matches...
+('initial order', [2, 0])
+('final order', ['X', 'C1'])
+done ordering
+('X', ['UNKNOWNCELL', 'UNKNOWNCELL', None])
+('C1', ['UNKNOWNCELL', 'UNKNOWNCELL', '1'])
+('X', ['X'])
+('C1', ['X', 'C1'])
+['X_C1', 'UNKNOWNCELL', 'UNKNOWNCELL', 'exactly', '2']
+None
+('Input ID', 'C1')
+('longest match', 'C')
+('longest match', 'C1')
+('current ID', '')
+['C1']
+[0]
+ordering matches...
+('initial order', [0])
+('final order', ['C1'])
+done ordering
+('C1', ['UNKNOWNCELL', 'UNKNOWNCELL', '1'])
+('C1', ['C1'])
+['C1', 'UNKNOWNCELL', 'UNKNOWNCELL', 'exactly', '1']
+1
+('Input ID', 'CX_C1')
+('longest match', 'X')
+('longest match', 'C1')
+('current ID', 'CX_')
+('longest match', 'X')
+('longest match', 'CX')
+('current ID', '_')
+['C1', 'CX']
+[3, 0]
+ordering matches...
+('initial order', [3, 0])
+('final order', ['CX', 'C1'])
+done ordering
+('CX', ['UNKNOWNCELL', 'UNKNOWNCELL', None])
+('C1', ['UNKNOWNCELL', 'UNKNOWNCELL', '1'])
+('CX', ['CX'])
+('C1', ['CX', 'C1'])
+['CX_C1', 'UNKNOWNCELL', 'UNKNOWNCELL', 'exactly', '2']
+None
+('Input ID', 'MDCK1_MDCK2')
+('longest match', 'M')
+('longest match', 'MDCK2')
+('current ID', 'MDCK1_')
+('longest match', 'M')
+('longest match', 'MDCK1')
+('current ID', '_')
+['MDCK2', 'MDCK1']
+[6, 0]
+ordering matches...
+('initial order', [6, 0])
+('final order', ['MDCK1', 'MDCK2'])
+done ordering
+('MDCK1', ['CANINECELL', 'MDCK', '1'])
+('MDCK2', ['CANINECELL', 'MDCK', '2'])
+('MDCK1', ['MDCK1'])
+('MDCK2', ['MDCK1', 'MDCK2'])
+['MDCK1_MDCK2', 'CANINECELL', 'MDCK', 'exactly', '3']
+1
+2
+('Input ID', 'XMDCK1')
+('longest match', 'M')
+('longest match', 'MDCK1')
+('current ID', 'X')
+('longest match', 'X')
+('current ID', '')
+['MDCK1', 'X']
+[1, 0]
+ordering matches...
+('initial order', [1, 0])
+('final order', ['X', 'MDCK1'])
+done ordering
+('X', ['UNKNOWNCELL', 'UNKNOWNCELL', None])
+('MDCK1', ['CANINECELL', 'MDCK', '1'])
+('X', ['X'])
+('MDCK1', ['X', 'MDCK1'])
+['X_MDCK1', 'UNKNOWNCELL+CANINECELL', 'UNKNOWNCELL+MDCK', 'exactly', '2']
+None
+('Input ID', 'MDCK1')
+('longest match', 'M')
+('longest match', 'MDCK1')
+('current ID', '')
+['MDCK1']
+[0]
+ordering matches...
+('initial order', [0])
+('final order', ['MDCK1'])
+done ordering
+('MDCK1', ['CANINECELL', 'MDCK', '1'])
+('MDCK1', ['MDCK1'])
+['MDCK1', 'CANINECELL', 'MDCK', 'exactly', '1']
+1
+('Input ID', 'M1_C1')
+('longest match', 'M')
+('longest match', 'C1')
+('current ID', 'M1_')
+('longest match', 'M')
+('longest match', 'M1')
+('current ID', '_')
+['C1', 'M1']
+[3, 0]
+ordering matches...
+('initial order', [3, 0])
+('final order', ['M1', 'C1'])
 done ordering
 ('M1', ['CANINECELL', 'MDCK', '1'])
-('C3', ['UNKNOWNCELL', 'UNKNOWNCELL', '3'])
-('E', ['EGG', 'EGG', None])
+('C1', ['UNKNOWNCELL', 'UNKNOWNCELL', '1'])
 ('M1', ['M1'])
-('C3', ['M1', 'C3'])
-('E', ['M1', 'C3', 'E'])
-['M1_C3_E', 'CANINECELL+UNKNOWNCELL+EGG', 'MDCK+UNKNOWNCELL+EGG', 'atleast', '5']
-('longest', 'M')
-('longest', 'C3')
-M1__E
-('longest', 'M')
-('longest', 'M1')
-__E
-('longest', 'E')
-__
-['C3', 'M1', 'E']
-[3, 0, 6]
-ordering...
-[3, 0, 6]
-['M1', 'C3', 'E']
+('C1', ['M1', 'C1'])
+['M1_C1', 'CANINECELL+UNKNOWNCELL', 'MDCK+UNKNOWNCELL', 'exactly', '2']
+1
+1
+('Input ID', 'NC2')
+('longest match', 'C')
+('longest match', 'C2')
+('longest match', 'NC2')
+('current ID', '')
+['NC2']
+[0]
+ordering matches...
+('initial order', [0])
+('final order', ['NC2'])
+done ordering
+('NC2', ['EGG', 'EGG', '2'])
+('NC2', ['NC2'])
+['NC2', 'EGG', 'EGG', 'exactly', '2']
+2
+('Input ID', '5001_DAY_3')
+('longest match', '_3')
+('longest match', '5001_DAY_3')
+('current ID', '')
+['5001_DAY_3']
+[0]
+ordering matches...
+('initial order', [0])
+('final order', ['5001_DAY_3'])
+done ordering
+('5001_DAY_3', [None, None, None])
+('5001_DAY_3', ['5001DAY3'])
+['5001DAY3', '', '', 'exactly', '1']
+None
+('Input ID', '5021_DAY_2')
+('longest match', '_2')
+('longest match', '5021_DAY_2')
+('current ID', '')
+['5021_DAY_2']
+[0]
+ordering matches...
+('initial order', [0])
+('final order', ['5021_DAY_2'])
+done ordering
+('5021_DAY_2', [None, None, None])
+('5021_DAY_2', ['5021DAY2'])
+['5021DAY2', '', '', 'exactly', '1']
+None
+('Input ID', '1006_DAY_1')
+('longest match', '6')
+('longest match', '_1')
+('longest match', '1006_DAY_1')
+('current ID', '')
+['1006_DAY_1']
+[0]
+ordering matches...
+('initial order', [0])
+('final order', ['1006_DAY_1'])
+done ordering
+('1006_DAY_1', [None, None, None])
+('1006_DAY_1', ['1006DAY1'])
+['1006DAY1', '', '', 'exactly', '1']
+None
+('Input ID', '5006_DAY_2')
+('longest match', '6')
+('longest match', '_2')
+('longest match', '5006_DAY_2')
+('current ID', '')
+['5006_DAY_2']
+[0]
+ordering matches...
+('initial order', [0])
+('final order', ['5006_DAY_2'])
+done ordering
+('5006_DAY_2', [None, None, None])
+('5006_DAY_2', ['5006DAY2'])
+['5006DAY2', '', '', 'exactly', '1']
+None
+('Input ID', 'RX_C2')
+('longest match', 'X')
+('longest match', 'C2')
+('current ID', 'RX_')
+('longest match', 'X')
+('longest match', 'RX')
+('current ID', '_')
+['C2', 'RX']
+[3, 0]
+ordering matches...
+('initial order', [3, 0])
+('final order', ['RX', 'C2'])
+done ordering
+('RX', ['MONKEYCELL', 'RHMK', None])
+('C2', ['UNKNOWNCELL', 'UNKNOWNCELL', '2'])
+('RX', ['RX'])
+('C2', ['RX', 'C2'])
+['RX_C2', 'MONKEYCELL+UNKNOWNCELL', 'RHMK+UNKNOWNCELL', 'exactly', '3']
+None
+('Input ID', '5004_DAY_5')
+('longest match', '_5')
+('longest match', '5004_DAY_5')
+('current ID', '')
+['5004_DAY_5']
+[0]
+ordering matches...
+('initial order', [0])
+('final order', ['5004_DAY_5'])
+done ordering
+('5004_DAY_5', [None, None, None])
+('5004_DAY_5', ['5004DAY5'])
+['5004DAY5', '', '', 'exactly', '1']
+None
+('Input ID', '5018_DAY_1')
+('longest match', '_1')
+('longest match', '5018_DAY_1')
+('current ID', '')
+['5018_DAY_1']
+[0]
+ordering matches...
+('initial order', [0])
+('final order', ['5018_DAY_1'])
+done ordering
+('5018_DAY_1', [None, None, None])
+('5018_DAY_1', ['5018DAY1'])
+['5018DAY1', '', '', 'exactly', '1']
+None
+('Input ID', 'UNKNOWN_1_RHMK_1')
+('longest match', '_1')
+('longest match', 'RHMK')
+('longest match', 'UNKNOWN_1')
+('current ID', '_RHMK_1')
+('longest match', '_1')
+('longest match', 'RHMK')
+('longest match', 'RHMK_1')
+('current ID', '_')
+['UNKNOWN_1', 'RHMK_1']
+[0, 10]
+ordering matches...
+('initial order', [0, 10])
+('final order', ['UNKNOWN_1', 'RHMK_1'])
+done ordering
+('UNKNOWN_1', [None, None, '1'])
+('RHMK_1', ['MONKEYCELL', 'RHMK', '1'])
+('UNKNOWN_1', ['UNKNOWN1'])
+('RHMK_1', ['UNKNOWN1', 'RHMK1'])
+['UNKNOWN1_RHMK1', 'MONKEYCELL', 'RHMK', 'exactly', '2']
+1
+1
+('Input ID', '5007_DAY_2')
+('longest match', '_2')
+('longest match', '5007_DAY_2')
+('current ID', '')
+['5007_DAY_2']
+[0]
+ordering matches...
+('initial order', [0])
+('final order', ['5007_DAY_2'])
+done ordering
+('5007_DAY_2', [None, None, None])
+('5007_DAY_2', ['5007DAY2'])
+['5007DAY2', '', '', 'exactly', '1']
+None
+('Input ID', '5002_DAY_2')
+('longest match', '_2')
+('longest match', '5002_DAY_2')
+('current ID', '')
+['5002_DAY_2']
+[0]
+ordering matches...
+('initial order', [0])
+('final order', ['5002_DAY_2'])
+done ordering
+('5002_DAY_2', [None, None, None])
+('5002_DAY_2', ['5002DAY2'])
+['5002DAY2', '', '', 'exactly', '1']
+None
+('Input ID', '5002_DAY_3')
+('longest match', '_3')
+('longest match', '5002_DAY_3')
+('current ID', '')
+['5002_DAY_3']
+[0]
+ordering matches...
+('initial order', [0])
+('final order', ['5002_DAY_3'])
+done ordering
+('5002_DAY_3', [None, None, None])
+('5002_DAY_3', ['5002DAY3'])
+['5002DAY3', '', '', 'exactly', '1']
+None
+('Input ID', '1012_DAY_6')
+('longest match', '6')
+('longest match', '_6')
+('longest match', '1012_DAY_6')
+('current ID', '')
+['1012_DAY_6']
+[0]
+ordering matches...
+('initial order', [0])
+('final order', ['1012_DAY_6'])
+done ordering
+('1012_DAY_6', [None, None, None])
+('1012_DAY_6', ['1012DAY6'])
+['1012DAY6', '', '', 'exactly', '1']
+None
+('Input ID', '5001_DAY_5')
+('longest match', '_5')
+('longest match', '5001_DAY_5')
+('current ID', '')
+['5001_DAY_5']
+[0]
+ordering matches...
+('initial order', [0])
+('final order', ['5001_DAY_5'])
+done ordering
+('5001_DAY_5', [None, None, None])
+('5001_DAY_5', ['5001DAY5'])
+['5001DAY5', '', '', 'exactly', '1']
+None
+('Input ID', '5006_DAY_3')
+('longest match', '6')
+('longest match', '_3')
+('longest match', '5006_DAY_3')
+('current ID', '')
+['5006_DAY_3']
+[0]
+ordering matches...
+('initial order', [0])
+('final order', ['5006_DAY_3'])
+done ordering
+('5006_DAY_3', [None, None, None])
+('5006_DAY_3', ['5006DAY3'])
+['5006DAY3', '', '', 'exactly', '1']
+None
+('Input ID', 'E9')
+('longest match', 'E9')
+('current ID', '')
+['E9']
+[0]
+ordering matches...
+('initial order', [0])
+('final order', ['E9'])
+done ordering
+('E9', ['EGG', 'EGG', '9'])
+('E9', ['E9'])
+['E9', 'EGG', 'EGG', 'exactly', '9']
+9
+('Input ID', 'E8')
+('longest match', 'E8')
+('current ID', '')
+['E8']
+[0]
+ordering matches...
+('initial order', [0])
+('final order', ['E8'])
+done ordering
+('E8', ['EGG', 'EGG', '8'])
+('E8', ['E8'])
+['E8', 'EGG', 'EGG', 'exactly', '8']
+8
+('Input ID', '1013_DAY_2')
+('longest match', '_2')
+('longest match', '1013_DAY_2')
+('current ID', '')
+['1013_DAY_2']
+[0]
+ordering matches...
+('initial order', [0])
+('final order', ['1013_DAY_2'])
+done ordering
+('1013_DAY_2', [None, None, None])
+('1013_DAY_2', ['1013DAY2'])
+['1013DAY2', '', '', 'exactly', '1']
+None
+('Input ID', 'NC2E3')
+('longest match', 'E3')
+('longest match', 'NC2')
+('current ID', 'E3')
+('longest match', 'E3')
+('current ID', '')
+['NC2', 'E3']
+[0, 3]
+ordering matches...
+('initial order', [0, 3])
+('final order', ['NC2', 'E3'])
+done ordering
+('NC2', ['EGG', 'EGG', '2'])
+('E3', ['EGG', 'EGG', '3'])
+('NC2', ['NC2'])
+('E3', ['NC2', 'E3'])
+['NC2_E3', 'EGG', 'EGG', 'exactly', '5']
+2
+3
+('Input ID', 'R1_S3')
+('longest match', 'S3')
+('current ID', 'R1_')
+('longest match', '1')
+('longest match', 'R1')
+('current ID', '_')
+['S3', 'R1']
+[3, 0]
+ordering matches...
+('initial order', [3, 0])
+('final order', ['R1', 'S3'])
+done ordering
+('R1', ['MONKEYCELL', 'RHMK', '1'])
+('S3', ['CANINECELL', 'SIAT', '3'])
+('R1', ['R1'])
+('S3', ['R1', 'S3'])
+['R1_S3', 'MONKEYCELL+CANINECELL', 'RHMK+SIAT', 'exactly', '4']
+1
+3
+('Input ID', '5019_DAY_1')
+('longest match', '_1')
+('longest match', '5019_DAY_1')
+('current ID', '')
+['5019_DAY_1']
+[0]
+ordering matches...
+('initial order', [0])
+('final order', ['5019_DAY_1'])
+done ordering
+('5019_DAY_1', [None, None, None])
+('5019_DAY_1', ['5019DAY1'])
+['5019DAY1', '', '', 'exactly', '1']
+None
+('Input ID', 'RII1_C1')
+('longest match', 'C')
+('longest match', 'C1')
+('longest match', 'RII')
+('longest match', 'RII1')
+('current ID', '_C1')
+('longest match', 'C')
+('longest match', 'C1')
+('current ID', '_')
+['RII1', 'C1']
+[0, 5]
+ordering matches...
+('initial order', [0, 5])
+('final order', ['RII1', 'C1'])
+done ordering
+('RII1', ['MONKEYCELL', 'RHMK', '1'])
+('C1', ['UNKNOWNCELL', 'UNKNOWNCELL', '1'])
+('RII1', ['RII1'])
+('C1', ['RII1', 'C1'])
+['RII1_C1', 'MONKEYCELL+UNKNOWNCELL', 'RHMK+UNKNOWNCELL', 'exactly', '2']
+1
+1
+('Input ID', '1008_DAY_2')
+('longest match', '_2')
+('longest match', '1008_DAY_2')
+('current ID', '')
+['1008_DAY_2']
+[0]
+ordering matches...
+('initial order', [0])
+('final order', ['1008_DAY_2'])
+done ordering
+('1008_DAY_2', [None, None, None])
+('1008_DAY_2', ['1008DAY2'])
+['1008DAY2', '', '', 'exactly', '1']
+None
+('Input ID', 'R1_C1')
+('longest match', 'C')
+('longest match', 'C1')
+('current ID', 'R1_')
+('longest match', '1')
+('longest match', 'R1')
+('current ID', '_')
+['C1', 'R1']
+[3, 0]
+ordering matches...
+('initial order', [3, 0])
+('final order', ['R1', 'C1'])
+done ordering
+('R1', ['MONKEYCELL', 'RHMK', '1'])
+('C1', ['UNKNOWNCELL', 'UNKNOWNCELL', '1'])
+('R1', ['R1'])
+('C1', ['R1', 'C1'])
+['R1_C1', 'MONKEYCELL+UNKNOWNCELL', 'RHMK+UNKNOWNCELL', 'exactly', '2']
+1
+1
+('Input ID', '1012_DAY_3')
+('longest match', '_3')
+('longest match', '1012_DAY_3')
+('current ID', '')
+['1012_DAY_3']
+[0]
+ordering matches...
+('initial order', [0])
+('final order', ['1012_DAY_3'])
+done ordering
+('1012_DAY_3', [None, None, None])
+('1012_DAY_3', ['1012DAY3'])
+['1012DAY3', '', '', 'exactly', '1']
+None
+('Input ID', 'RII1_S3')
+('longest match', 'S3')
+('longest match', 'RII')
+('longest match', 'RII1')
+('current ID', '_S3')
+('longest match', 'S3')
+('current ID', '_')
+['RII1', 'S3']
+[0, 5]
+ordering matches...
+('initial order', [0, 5])
+('final order', ['RII1', 'S3'])
+done ordering
+('RII1', ['MONKEYCELL', 'RHMK', '1'])
+('S3', ['CANINECELL', 'SIAT', '3'])
+('RII1', ['RII1'])
+('S3', ['RII1', 'S3'])
+['RII1_S3', 'MONKEYCELL+CANINECELL', 'RHMK+SIAT', 'exactly', '4']
+1
+3
+('Input ID', 'XTMK1_MDCK1')
+('longest match', 'MK1')
+('longest match', 'MDCK1')
+('current ID', 'XTMK1_')
+('longest match', 'MK1')
+('longest match', 'TMK1')
+('current ID', 'X_')
+('longest match', 'X')
+('current ID', '_')
+['MDCK1', 'TMK1', 'X']
+[6, 1, 0]
+ordering matches...
+('initial order', [6, 1, 0])
+('final order', ['X', 'TMK1', 'MDCK1'])
+done ordering
+('X', ['UNKNOWNCELL', 'UNKNOWNCELL', None])
+('TMK1', ['MONKEYCELL', 'TMK', '1'])
+('MDCK1', ['CANINECELL', 'MDCK', '1'])
+('X', ['X'])
+('TMK1', ['X', 'TMK1'])
+('MDCK1', ['X', 'TMK1', 'MDCK1'])
+['X_TMK1_MDCK1', 'UNKNOWNCELL+MONKEYCELL+CANINECELL', 'UNKNOWNCELL+TMK+MDCK', 'exactly', '3']
+None
+('Input ID', 'UNKNOWN_1_RHMK_2')
+('longest match', '_2')
+('longest match', 'RHMK')
+('longest match', 'UNKNOWN_1')
+('current ID', '_RHMK_2')
+('longest match', '_2')
+('longest match', 'RHMK')
+('longest match', 'RHMK_2')
+('current ID', '_')
+['UNKNOWN_1', 'RHMK_2']
+[0, 10]
+ordering matches...
+('initial order', [0, 10])
+('final order', ['UNKNOWN_1', 'RHMK_2'])
+done ordering
+('UNKNOWN_1', [None, None, '1'])
+('RHMK_2', ['MONKEYCELL', 'RHMK', '2'])
+('UNKNOWN_1', ['UNKNOWN1'])
+('RHMK_2', ['UNKNOWN1', 'RHMK2'])
+['UNKNOWN1_RHMK2', 'MONKEYCELL', 'RHMK', 'exactly', '3']
+1
+2
+('Input ID', 'RII1_S1')
+('longest match', 'S1')
+('longest match', 'RII')
+('longest match', 'RII1')
+('current ID', '_S1')
+('longest match', 'S1')
+('current ID', '_')
+['RII1', 'S1']
+[0, 5]
+ordering matches...
+('initial order', [0, 5])
+('final order', ['RII1', 'S1'])
+done ordering
+('RII1', ['MONKEYCELL', 'RHMK', '1'])
+('S1', ['CANINECELL', 'SIAT', '1'])
+('RII1', ['RII1'])
+('S1', ['RII1', 'S1'])
+['RII1_S1', 'MONKEYCELL+CANINECELL', 'RHMK+SIAT', 'exactly', '2']
+1
+1
+('Input ID', '5019_DAY_3')
+('longest match', '_3')
+('longest match', '5019_DAY_3')
+('current ID', '')
+['5019_DAY_3']
+[0]
+ordering matches...
+('initial order', [0])
+('final order', ['5019_DAY_3'])
+done ordering
+('5019_DAY_3', [None, None, None])
+('5019_DAY_3', ['5019DAY3'])
+['5019DAY3', '', '', 'exactly', '1']
+None
+('Input ID', 'M1_RII1_C5')
+('longest match', 'M')
+('longest match', 'C5')
+('longest match', 'RII')
+('longest match', 'RII1')
+('current ID', 'M1__C5')
+('longest match', 'M')
+('longest match', 'C5')
+('current ID', 'M1__')
+('longest match', 'M')
+('longest match', 'M1')
+('current ID', '__')
+['RII1', 'C5', 'M1']
+[3, 8, 0]
+ordering matches...
+('initial order', [3, 8, 0])
+('final order', ['M1', 'RII1', 'C5'])
 done ordering
 ('M1', ['CANINECELL', 'MDCK', '1'])
-('C3', ['UNKNOWNCELL', 'UNKNOWNCELL', '3'])
-('E', ['EGG', 'EGG', None])
+('RII1', ['MONKEYCELL', 'RHMK', '1'])
+('C5', ['UNKNOWNCELL', 'UNKNOWNCELL', '5'])
 ('M1', ['M1'])
-('C3', ['M1', 'C3'])
-('E', ['M1', 'C3', 'E'])
-['M1_C3_E', 'CANINECELL+UNKNOWNCELL+EGG', 'MDCK+UNKNOWNCELL+EGG', 'atleast', '5']
-('longest', 'M')
-('longest', 'C3')
-M1__E
-('longest', 'M')
-('longest', 'M1')
-__E
-('longest', 'E')
-__
-['C3', 'M1', 'E']
-[3, 0, 6]
-ordering...
-[3, 0, 6]
-['M1', 'C3', 'E']
+('RII1', ['M1', 'RII1'])
+('C5', ['M1', 'RII1', 'C5'])
+['M1_RII1_C5', 'CANINECELL+MONKEYCELL+UNKNOWNCELL', 'MDCK+RHMK+UNKNOWNCELL', 'exactly', '7']
+1
+1
+5
+('Input ID', '5020_DAY_2')
+('longest match', '_2')
+('longest match', '5020_DAY_2')
+('current ID', '')
+['5020_DAY_2']
+[0]
+ordering matches...
+('initial order', [0])
+('final order', ['5020_DAY_2'])
 done ordering
-('M1', ['CANINECELL', 'MDCK', '1'])
-('C3', ['UNKNOWNCELL', 'UNKNOWNCELL', '3'])
-('E', ['EGG', 'EGG', None])
-('M1', ['M1'])
-('C3', ['M1', 'C3'])
-('E', ['M1', 'C3', 'E'])
-['M1_C3_E', 'CANINECELL+UNKNOWNCELL+EGG', 'MDCK+UNKNOWNCELL+EGG', 'atleast', '5']
-('longest', 'M')
-('longest', 'C3')
-M1__E
-('longest', 'M')
-('longest', 'M1')
-__E
-('longest', 'E')
-__
-['C3', 'M1', 'E']
-[3, 0, 6]
-ordering...
-[3, 0, 6]
-['M1', 'C3', 'E']
+('5020_DAY_2', [None, None, None])
+('5020_DAY_2', ['5020DAY2'])
+['5020DAY2', '', '', 'exactly', '1']
+None
+('Input ID', 'AMNIOTIC_1_PRHMK_2')
+('longest match', 'C_1')
+('longest match', 'RHMK')
+('longest match', 'PRHMK_2')
+('longest match', 'AMNIOTIC')
+('longest match', 'AMNIOTIC_1')
+('current ID', '_PRHMK_2')
+('longest match', '_2')
+('longest match', 'RHMK')
+('longest match', 'PRHMK_2')
+('current ID', '_')
+['AMNIOTIC_1', 'PRHMK_2']
+[0, 11]
+ordering matches...
+('initial order', [0, 11])
+('final order', ['AMNIOTIC_1', 'PRHMK_2'])
 done ordering
-('M1', ['CANINECELL', 'MDCK', '1'])
-('C3', ['UNKNOWNCELL', 'UNKNOWNCELL', '3'])
-('E', ['EGG', 'EGG', None])
-('M1', ['M1'])
-('C3', ['M1', 'C3'])
-('E', ['M1', 'C3', 'E'])
-['M1_C3_E', 'CANINECELL+UNKNOWNCELL+EGG', 'MDCK+UNKNOWNCELL+EGG', 'atleast', '5']
+('AMNIOTIC_1', ['EGG', 'EGG', '1'])
+('PRHMK_2', ['MONKEYCELL', 'RHMK', '2'])
+('AMNIOTIC_1', ['AMNIOTIC1'])
+('PRHMK_2', ['AMNIOTIC1', 'PRHMK2'])
+['AMNIOTIC1_PRHMK2', 'EGG+MONKEYCELL', 'EGG+RHMK', 'exactly', '3']
+1
+2
+('Input ID', '5020_DAY_4')
+('longest match', '_4')
+('longest match', '5020_DAY_4')
+('current ID', '')
+['5020_DAY_4']
+[0]
+ordering matches...
+('initial order', [0])
+('final order', ['5020_DAY_4'])
+done ordering
+('5020_DAY_4', [None, None, None])
+('5020_DAY_4', ['5020DAY4'])
+['5020DAY4', '', '', 'exactly', '1']
+None
+('Input ID', '5004_DAY_3')
+('longest match', '_3')
+('longest match', '5004_DAY_3')
+('current ID', '')
+['5004_DAY_3']
+[0]
+ordering matches...
+('initial order', [0])
+('final order', ['5004_DAY_3'])
+done ordering
+('5004_DAY_3', [None, None, None])
+('5004_DAY_3', ['5004DAY3'])
+['5004DAY3', '', '', 'exactly', '1']
+None
+('Input ID', '5006_DAY_1')
+('longest match', '6')
+('longest match', '_1')
+('longest match', '5006_DAY_1')
+('current ID', '')
+['5006_DAY_1']
+[0]
+ordering matches...
+('initial order', [0])
+('final order', ['5006_DAY_1'])
+done ordering
+('5006_DAY_1', [None, None, None])
+('5006_DAY_1', ['5006DAY1'])
+['5006DAY1', '', '', 'exactly', '1']
+None
+('Input ID', '5021_DAY_4')
+('longest match', '_4')
+('longest match', '5021_DAY_4')
+('current ID', '')
+['5021_DAY_4']
+[0]
+ordering matches...
+('initial order', [0])
+('final order', ['5021_DAY_4'])
+done ordering
+('5021_DAY_4', [None, None, None])
+('5021_DAY_4', ['5021DAY4'])
+['5021DAY4', '', '', 'exactly', '1']
+None
+('Input ID', '5018_DAY_2')
+('longest match', '_2')
+('longest match', '5018_DAY_2')
+('current ID', '')
+['5018_DAY_2']
+[0]
+ordering matches...
+('initial order', [0])
+('final order', ['5018_DAY_2'])
+done ordering
+('5018_DAY_2', [None, None, None])
+('5018_DAY_2', ['5018DAY2'])
+['5018DAY2', '', '', 'exactly', '1']
+None
+('Input ID', '1013_DAY_3')
+('longest match', '_3')
+('longest match', '1013_DAY_3')
+('current ID', '')
+['1013_DAY_3']
+[0]
+ordering matches...
+('initial order', [0])
+('final order', ['1013_DAY_3'])
+done ordering
+('1013_DAY_3', [None, None, None])
+('1013_DAY_3', ['1013DAY3'])
+['1013DAY3', '', '', 'exactly', '1']
+None
+('Input ID', '5001_DAY_2')
+('longest match', '_2')
+('longest match', '5001_DAY_2')
+('current ID', '')
+['5001_DAY_2']
+[0]
+ordering matches...
+('initial order', [0])
+('final order', ['5001_DAY_2'])
+done ordering
+('5001_DAY_2', [None, None, None])
+('5001_DAY_2', ['5001DAY2'])
+['5001DAY2', '', '', 'exactly', '1']
+None
+('Input ID', 'NC2E2')
+('longest match', 'E2')
+('longest match', 'NC2')
+('current ID', 'E2')
+('longest match', 'E2')
+('current ID', '')
+['NC2', 'E2']
+[0, 3]
+ordering matches...
+('initial order', [0, 3])
+('final order', ['NC2', 'E2'])
+done ordering
+('NC2', ['EGG', 'EGG', '2'])
+('E2', ['EGG', 'EGG', '2'])
+('NC2', ['NC2'])
+('E2', ['NC2', 'E2'])
+['NC2_E2', 'EGG', 'EGG', 'exactly', '4']
+2
+2
+('Input ID', 'RIIX_C1')
+('longest match', 'X')
+('longest match', 'C1')
+('longest match', 'RII')
+('longest match', 'RIIX')
+('current ID', '_C1')
+('longest match', 'C')
+('longest match', 'C1')
+('current ID', '_')
+['RIIX', 'C1']
+[0, 5]
+ordering matches...
+('initial order', [0, 5])
+('final order', ['RIIX', 'C1'])
+done ordering
+('RIIX', ['MONKEYCELL', 'RHMK', None])
+('C1', ['UNKNOWNCELL', 'UNKNOWNCELL', '1'])
+('RIIX', ['RIIX'])
+('C1', ['RIIX', 'C1'])
+['RIIX_C1', 'MONKEYCELL+UNKNOWNCELL', 'RHMK+UNKNOWNCELL', 'exactly', '2']
+None
+('Input ID', '5021_DAY_1')
+('longest match', '_1')
+('longest match', '5021_DAY_1')
+('current ID', '')
+['5021_DAY_1']
+[0]
+ordering matches...
+('initial order', [0])
+('final order', ['5021_DAY_1'])
+done ordering
+('5021_DAY_1', [None, None, None])
+('5021_DAY_1', ['5021DAY1'])
+['5021DAY1', '', '', 'exactly', '1']
+None
+('Input ID', '5004_DAY_4')
+('longest match', '_4')
+('longest match', '5004_DAY_4')
+('current ID', '')
+['5004_DAY_4']
+[0]
+ordering matches...
+('initial order', [0])
+('final order', ['5004_DAY_4'])
+done ordering
+('5004_DAY_4', [None, None, None])
+('5004_DAY_4', ['5004DAY4'])
+['5004DAY4', '', '', 'exactly', '1']
+None
+('Input ID', 'DEE_5_CHALLENGE_VIRUS_STOCK')
+('longest match', 'V')
+('longest match', '_5')
+('longest match', 'E_5')
+('current ID', 'DE_CHALLENGE_VIRUS_STOCK')
+('longest match', 'V')
+('longest match', 'CK')
+('current ID', 'DE_CHALLENGE_VIRUS_STO')
+('longest match', 'V')
+('longest match', 'AL')
+('current ID', 'DE_CHLENGE_VIRUS_STO')
+('longest match', 'V')
+('current ID', 'DE_CHLENGE_IRUS_STO')
+('longest match', 'C')
+('current ID', 'DE_HLENGE_IRUS_STO')
+('Input ID', '5007_DAY_3')
+('longest match', '_3')
+('longest match', '5007_DAY_3')
+('current ID', '')
+['5007_DAY_3']
+[0]
+ordering matches...
+('initial order', [0])
+('final order', ['5007_DAY_3'])
+done ordering
+('5007_DAY_3', [None, None, None])
+('5007_DAY_3', ['5007DAY3'])
+['5007DAY3', '', '', 'exactly', '1']
+None
+('Input ID', 'P3')
+('longest match', 'P')
+('longest match', 'P3')
+('current ID', '')
+['P3']
+[0]
+ordering matches...
+('initial order', [0])
+('final order', ['P3'])
+done ordering
+('P3', [None, None, '3'])
+('P3', ['P3'])
+['P3', '', '', 'exactly', '3']
+3
+('Input ID', '1001_DAY_2')
+('longest match', '_2')
+('longest match', '1001_DAY_2')
+('current ID', '')
+['1001_DAY_2']
+[0]
+ordering matches...
+('initial order', [0])
+('final order', ['1001_DAY_2'])
+done ordering
+('1001_DAY_2', [None, None, None])
+('1001_DAY_2', ['1001DAY2'])
+['1001DAY2', '', '', 'exactly', '1']
+None
+('Input ID', '5017_DAY_2')
+('longest match', '_2')
+('longest match', '5017_DAY_2')
+('current ID', '')
+['5017_DAY_2']
+[0]
+ordering matches...
+('initial order', [0])
+('final order', ['5017_DAY_2'])
+done ordering
+('5017_DAY_2', [None, None, None])
+('5017_DAY_2', ['5017DAY2'])
+['5017DAY2', '', '', 'exactly', '1']
+None
+('Input ID', '5007_DAY_1')
+('longest match', '5007_DAY_1')
+('current ID', '')
+['5007_DAY_1']
+[0]
+ordering matches...
+('initial order', [0])
+('final order', ['5007_DAY_1'])
+done ordering
+('5007_DAY_1', [None, None, None])
+('5007_DAY_1', ['5007DAY1'])
+['5007DAY1', '', '', 'exactly', '1']
+None
+('Input ID', 'TMK1_MDCK1')
+('longest match', 'MK1')
+('longest match', 'MDCK1')
+('current ID', 'TMK1_')
+('longest match', 'MK1')
+('longest match', 'TMK1')
+('current ID', '_')
+['MDCK1', 'TMK1']
+[5, 0]
+ordering matches...
+('initial order', [5, 0])
+('final order', ['TMK1', 'MDCK1'])
+done ordering
+('TMK1', ['MONKEYCELL', 'TMK', '1'])
+('MDCK1', ['CANINECELL', 'MDCK', '1'])
+('TMK1', ['TMK1'])
+('MDCK1', ['TMK1', 'MDCK1'])
+['TMK1_MDCK1', 'MONKEYCELL+CANINECELL', 'TMK+MDCK', 'exactly', '2']
+1
+1
+('Input ID', 'R1_S1')
+('longest match', 'S1')
+('current ID', 'R1_')
+('longest match', '1')
+('longest match', 'R1')
+('current ID', '_')
+['S1', 'R1']
+[3, 0]
+ordering matches...
+('initial order', [3, 0])
+('final order', ['R1', 'S1'])
+done ordering
+('R1', ['MONKEYCELL', 'RHMK', '1'])
+('S1', ['CANINECELL', 'SIAT', '1'])
+('R1', ['R1'])
+('S1', ['R1', 'S1'])
+['R1_S1', 'MONKEYCELL+CANINECELL', 'RHMK+SIAT', 'exactly', '2']
+1
+1
+('Input ID', 'UNKNOWN_1')
+('longest match', '_1')
+('longest match', 'UNKNOWN_1')
+('current ID', '')
+['UNKNOWN_1']
+[0]
+ordering matches...
+('initial order', [0])
+('final order', ['UNKNOWN_1'])
+done ordering
+('UNKNOWN_1', [None, None, '1'])
+('UNKNOWN_1', ['UNKNOWN1'])
+['UNKNOWN1', '', '', 'exactly', '1']
+1
+('Input ID', 'P1')
+('longest match', 'P')
+('longest match', 'P1')
+('current ID', '')
+['P1']
+[0]
+ordering matches...
+('initial order', [0])
+('final order', ['P1'])
+done ordering
+('P1', [None, None, '1'])
+('P1', ['P1'])
+['P1', '', '', 'exactly', '1']
+1
+('Input ID', 'P4')
+('longest match', 'P')
+('longest match', 'P4')
+('current ID', '')
+['P4']
+[0]
+ordering matches...
+('initial order', [0])
+('final order', ['P4'])
+done ordering
+('P4', [None, None, '4'])
+('P4', ['P4'])
+['P4', '', '', 'exactly', '4']
+4
+('Input ID', '1012_DAY_2')
+('longest match', '_2')
+('longest match', '1012_DAY_2')
+('current ID', '')
+['1012_DAY_2']
+[0]
+ordering matches...
+('initial order', [0])
+('final order', ['1012_DAY_2'])
+done ordering
+('1012_DAY_2', [None, None, None])
+('1012_DAY_2', ['1012DAY2'])
+['1012DAY2', '', '', 'exactly', '1']
+None
+('Input ID', 'MDCK_1_RHMK_2')
+('longest match', '_2')
+('longest match', 'CK_1')
+('longest match', 'RHMK_2')
+('current ID', 'MDCK_1_')
+('longest match', '_1')
+('longest match', 'CK_1')
+('longest match', 'MDCK_1')
+('current ID', '_')
+['RHMK_2', 'MDCK_1']
+[7, 0]
+ordering matches...
+('initial order', [7, 0])
+('final order', ['MDCK_1', 'RHMK_2'])
+done ordering
+('MDCK_1', ['CANINECELL', 'MDCK', '1'])
+('RHMK_2', ['MONKEYCELL', 'RHMK', '2'])
+('MDCK_1', ['MDCK1'])
+('RHMK_2', ['MDCK1', 'RHMK2'])
+['MDCK1_RHMK2', 'CANINECELL+MONKEYCELL', 'MDCK+RHMK', 'exactly', '3']
+1
+2
+('Input ID', '5020_DAY_1')
+('longest match', '_1')
+('longest match', '5020_DAY_1')
+('current ID', '')
+['5020_DAY_1']
+[0]
+ordering matches...
+('initial order', [0])
+('final order', ['5020_DAY_1'])
+done ordering
+('5020_DAY_1', [None, None, None])
+('5020_DAY_1', ['5020DAY1'])
+['5020DAY1', '', '', 'exactly', '1']
+None
+('Input ID', 'R1_S2')
+('longest match', 'S2')
+('current ID', 'R1_')
+('longest match', '1')
+('longest match', 'R1')
+('current ID', '_')
+['S2', 'R1']
+[3, 0]
+ordering matches...
+('initial order', [3, 0])
+('final order', ['R1', 'S2'])
+done ordering
+('R1', ['MONKEYCELL', 'RHMK', '1'])
+('S2', ['CANINECELL', 'SIAT', '2'])
+('R1', ['R1'])
+('S2', ['R1', 'S2'])
+['R1_S2', 'MONKEYCELL+CANINECELL', 'RHMK+SIAT', 'exactly', '3']
+1
+2
+('Input ID', '1001_DAY_1')
+('longest match', '_1')
+('current ID', '1001_DAY')
+('longest match', '0')
+('longest match', '10')
+('current ID', '01_DAY')
+('longest match', '0')
+('current ID', '1_DAY')
+('longest match', '1')
+('current ID', '_DAY')
+('current ID', 'DAY')
+('Input ID', '1006_DAY_3')
+('longest match', '6')
+('longest match', '_3')
+('longest match', '1006_DAY_3')
+('current ID', '')
+['1006_DAY_3']
+[0]
+ordering matches...
+('initial order', [0])
+('final order', ['1006_DAY_3'])
+done ordering
+('1006_DAY_3', [None, None, None])
+('1006_DAY_3', ['1006DAY3'])
+['1006DAY3', '', '', 'exactly', '1']
+None
+('Input ID', '5021_DAY_3')
+('longest match', '_3')
+('longest match', '5021_DAY_3')
+('current ID', '')
+['5021_DAY_3']
+[0]
+ordering matches...
+('initial order', [0])
+('final order', ['5021_DAY_3'])
+done ordering
+('5021_DAY_3', [None, None, None])
+('5021_DAY_3', ['5021DAY3'])
+['5021DAY3', '', '', 'exactly', '1']
+None
+('Input ID', '1010_DAY_3')
+('longest match', '_3')
+('longest match', '1010_DAY_3')
+('current ID', '')
+['1010_DAY_3']
+[0]
+ordering matches...
+('initial order', [0])
+('final order', ['1010_DAY_3'])
+done ordering
+('1010_DAY_3', [None, None, None])
+('1010_DAY_3', ['1010DAY3'])
+['1010DAY3', '', '', 'exactly', '1']
+None
+('Input ID', '1015_DAY_4')
+('longest match', '1015_DAY_4')
+('current ID', '')
+['1015_DAY_4']
+[0]
+ordering matches...
+('initial order', [0])
+('final order', ['1015_DAY_4'])
+done ordering
+('1015_DAY_4', [None, None, None])
+('1015_DAY_4', ['1015DAY4'])
+['1015DAY4', '', '', 'exactly', '1']
+None
+('Input ID', 'RII1_C2')
+('longest match', 'C')
+('longest match', 'C2')
+('longest match', 'RII')
+('longest match', 'RII1')
+('current ID', '_C2')
+('longest match', 'C')
+('longest match', 'C2')
+('current ID', '_')
+['RII1', 'C2']
+[0, 5]
+ordering matches...
+('initial order', [0, 5])
+('final order', ['RII1', 'C2'])
+done ordering
+('RII1', ['MONKEYCELL', 'RHMK', '1'])
+('C2', ['UNKNOWNCELL', 'UNKNOWNCELL', '2'])
+('RII1', ['RII1'])
+('C2', ['RII1', 'C2'])
+['RII1_C2', 'MONKEYCELL+UNKNOWNCELL', 'RHMK+UNKNOWNCELL', 'exactly', '3']
+1
+2
+('Input ID', 'ORIGINAL_SPECIMEN_UNCULTURED_IN_VTM')
+('longest match', 'V')
+('longest match', 'OR')
+('longest match', 'ORIGINAL_SPECIMEN_UNCULTURED_IN_VTM')
+('current ID', '')
+['ORIGINAL_SPECIMEN_UNCULTURED_IN_VTM']
+[0]
+ordering matches...
+('initial order', [0])
+('final order', ['ORIGINAL_SPECIMEN_UNCULTURED_IN_VTM'])
+done ordering
+('ORIGINAL_SPECIMEN_UNCULTURED_IN_VTM', ['UNPASSAGED', 'UNPASSAGED', '0'])
+('ORIGINAL_SPECIMEN_UNCULTURED_IN_VTM', ['ORIGINALSPECIMENUNCULTUREDINVTM'])
+['ORIGINALSPECIMENUNCULTUREDINVTM', 'UNPASSAGED', 'UNPASSAGED', 'exactly', '0']
+0
+('Input ID', 'XTMK1_MDCK2')
+('longest match', 'MK1')
+('longest match', 'MDCK2')
+('current ID', 'XTMK1_')
+('longest match', 'MK1')
+('longest match', 'TMK1')
+('current ID', 'X_')
+('longest match', 'X')
+('current ID', '_')
+['MDCK2', 'TMK1', 'X']
+[6, 1, 0]
+ordering matches...
+('initial order', [6, 1, 0])
+('final order', ['X', 'TMK1', 'MDCK2'])
+done ordering
+('X', ['UNKNOWNCELL', 'UNKNOWNCELL', None])
+('TMK1', ['MONKEYCELL', 'TMK', '1'])
+('MDCK2', ['CANINECELL', 'MDCK', '2'])
+('X', ['X'])
+('TMK1', ['X', 'TMK1'])
+('MDCK2', ['X', 'TMK1', 'MDCK2'])
+['X_TMK1_MDCK2', 'UNKNOWNCELL+MONKEYCELL+CANINECELL', 'UNKNOWNCELL+TMK+MDCK', 'exactly', '4']
+None
+('Input ID', '5021_DAY_5')
+('longest match', '_5')
+('longest match', '5021_DAY_5')
+('current ID', '')
+['5021_DAY_5']
+[0]
+ordering matches...
+('initial order', [0])
+('final order', ['5021_DAY_5'])
+done ordering
+('5021_DAY_5', [None, None, None])
+('5021_DAY_5', ['5021DAY5'])
+['5021DAY5', '', '', 'exactly', '1']
+None
+('Input ID', 'NC2E4')
+('longest match', 'E4')
+('longest match', 'NC2')
+('current ID', 'E4')
+('longest match', 'E4')
+('current ID', '')
+['NC2', 'E4']
+[0, 3]
+ordering matches...
+('initial order', [0, 3])
+('final order', ['NC2', 'E4'])
+done ordering
+('NC2', ['EGG', 'EGG', '2'])
+('E4', ['EGG', 'EGG', '4'])
+('NC2', ['NC2'])
+('E4', ['NC2', 'E4'])
+['NC2_E4', 'EGG', 'EGG', 'exactly', '6']
+2
+4
+('Input ID', 'R1_C2')
+('longest match', 'C')
+('longest match', 'C2')
+('current ID', 'R1_')
+('longest match', '1')
+('longest match', 'R1')
+('current ID', '_')
+['C2', 'R1']
+[3, 0]
+ordering matches...
+('initial order', [3, 0])
+('final order', ['R1', 'C2'])
+done ordering
+('R1', ['MONKEYCELL', 'RHMK', '1'])
+('C2', ['UNKNOWNCELL', 'UNKNOWNCELL', '2'])
+('R1', ['R1'])
+('C2', ['R1', 'C2'])
+['R1_C2', 'MONKEYCELL+UNKNOWNCELL', 'RHMK+UNKNOWNCELL', 'exactly', '3']
+1
+2
+('Input ID', '5020_DAY_3')
+('longest match', '_3')
+('longest match', '5020_DAY_3')
+('current ID', '')
+['5020_DAY_3']
+[0]
+ordering matches...
+('initial order', [0])
+('final order', ['5020_DAY_3'])
+done ordering
+('5020_DAY_3', [None, None, None])
+('5020_DAY_3', ['5020DAY3'])
+['5020DAY3', '', '', 'exactly', '1']
+None
+('Input ID', '5004_DAY_2')
+('longest match', '_2')
+('longest match', '5004_DAY_2')
+('current ID', '')
+['5004_DAY_2']
+[0]
+ordering matches...
+('initial order', [0])
+('final order', ['5004_DAY_2'])
+done ordering
+('5004_DAY_2', [None, None, None])
+('5004_DAY_2', ['5004DAY2'])
+['5004DAY2', '', '', 'exactly', '1']
+None
+('Input ID', '5019_DAY_2')
+('longest match', '_2')
+('longest match', '5019_DAY_2')
+('current ID', '')
+['5019_DAY_2']
+[0]
+ordering matches...
+('initial order', [0])
+('final order', ['5019_DAY_2'])
+done ordering
+('5019_DAY_2', [None, None, None])
+('5019_DAY_2', ['5019DAY2'])
+['5019DAY2', '', '', 'exactly', '1']
+None
+('Input ID', 'RII1_S2')
+('longest match', 'S2')
+('longest match', 'RII')
+('longest match', 'RII1')
+('current ID', '_S2')
+('longest match', 'S2')
+('current ID', '_')
+['RII1', 'S2']
+[0, 5]
+ordering matches...
+('initial order', [0, 5])
+('final order', ['RII1', 'S2'])
+done ordering
+('RII1', ['MONKEYCELL', 'RHMK', '1'])
+('S2', ['CANINECELL', 'SIAT', '2'])
+('RII1', ['RII1'])
+('S2', ['RII1', 'S2'])
+['RII1_S2', 'MONKEYCELL+CANINECELL', 'RHMK+SIAT', 'exactly', '3']
+1
+2
+('Input ID', 'SIAT3_SIAT1')
+('longest match', 'SIAT')
+('longest match', 'SIAT1')
+('current ID', 'SIAT3_')
+('longest match', 'SIAT')
+('longest match', 'SIAT3')
+('current ID', '_')
+['SIAT1', 'SIAT3']
+[6, 0]
+ordering matches...
+('initial order', [6, 0])
+('final order', ['SIAT3', 'SIAT1'])
+done ordering
+('SIAT3', ['CANINECELL', 'SIAT', '3'])
+('SIAT1', ['CANINECELL', 'SIAT', '1'])
+('SIAT3', ['SIAT3'])
+('SIAT1', ['SIAT3', 'SIAT1'])
+['SIAT3_SIAT1', 'CANINECELL', 'SIAT', 'exactly', '4']
+3
+1
+('Input ID', 'S1')
+('longest match', 'S1')
+('current ID', '')
+['S1']
+[0]
+ordering matches...
+('initial order', [0])
+('final order', ['S1'])
+done ordering
+('S1', ['CANINECELL', 'SIAT', '1'])
+('S1', ['S1'])
+['S1', 'CANINECELL', 'SIAT', 'exactly', '1']
+1
+('Input ID', 'S3')
+('longest match', 'S3')
+('current ID', '')
+['S3']
+[0]
+ordering matches...
+('initial order', [0])
+('final order', ['S3'])
+done ordering
+('S3', ['CANINECELL', 'SIAT', '3'])
+('S3', ['S3'])
+['S3', 'CANINECELL', 'SIAT', 'exactly', '3']
+3
+('Input ID', 'SIAT2_SIAT1')
+('longest match', 'SIAT')
+('longest match', 'SIAT1')
+('current ID', 'SIAT2_')
+('longest match', 'SIAT')
+('longest match', 'SIAT2')
+('current ID', '_')
+['SIAT1', 'SIAT2']
+[6, 0]
+ordering matches...
+('initial order', [6, 0])
+('final order', ['SIAT2', 'SIAT1'])
+done ordering
+('SIAT2', ['CANINECELL', 'SIAT', '2'])
+('SIAT1', ['CANINECELL', 'SIAT', '1'])
+('SIAT2', ['SIAT2'])
+('SIAT1', ['SIAT2', 'SIAT1'])
+['SIAT2_SIAT1', 'CANINECELL', 'SIAT', 'exactly', '3']
+2
+1
+('Input ID', 'S4')
+('longest match', 'S4')
+('current ID', '')
+['S4']
+[0]
+ordering matches...
+('initial order', [0])
+('final order', ['S4'])
+done ordering
+('S4', ['CANINECELL', 'SIAT', '4'])
+('S4', ['S4'])
+['S4', 'CANINECELL', 'SIAT', 'exactly', '4']
+4
+('Input ID', 'S2')
+('longest match', 'S2')
+('current ID', '')
+['S2']
+[0]
+ordering matches...
+('initial order', [0])
+('final order', ['S2'])
+done ordering
+('S2', ['CANINECELL', 'SIAT', '2'])
+('S2', ['S2'])
+['S2', 'CANINECELL', 'SIAT', 'exactly', '2']
+2
+('Input ID', 'ORIGINAL')
+('longest match', 'OR')
+('longest match', 'ORIGINAL')
+('current ID', '')
+['ORIGINAL']
+[0]
+ordering matches...
+('initial order', [0])
+('final order', ['ORIGINAL'])
+done ordering
+('ORIGINAL', ['UNPASSAGED', 'UNPASSAGED', '0'])
+('ORIGINAL', ['ORIGINAL'])
+['ORIGINAL', 'UNPASSAGED', 'UNPASSAGED', 'exactly', '0']
+0
+('Input ID', 'LUNG_1')
+('longest match', '_1')
+('longest match', 'LUNG_1')
+('current ID', '')
+['LUNG_1']
+[0]
+ordering matches...
+('initial order', [0])
+('final order', ['LUNG_1'])
+done ordering
+('LUNG_1', ['UNPASSAGED', 'UNPASSAGED', '0'])
+('LUNG_1', ['LUNG1'])
+['LUNG1', 'UNPASSAGED', 'UNPASSAGED', 'exactly', '0']
+0
+('Input ID', 'ISOLATED_DIRECTLY_FROM_HOST_NO')
+('longest match', 'M')
+('longest match', 'ISOLATED_DIRECTLY_FROM_HOST_NO')
+('current ID', '')
+['ISOLATED_DIRECTLY_FROM_HOST_NO']
+[0]
+ordering matches...
+('initial order', [0])
+('final order', ['ISOLATED_DIRECTLY_FROM_HOST_NO'])
+done ordering
+('ISOLATED_DIRECTLY_FROM_HOST_NO', ['UNPASSAGED', 'UNPASSAGED', '0'])
+('ISOLATED_DIRECTLY_FROM_HOST_NO', ['ISOLATEDDIRECTLYFROMHOSTNO'])
+['ISOLATEDDIRECTLYFROMHOSTNO', 'UNPASSAGED', 'UNPASSAGED', 'exactly', '0']
+0
+('Input ID', 'P0')
+('longest match', '0')
+('longest match', 'P0')
+('current ID', '')
+['P0']
+[0]
+ordering matches...
+('initial order', [0])
+('final order', ['P0'])
+done ordering
+('P0', ['UNPASSAGED', 'UNPASSAGED', '0'])
+('P0', ['P0'])
+['P0', 'UNPASSAGED', 'UNPASSAGED', 'exactly', '0']
+0
+('Input ID', 'OR')
+('longest match', 'OR')
+('current ID', '')
+['OR']
+[0]
+ordering matches...
+('initial order', [0])
+('final order', ['OR'])
+done ordering
+('OR', ['UNPASSAGED', 'UNPASSAGED', '0'])
+('OR', ['OR'])
+['OR', 'UNPASSAGED', 'UNPASSAGED', 'exactly', '0']
+0
+('Input ID', 'SIAT_1_SIAT_2_SIAT1')
+('longest match', '_2')
+('longest match', 'SIAT')
+('longest match', 'SIAT1')
+('longest match', 'SIAT_1')
+('current ID', '_SIAT_2_SIAT1')
+('longest match', '_2')
+('longest match', 'SIAT')
+('longest match', 'SIAT1')
+('longest match', 'SIAT_2')
+('current ID', '__SIAT1')
+('longest match', 'SIAT')
+('longest match', 'SIAT1')
+('current ID', '__')
+['SIAT_1', 'SIAT_2', 'SIAT1']
+[0, 7, 14]
+ordering matches...
+('initial order', [0, 7, 14])
+('final order', ['SIAT_1', 'SIAT_2', 'SIAT1'])
+done ordering
+('SIAT_1', ['CANINECELL', 'SIAT', '1'])
+('SIAT_2', ['CANINECELL', 'SIAT', '2'])
+('SIAT1', ['CANINECELL', 'SIAT', '1'])
+('SIAT_1', ['SIAT1'])
+('SIAT_2', ['SIAT1', 'SIAT2'])
+('SIAT1', ['SIAT1', 'SIAT2', 'SIAT1'])
+['SIAT1_SIAT2_SIAT1', 'CANINECELL', 'SIAT', 'exactly', '4']
+1
+2
+1
+('Input ID', 'E5_1')
+('longest match', '_1')
+('current ID', 'E5')
+('longest match', 'E5')
+('current ID', '')
+['_1', 'E5']
+[2, 0]
+ordering matches...
+('initial order', [2, 0])
+('final order', ['E5', '_1'])
+done ordering
+('E5', ['EGG', 'EGG', '5'])
+('_1', [None, None, '1'])
+('E5', ['E5'])
+('_1', ['E5', '1'])
+['E5_1', '', '', 'exactly', '6']
+5
+1
+('Input ID', 'MDCK_4_SIAT2')
+('longest match', '_4')
+('longest match', 'CK_4')
+('longest match', 'SIAT2')
+('longest match', 'MDCK_4')
+('current ID', '_SIAT2')
+('longest match', 'SIAT')
+('longest match', 'SIAT2')
+('current ID', '_')
+['MDCK_4', 'SIAT2']
+[0, 7]
+ordering matches...
+('initial order', [0, 7])
+('final order', ['MDCK_4', 'SIAT2'])
+done ordering
+('MDCK_4', ['CANINECELL', 'MDCK', '4'])
+('SIAT2', ['CANINECELL', 'SIAT', '2'])
+('MDCK_4', ['MDCK4'])
+('SIAT2', ['MDCK4', 'SIAT2'])
+['MDCK4_SIAT2', 'CANINECELL', 'MDCK+SIAT', 'exactly', '6']
+4
+2
+('Input ID', 'E6_AM1AL_E1_1')
+('longest match', '6')
+('longest match', '_1')
+('longest match', 'AM1')
+('current ID', 'E6_AL_E1_1')
+('longest match', '6')
+('longest match', '_1')
+('current ID', 'E6_AL_E1')
+('longest match', '6')
+('longest match', 'E6')
+('current ID', '_AL_E1')
+('longest match', 'E1')
+('current ID', '_AL_')
+('longest match', 'AL')
+('current ID', '__')
+['AM1', '_1', 'E6', 'E1', 'AL']
+[3, 11, 0, 9, 6]
+ordering matches...
+('initial order', [3, 11, 0, 9, 6])
+('final order', ['E6', 'AM1', 'AL', 'E1', '_1'])
+done ordering
+('E6', ['EGG', 'EGG', '6'])
+('AM1', ['EGG', 'EGG', '1'])
+('AL', ['EGG', 'EGG', None])
+('E1', ['EGG', 'EGG', '1'])
+('_1', [None, None, '1'])
+('E6', ['E6'])
+('AM1', ['E6', 'AM1'])
+('AL', ['E6', 'AM1', 'AL'])
+('E1', ['E6', 'AM1', 'AL', 'E1'])
+('_1', ['E6', 'AM1', 'AL', 'E1', '1'])
+['E6_AM1_AL_E1_1', '', '', 'exactly', '10']
+6
+1
+None
+('Input ID', 'E5_E10_1')
+('longest match', '_1')
+('longest match', 'E10')
+('current ID', 'E5__1')
+('longest match', '_1')
+('current ID', 'E5_')
+('longest match', 'E5')
+('current ID', '_')
+['E10', '_1', 'E5']
+[3, 6, 0]
+ordering matches...
+('initial order', [3, 6, 0])
+('final order', ['E5', 'E10', '_1'])
+done ordering
+('E5', ['EGG', 'EGG', '5'])
+('E10', ['EGG', 'EGG', '10'])
+('_1', [None, None, '1'])
+('E5', ['E5'])
+('E10', ['E5', 'E10'])
+('_1', ['E5', 'E10', '1'])
+['E5_E10_1', '', '', 'exactly', '16']
+5
+10
+1
+('Input ID', 'NC_0_3_E8')
+('longest match', 'C_0')
+('longest match', 'NC_0')
+('current ID', '_3_E8')
+('longest match', '_3')
+('current ID', '_E8')
+('longest match', 'E8')
+('current ID', '_')
+['NC_0', '_3', 'E8']
+[0, 4, 7]
+ordering matches...
+('initial order', [0, 4, 7])
+('final order', ['NC_0', '_3', 'E8'])
+done ordering
+('NC_0', ['EGG', 'EGG', '0'])
+('_3', [None, None, '3'])
+('E8', ['EGG', 'EGG', '8'])
+('NC_0', ['NC0'])
+('_3', ['NC0', '3'])
+('E8', ['NC0', '3', 'E8'])
+['NC0_3_E8', 'EGG', 'EGG', 'exactly', '11']
+0
+3
+8
+('Input ID', 'EGG_LOT_FT2187')
+('longest match', 'EGG_LOT_FT2187')
+('current ID', '')
+['EGG_LOT_FT2187']
+[0]
+ordering matches...
+('initial order', [0])
+('final order', ['EGG_LOT_FT2187'])
+done ordering
+('EGG_LOT_FT2187', ['EGG', 'EGG', 'X'])
+('EGG_LOT_FT2187', ['EGGLOTFT2187'])
+['EGGLOTFT2187', 'EGG', 'EGG', 'exactly', '1']
+X

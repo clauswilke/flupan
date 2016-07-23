@@ -7,30 +7,64 @@ import logging
 
 class PassageParser:
     def __init__(self, nth_passage=None): 
+
+        #The raw input ID
         self.original = ""
+
+        #Input ID, capitalized, spec characters removed
         self.plainformat = ""
+ 
+        #Try to get plainformat ID into consistent format
         self.coercedformat = ""
+ 
+        #Convenience list of annotations for a passage
         self.summary = []    
+
+        #The minimum number of passage round that occurred. Could be higher
+        #Ex. SIAT3_EGG had to have been passaged at least 4 times
         self.min_passages = None
+
+        #If possible to determine, the exact total annotated rounds of passaging
         self.total_passages = None
+
+        #If requested, get the identity of the nth passage
         self.nth_passage = None
+
+        #The species/general type of the passages
+        #Ex. CANINECELL, MONKEYCELL
         self.general_passages= []
+
+        #More specific type of passage, if known
+        #MDCK, RHMK, etc.
         self.specific_passages = []
+
+        #The order of specific passages
+        #Ex. [[1, 'SIAT'], [2, 'SIAT'], [3, 'EGG'], [4, 'EGG']]
         self.passage_series = []
       
     def spec_char_strip(self, ID):
         ''' 
         Replaces special characters with underscores
         Compresses redundant series of underscores with a single underscore
-        Replaces unsummaryrmative words 
+        Replaces uninformative words 
         ''' 
-    
+        # Because- most always appears between a passage type and # of rounds    
+        # Replace with no space 
+        # Ex. EGG-4 -> EGG4
         record_strip = ID.replace("-", "")
+
+        #Replace things that aren't alphanumeric with an underscore
         record_strip = re.sub('[^A-Z0-9\|]', '_', record_strip)
+
+        #Remove not useful words
         record_strip = re.sub('PASSAGE_DETAILS_|_AND_|ST_PASSAGE|ND_PASSAGE|PASSAGING|_PASSAGE|_PASSAGES|_PASSAGE_|_PASSAGES_|_CELLS', '', record_strip)
+        #Get rid
         record_strip = record_strip.replace("__", "_")
-        record_strip = re.sub('01', '1', record_strip)
+
+        #01 just means 1 - Maybe put back in
+        #record_strip = re.sub('01', '1', record_strip)
         if len(record_strip) > 0:
+            #Get rid of leading and trailing underscores
             if record_strip[0] == "_":
                 record_strip = record_strip[1:]
             if record_strip[-1] == "_":
@@ -41,6 +75,7 @@ class PassageParser:
     def format_ID(self, ID):
         '''
         Gets passage annotation into a consistent format for lookup
+        Checks type of ID
         '''
 
         assert type(ID)==str
@@ -53,7 +88,9 @@ class PassageParser:
     def reformat_annotation(self, annotation_list):
         '''
         Removes underscores which occur inside a single annotation
-        also, replaces MDCKSIAT with the synonymous SIAT, since this confuses parsers
+        also, replaces MDCKSIAT with the synonymous SIAT
+        Once a set of passagine annotation standards are released, this 
+        will be the function to make old annotations consistent with them
         '''
  
         reformatted_annotation_list = []
@@ -71,13 +108,12 @@ class PassageParser:
 
     def make_annotation(self, annotation_list, lookuptable):
        '''
-       This function take a list of passage IDs found in 
+       This function takes a list of passage IDs found in 
        the full passage ID, and then consolidates their annotations
-       THIS would be the place to make a consistent format
        '''
-       general_passage = ""
-       specific_passage = ""
-       num_passages= ""
+       concat_general_passage = ""
+       concat_specific_passage = ""
+       cumulative_num_passages= ""
        num_condition = "exactly"
  
        for passage in annotation_list:
@@ -86,53 +122,74 @@ class PassageParser:
             
             tmp_passage = passage.replace("_", "")
             #Consolidate the general passage summary
-            if general_passage == "":
-                general_passage = annot[0]
-            elif annot[0] in general_passage:
-                general_passage = general_passage
+ 
+            if annot[0] == None:
+                concat_general_passage = ""
+
+            #If it's the first passage in the list
+            elif concat_general_passage == "":
+                concat_general_passage = annot[0]
+
+            #If the passage has already occured, don't change anything
+            elif annot[0] in concat_general_passage:
+                concat_general_passage = concat_general_passage
+
+            #If the ID is just a number, assume it was in the passage condition of
+            #the previous ID. 
+            #Ex. EGG5_1 = EGG6 essentially. 
             elif tmp_passage in ["1","2","3","4","5","6","7","9","10","11","12"]:
-                general_passage = general_passage
+                concat_general_passage = concat_general_passage
             else:
-                general_passage = "+".join([general_passage, annot[0]])
+                concat_general_passage = "+".join([concat_general_passage, annot[0]])
+
             #Consolidate the specific passage summary
-            if specific_passage == "":
-                specific_passage = annot[1]
-            elif annot[1] in specific_passage:
-                specific_passage = specific_passage
+            #Same idea as above 
+
+            if annot[1] == None:
+                concat_specific_passage = ""
+ 
+            elif concat_specific_passage == "":
+                concat_specific_passage = annot[1]
+            elif annot[1] in concat_specific_passage:
+                concat_specific_passage = concat_specific_passage
             elif tmp_passage in ["1","2","3","4","5","6","7","9","10","11","12"]:
-                specific_passage = specific_passage
+                concat_specific_passage = concat_specific_passage
             else:
-                specific_passage = "+".join([specific_passage, annot[1]])
+                concat_specific_passage = "+".join([concat_specific_passage, annot[1]])
        
             #Add up numbers of passages
             #Some annotations don't have numbers, so can't be added
-            if num_passages == "":
+            if cumulative_num_passages == "":
                 try:
-                   num_passages = str(eval(annot[2]))
+                   cumulative_num_passages = str(eval(annot[2]))
 
                 except:
                    #indeterminate passages happen at least once
-                   num_passages = "1"
-                   num_condition = "atleast"                
+                   cumulative_num_passages = "1"
+                   cumulative_num_condition = "atleast"                
             else:
                 try:
-                   num_passages = str(eval(num_passages) + eval(annot[2])) 
+                   cumulative_num_passages = str(eval(cumulative_num_passages) + eval(annot[2])) 
 
                 except:
-                   num_condition = "atleast"                
-                   num_passages = str(eval(num_passages) + 1) 
+                   #if any passage has an indeterminate number of rounds,
+                   #it happened at least once
+                   cumulative_num_condition = "atleast"                
+                   cumulative_num_passages = str(eval(cumulative_num_passages) + 1) 
  
-       self.general_passages = general_passage.split("+")
-       self.specific_passages = specific_passage.split("+")
+       self.general_passages = concat_general_passage.split("+")
+       self.specific_passages = concat_specific_passage.split("+")
        reformatted_annotation = self.reformat_annotation(annotation_list)
        self.coercedformat = reformatted_annotation
-       self.min_passages = eval(num_passages)
+       self.min_passages = eval(cumulative_num_passages)
+       #If any of  passage doesn't have a number, can't get exact total 
        if  num_condition == "atleast":
             self.total_passages = None
+       #Can only get total number of rounds if there's an exact count
        elif num_condition == "exactly":
-            self.total_passages = eval(num_passages)
+            self.total_passages = eval(cumulative_num_passages)
 
-       annot =  [reformatted_annotation, general_passage, specific_passage, num_condition, num_passages]
+       annot =  [reformatted_annotation, concat_general_passage, concat_specific_passage, num_condition, cumulative_num_passages]
        print(annot)
        return(annot)  
 
@@ -140,30 +197,51 @@ class PassageParser:
 
 
     def get_nth_passage(self, n):
+        '''
+        Get the type of the nth round of passaging
+        '''
+        #If an n is provided by user...
         if n != None:
+            #If a passage series could be determined by get_series()...
             if self.passage_series is not []:
                for entry in self.passage_series:  
+                    #Get the nth passage
                     if entry[0] == n:
                         self.nth_passage = entry[1]
 
 
     def get_series(self, annotation_list, lookuptable):
+       '''
+
+       Get a series of passage rounds, 
+       EGG2_M1 => [1, EGG], [2,EGG], [3,MDCK], etc.
+       Setup for getting the nth passage function
+       '''
        prev_annot = ""
        prev_i = 0
        for passage in annotation_list:
             annot = lookuptable[passage]
-            if annot[2] == None:
-                return 
-            
-            for i in range(1, eval(annot[2])+1):
-                
-               if annot[1] != None:
-                    self.passage_series.append([ i + prev_i, annot[1]])
-                    prev_annot = annot[1]
-               elif prev_annot != "":
-                    self.passage_series.append([i + prev_i, prev_annot])
-            prev_i = eval(annot[2])
+            #If any annot[2] (num_passage) is not a number,
+            #will cause exception and just return nothing
+            try: 
+                #num passages
+                print(annot[2]) 
+                #for round in number of passages that occur
+                for i in range(1, eval(annot[2])+1):
 
+                   #If there's a passage type, use it
+                   if annot[1] != None:
+                        self.passage_series.append([ i + prev_i, annot[1]])
+                        prev_annot = annot[1]
+
+                   #Else, if the previous annotation's passage type isn't empty, 
+                   #use previous annotation
+                   elif prev_annot != "":
+                        self.passage_series.append([i + prev_i, prev_annot])
+                #Keep track of cumulative number of rounds    
+                prev_i = eval(annot[2])
+            except:
+                return
                                    
 
 
@@ -172,65 +250,75 @@ class PassageParser:
     def match_known_passage(self, formatted_ID):
         '''
         This function looks for known passage annotations within 
-        full passage identifiers
+        ihe formatted input passage identifiers
         If the full passage can't be accounted for,
-        the identifier is sent to regular expressions
+        Nones are returned
         '''
-
+ 
+        #Start logging
         log = open("passage_interpreter.out", "a")
         sys.stdout = log
 
         
 
         with open("tables/passage_lookup.txt", "r") as lookuptable_txt:
+
+           #Read the {passage:annotation} file as a literal dictionary
            lookuptable = eval(lookuptable_txt.read())
+
            tmp_ID = formatted_ID
-           prevlength = 100
            longest_match = ""
            matches = []
-           #check for up to 5 passage rounds
+           print("Input ID", formatted_ID)
+           #Searches for up to different 5 passage rounds
            for i in [1,2,3,4, 5]:
-               #while "__" in tmp_ID:
-               #    tmp_ID = tmp_ID.replace("__", "_")
+               #find the longest known passage in input passage ID
                for key in lookuptable.keys():
                   if key in tmp_ID:
                       if len(key) > len(longest_match):
                           longest_match = key
-                          print("longest", key)
+                          print("longest match", key)
+               #If no match, try getting rid of underscores
                if longest_match == "":
                    tmp_ID = tmp_ID.replace("_", "")
                    for key in lookuptable.keys():
                        if key in tmp_ID:
                            if len(key) > len(longest_match):
                                longest_match = key
-                               print("longest", key)
+                               print("longest match", key)
+               #If the full passage ID is accounted for
                if len(tmp_ID)==0: 
                   continue 
+               #The full passage ID is accounted for if only _ 's are left
                if len(tmp_ID.replace("_", "")) == 0:
                   continue     
-
+               #Make list of matches
                matches.append(longest_match)
+
+               #Get rid of current match to search rest of ID for more matches            
                tmp_ID = tmp_ID.replace(longest_match, "")
-               prevlength = len(tmp_ID)
                longest_match = "" 
-               print(tmp_ID)
+               print("current ID", tmp_ID)
            #If the full passage can't be parsed, return None           
 
 
-
+           #If full passage can't be accounted for, return Nones
            if len(tmp_ID.replace("_", "")) > 1:
                annotation = ["None", "None", "None", "None", "None"]  
+
            else:
-               #Need to get ordering of matches
+               #Need to get ordering of matches within input ID
                print(matches)
                match_order = []
                for match in matches:
                     match_order.append(formatted_ID.find(match))
-               print(match_order)         
+               print(match_order)     
+
+               #Get matches are in the same order as they appear in the ID    
                ordered_matches = [x for y, x in sorted(zip(match_order, matches))]  
-               print("ordering...")
-               print(match_order)
-               print(ordered_matches)
+               print("ordering matches...")
+               print("initial order", match_order)
+               print("final order", ordered_matches)
                print("done ordering")
                annotation = self.make_annotation(ordered_matches, lookuptable)
                annot_series = self.get_series(ordered_matches, lookuptable)  
@@ -240,7 +328,7 @@ class PassageParser:
            #    annotation = lookuptable[formatted_ID]
      
 
-
+           #stop logging
            sys.stdout = sys.__stdout__
            return annotation
          
@@ -251,11 +339,18 @@ class PassageParser:
         control function 
         '''
         ID = ID.rstrip("\n")
+   
+        #Store input ID
         self.original = ID
+
+        #If there is no annotation, return default values
+        if ID == "":
+            return self
 
         #Make the ID all caps, remove special characters
         formatted_ID = self.format_ID(ID)
 
+        #Store plain format
         self.plainformat = formatted_ID
       
         #Match a formatted ID to its composite passage types
@@ -266,7 +361,6 @@ class PassageParser:
         self.summary = output
 
         #Optional retrieval of the nth passage a sequence went through
-        
         self.get_nth_passage(n)
 
         return self        
