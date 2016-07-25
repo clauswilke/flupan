@@ -1,5 +1,4 @@
 from setuptools import setup
-
 setup(name='flupan',
       version='0.0.4',
       description='Python library to parse influenza passaging annotations',

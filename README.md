@@ -2,20 +2,25 @@ flupan
 =========
 Python library to parse influenza passaging annotations.
 
-
+# About
+Influenza virus is frequency passaged prior to being sequenced. These growth conditions are recorded as shorthand passaging annotations. However, these passages are often inconsistent, and not easily machine readable. This library takes individual passage annotation strings, (Ex. M1_S3), and returns an object containing its interpretation. 
 
 
 # Installation
 Flupan can be directly installed with [sudo permission] from pypi
+
 ```bash
 pip install flupan 
 ```
+
 or 
+
 ```bash
 easy_install install flupan
 ```
 
-Alternatively, Flupan can also be install from source. 
+Alternatively, Flupan can also be installed from source. 
+
 ```bash
 git clone https://github.com/clauswilke/flupan.git
 cd flupan
@@ -26,12 +31,12 @@ sudo python setup.py install
 python setup.py install --user   
 ```
 
-There are several optional tests, which can be run using
+There are several recommended tests, which can be run using
 ```bash
-python setup.py test
+[sudo] python setup.py test
 ```
 
-There will always be passage annotations which aren't currently covered by this paackaged. If you find any, please submit them under the Issues tab, and we'll add them in. : [https://github.com/clauswilke/flupan/issues](https://github.com/clauswilke/flupan/issues)
+There will always be passage annotations which aren't currently covered by this packaged. If you find any, please submit them under the Issues tab, and we'll add them in.Alternatively, special cases can be locally appended to the /tables .txt files. : [https://github.com/clauswilke/flupan/issues](https://github.com/clauswilke/flupan/issues)
 
 
 # Package usage
@@ -40,20 +45,21 @@ There will always be passage annotations which aren't currently covered by this 
 
 >>from flupan import passage_interpreter
 
->>pp = passage_interpreter.PassageParser()
->> p = pp.parse_passage("m 1")
->> p.summary
+>> pp = passage_interpreter.PassageParser()
+>> p = pp.parse_passage("m 1") #passage annotation to be parsed
+>> p.summary #A quick summary of the passage interpretation
 
 ['m 1', 'M_1', 'M1', 'CELL', 'MDCK', 'exactly', '1']
 
 >>pp.parse_passage("e 1/m3", 4)
 >>p.original #The input passage
-e 1/m3
+e 1/mdck3 
 
 >>p.plainformat #The input passage capitalized w/ special characters removed 
-E_1_M3
+E_1_MDCK3
 
->>p.coercedformat #Standardized format where each passage separated by an underscore
+>>p.coercedformat #Standardized format where each passage is separated by an underscore
+#And common passage IDs are shortened
 E1_M3
 
 >>p.general_passages #The broad categories of the passage types
@@ -68,16 +74,20 @@ E1_M3
 >>p.min_passages # At least this many rounds occurred (useful for passage IDs without numbers of rounds annotated)
 4
 
->>p.summary  #A quick listing of passage features
-['e 1/m3 + 2', 'E_1_M3_2', 'E1_M3_2, 'EGG+CANINECELL', 'EGG + MDCK', 'exactly', '6']
-# 1. original input, 2. standardized input, 3. standardized passage, 4. general passage type(s), 5. specific passage type(s), 6. qualifier for number of passages, 7. number of passages
+>>p.passage_series #An ordered list of each round of passaging
+[[1, 'EGG'], [2,'MDCK'], [3,'MDCK'], [4, 'MDCK']]
 
->>
+
+>>p.summary  #A quick listing of passage features
+['e 1/mdck3', 'E_1_MDCK3', 'E1_M3, 'EGG+CANINECELL', 'EGG + MDCK', 'exactly', '4']
+# 1. original input, 2. standardized input, 3. coerced format input, 4. general passage type(s), 5. specific passage type(s), 6. qualifier for number of passages, 7. number of passages
 
 
 ```
 
 # Command line usage
+
+
 
 $ translate_passage  
 
@@ -94,11 +104,23 @@ optional arguments:
   -o OUTFILE, --outfile OUTFILE
                         An outfile to store output
 
+ex.
+```bash
+$ translate_passage -p 'm2 + rhmk1'
+m2 + rhmk1,M2_RHMK1,M2_R1,CANINECELL+MONKEYCELL,MDCK+RHMK,exactly,
+
+
+```
+
+
+
 # Passage annotation interpretation
 
 A single number that follows a previous passage type is given the identity of the previous passage type
+Ex. Mdck3 + 2 is assumed to have gone through 5 MDCK passages
 
-If a passage annotation hasn't been observed in the flupan database, it is given "None" values. 
+
+If a passage annotation hasn't been observed in the flupan database or can't be parsed, it is given "None" values. 
 
 
 ## Passage assignments
@@ -116,13 +138,13 @@ If a passage annotation hasn't been observed in the flupan database, it is given
     - VERO = ["VERO", "V"]
     ####check source on NC meaning eggs
     #### EGG passages
-    - EGG  = ["NC", "AL", "ALLANTOIC", "EGG", "E", "AM", "AMNIOTIC"]
+    - EGG  = ["AL", "ALLANTOIC", "EGG", "E", "AM", "AMNIOTIC"]
     #### PIGCELL passages
     - PTHYR = ["PTHYR"]
     #### CHICKCELL passages
     -chickcell = ["SPFCK", "CK", "PCK"]
     #### UNKNOWN passages
-    - unknown = ["UNKNOWN", "P"]
+    - unknown = ["UNKNOWN", "P", "", "NC"]
     #### R-MIX passage
     - RMIX = ["R_MIX", "RMIX"]
     #### MINKCELL passage
@@ -134,7 +156,7 @@ If a passage annotation hasn't been observed in the flupan database, it is given
 
     ALL_CELLS = CANINECELL + MONKEYCELL + UNKNOWNCELL + CHICKCELL + RMIX + MINKCELL
 
-    ALL_PASSAGES = CANINECELL + MONKEYCELL + EGG + UNKNOWN + PIGCELL + UNKNOWNCELL + CHICKCELL + RMIX + ONLY_NUMBER + MINKCELL
+    ALL_PASSAGES = CANINECELL + MONKEYCELL + EGG + UNKNOWN + PIGCELL + UNKNOWNCELL + CHICKCELL + RMIX +  MINKCELL
 
 
 

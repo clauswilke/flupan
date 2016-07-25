@@ -5,7 +5,7 @@ Test modules
 * test_flupan.py
 """
 import sys
-sys.path.append('/home/claire2/flupan/src')
 
 from flupan import *
+#from .passage_interpreter import *
 

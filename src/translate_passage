@@ -1,9 +1,8 @@
 #!/usr/bin/env python
 from __future__ import print_function
-import sys
-#sys.path.append('/home/claire2/flupan/src')
+#import sys
 
-from passage_interpreter import *
+from flupan import passage_interpreter
 import argparse
 
 
@@ -11,9 +10,9 @@ def parse_file(infile):
     with open(infile, "r") as passageIDs:
             for ID in passageIDs.readlines():
                  annotation = pp.parse_passage(ID) 
-                 #print(annotation)
                  return annotation
 def parse_passage(passage):
+    
     p = pp.parse_passage(passage) 
     return p.summary
 
@@ -24,7 +23,7 @@ if __name__ == "__main__":
     parser.add_argument('-o', '--outfile', action='store', help = 'An outfile to store output', required=False, default='interpreted_passage.txt')
 
     args = parser.parse_args()
-    pp = PassageParser()
+    pp = passage_interpreter.PassageParser()
 
     if not args.infile and not args.passage:
         sys.exit("No arguments, either provide a file (-f) or single passage identifier (-p)")

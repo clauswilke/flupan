@@ -1,6 +1,12 @@
 #!/usr/bin/env python
 import __future__ 
+import sys
+
+
+
+
 from flupan import passage_interpreter
+
 import unittest
 
 
@@ -12,9 +18,8 @@ class test_flupan(unittest.TestCase):
         '''
         pp = passage_interpreter.PassageParser()
         p = pp.parse_passage("Mdcksiat2_E8")
-        #print(p)
-        #print(p.summary)    
         self.assertTrue(p.summary, list)
+
     def test2(self):
         '''
         Test example case
@@ -120,15 +125,14 @@ class test_flupan(unittest.TestCase):
     
 
 if __name__ == "__main__":
+    pass 
+    #pp = flupan.PassageParser()
+    #pp.parse_passage("m 1")
 
-    pp = flupan.PassageParser()
-    pp.parse_passage("m 1")
-
-    tf = test_flupan() 
-    tf.test1()
-    tf.test2()
-    tf.test3()
-    tf.test4()
-    tf.test5()
-    tf.test6()
+    #tf.test1()
+    #tf.test2()
+    #tf.test3()
+    #tf.test4()
+    #tf.test5()
+    #tf.test6()
 
