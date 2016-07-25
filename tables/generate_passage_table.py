@@ -8,18 +8,15 @@ def generate_generic():
 
 
     siat = ["SIAT", "S", "MDCKSIAT"]
-    #Check source on MK, should b monkey?
     mdck = ["MDCK", "M", "MK"]
     unknowncell = ["C", "X"]
     rhmk = ["RHMK", "RMK", "R", "PRHMK", "RII"]
     tmk = ["TMK"]
     vero = ["VERO", "V"]
-    #check source on NC meaning eggs
-    egg = ["NC", "AL", "ALLANTOIC", "EGG", "E", "AM", "AMNIOTIC"]
+    egg = ["AL", "ALLANTOIC", "EGG", "E", "AM", "AMNIOTIC"]
     pigcell = ["PTHYR"]
     chickcell = ["SPFCK", "CK", "PCK"]
-    unknown = ["UNKNOWN", "P", ""]
-    #only_number = [""]
+    unknown = ["UNKNOWN", "P", "", "NC"]
     rmix = ["R_MIX", "RMIX"]
 
     minkcell = ["MV_1_LU", "MV1_LU", "MV1_LUNG"]
@@ -50,18 +47,12 @@ def generate_generic():
                  continue
 
                
-              #if passage in all_cells and num in ["6","7", "8", "9", "10"]:
-              #   continue
-
-              #if num != "" and passage == "P":
-              #   continue
-
               #annotate specific passage category
               specific_passage = None
               general_passage= None
 
 
-
+              #Change to a lookup instead of ifs
               if passage in caninecell:
 
                   if passage in siat:
@@ -106,20 +97,10 @@ def generate_generic():
                    specific_passage = "UNKNOWNCELL"
                    general_passage = "UNKNOWNCELL"
 
-              #elif passage in unknown: 
-              #     specific_passage = None
-              #     general_passage = None
 
               elif passage in egg: 
                    specific_passage = "EGG"
                    general_passage = "EGG" 
-              
-              #elif passage in only_number:
-              #     specific_passage = None
-              #     general_passage = None 
-
- 
-
 
 
               passage_construct = "".join([passage,sep,num])
@@ -142,6 +123,10 @@ def generate_generic():
 
 
 def generate_unpassaged():
+    ''' 
+    Create annotations for unpassaged sequences
+    '''
+
     unpassaged = ["ORIGINAL_SPECIMEN_UNCULTURED_IN_VTM","OR", "ORIGINAL", "P0", "ISOLATED_DIRECTLY_FROM_HOST_NO", "CLINICAL_SPECIMEN", "NO", "LUNG_1", "LUNG"]
     unpass_dict = {}
     annot  = ["UNPASSAGED", "UNPASSAGED", "0"]
@@ -153,6 +138,9 @@ def generate_unpassaged():
 
 
 def generate_nonconventional():
+    ''' 
+    Create annotations for the list of unconventially formatted IDs
+    '''
 
     uncon_dict = {}
  
@@ -162,28 +150,12 @@ def generate_nonconventional():
             uncon_dict[i[0]] = i[1:]
  
 
-    #for i in ["1","2","3","4", "5"]:
-    #    annot =["CANINECELL", "MDCK", i]    
-        #passage = "P" + i + "_MDCK"
-        #uncon_dict[passage] = annot 
-
-
-    #annot =["CANINECELL", "MDCK", "X"]    
-    #uncon_dict["ND_MDCK"] = annot 
-
-    #annot =["EGG", "EGG", "X"]    
-    #uncon_dict["EGG_LOT_FT2187"] = annot 
-
-
     with open("unknown_passages.txt", "r") as completely_unknown:
         annot = [None, None, None]
         for passage in completely_unknown.readlines():
             uncon_dict[passage.rstrip("\n")] = annot
 
 
-
-
-    #print(unpass_dict)
     return uncon_dict
 
 
@@ -199,15 +171,10 @@ def merge_dicts(*dict_args):
    return result
 
 
-
-
-
 if __name__ == "__main__":
     pass1 = generate_generic()
-    #pass2 = second_pass(pass1)
     unpass = generate_unpassaged()
     uncon = generate_nonconventional()
-    #pass2 = second_pass(pass1)
     print(pass1)
     print(uncon)
     full_list = merge_dicts(pass1, unpass, uncon) 
@@ -217,10 +184,6 @@ if __name__ == "__main__":
 
     with open("passage_lookup.txt", "w") as outfile:
          outfile.write(str(full_list))
-    #for annotation in full_list:
-        #print(annotation)
-        #print(annotation.values())
-
 
 
 

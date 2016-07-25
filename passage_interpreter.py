@@ -35,7 +35,7 @@ class PassageParser:
         self.general_passages= []
 
         #More specific type of passage, if known
-        #MDCK, RHMK, etc.
+        #["MDCK", "RHMK"], etc.
         self.specific_passages = []
 
         #The order of specific passages
@@ -59,7 +59,8 @@ class PassageParser:
         #Remove not useful words
         record_strip = re.sub('PASSAGE_DETAILS_|_AND_|ST_PASSAGE|ND_PASSAGE|PASSAGING|_PASSAGE|_PASSAGES|_PASSAGE_|_PASSAGES_|_CELLS', '', record_strip)
         #Get rid
-        record_strip = record_strip.replace("__", "_")
+        while "__" in record_strip:
+            record_strip = record_strip.replace("__", "_")
 
         #01 just means 1 - Maybe put back in
         #record_strip = re.sub('01', '1', record_strip)
@@ -75,7 +76,7 @@ class PassageParser:
     def format_ID(self, ID):
         '''
         Gets passage annotation into a consistent format for lookup
-        Checks type of ID
+        Asserts that ID is a string
         '''
 
         assert type(ID)==str
@@ -87,18 +88,23 @@ class PassageParser:
 
     def reformat_annotation(self, annotation_list):
         '''
+        This function coerces the most common passage IDs into a more standard format
         Removes underscores which occur inside a single annotation
-        also, replaces MDCKSIAT with the synonymous SIAT
-        Once a set of passagine annotation standards are released, this 
+        Once a set of passaging annotation standards are released, this 
         will be the function to make old annotations consistent with them
         '''
  
         reformatted_annotation_list = []
-        for annot in annotation_list:
-
-            reform = annot.replace("_", "")
-            reform = reform.replace("MDCKSIAT", "SIAT")
-            reformatted_annotation_list.append(reform) 
+        with open("tables/coerce_format.txt", "r") as replacements_file:
+             
+            replacements = replacements_file.readlines()
+            for annot in annotation_list:
+                 for replacement in replacements:
+                    rep_list = replacement.split(" ")
+                    annot = annot.replace(rep_list[0], rep_list[1].rstrip("\n"))                    
+                    print("reformatting")
+            
+                 reformatted_annotation_list.append(annot) 
                  
             print(annot, reformatted_annotation_list)
         reformatted_annotation = "_".join(reformatted_annotation_list)
@@ -109,13 +115,16 @@ class PassageParser:
     def make_annotation(self, annotation_list, lookuptable):
        '''
        This function takes a list of passage IDs found in 
-       the full passage ID, and then consolidates their annotations
+       the full passage ID, and then consolidates their annotations 
+       It needs the dictionary from lookup_table.txt as a reference to 
+       lookup annotations
        '''
        concat_general_passage = ""
        concat_specific_passage = ""
        cumulative_num_passages= ""
        num_condition = "exactly"
- 
+       assert type(annotation_list)== list
+       assert type(lookuptable) == dict
        for passage in annotation_list:
             annot = lookuptable[passage]
             print(passage, annot)
@@ -178,8 +187,12 @@ class PassageParser:
                    cumulative_num_passages = str(eval(cumulative_num_passages) + 1) 
  
        self.general_passages = concat_general_passage.split("+")
+       assert type(self.general_passages) == list
+
        self.specific_passages = concat_specific_passage.split("+")
+       assert type(self.specific_passages) == list
        reformatted_annotation = self.reformat_annotation(annotation_list)
+       assert type(reformatted_annotation) == str
        self.coercedformat = reformatted_annotation
        self.min_passages = eval(cumulative_num_passages)
        #If any of  passage doesn't have a number, can't get exact total 
