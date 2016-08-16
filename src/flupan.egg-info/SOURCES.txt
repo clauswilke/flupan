@@ -1,0 +1,8 @@
+MANIFEST.in
+README.md
+setup.py
+bin/translate_passage
+src/flupan.egg-info/PKG-INFO
+src/flupan.egg-info/SOURCES.txt
+src/flupan.egg-info/dependency_links.txt
+src/flupan.egg-info/top_level.txt

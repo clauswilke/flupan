@@ -1,0 +1,1000 @@
+ 1017  cd ../
+ 1018  ls
+ 1019  git add .
+ 1020  git commit -m "fix command line"
+ 1021  git push
+ 1022  vim setup.py 
+ 1023  ls
+ 1024  git rm flupan.pyc 
+ 1025  ls
+ 1026  sudo python setup.py sdist upload
+ 1027  ls
+ 1028  git add .
+ 1029  git commit -m "uploaded 0.0.2, fixed command line again"
+ 1030  git push
+ 1031  cd tests/
+ 1032  cd ../
+ 1033  sudo python setup.py test
+ 1034  vim tests/__init__.py
+ 1035  sudo python setup.py test
+ 1036  vim tests/__init__.py
+ 1037  sudo python setup.py test
+ 1038  vim flupan.
+ 1039  vim flupan.py 
+ 1040  sudo python setup.py test
+ 1041  sudo python setup.py test > tmp
+ 1042  vim tmp
+ 1043  rm tmp
+ 1044  sudo python setup.py test > tmp
+ 1045  sudo python setup.py test
+ 1046  sudo python setup.py test 
+ 1047  vim tests/test_
+ 1048  vim tests/test_flupan.py
+ 1049  sudo python setup.py test 
+ 1050  vim tests/test_flupan.py
+ 1051  sudo python setup.py test
+ 1052  sudo python setup.py test 
+ 1053  ls
+ 1054  vim flupan.out 
+ 1055  rm flupan.out 
+ 1056  sudo python setup.py test 
+ 1057  vim flupan.out 
+ 1058  sudo python setup.py test 
+ 1059  vim flupan.out 
+ 1060  rm flupan.out 
+ 1061  vim flupan.out 
+ 1062  sudo python setup.py test 
+ 1063  vim flupan.out 
+ 1064  rm flupan.out 
+ 1065  sudo python setup.py test 
+ 1066  vim flupan.out 
+ 1067  vim tests/test_flupan.py
+ 1068  sudo python setup.py test 
+ 1069  vim tests/test_flupan.py
+ 1070  sudo python setup.py test 
+ 1071  vim tests/test_flupan.py
+ 1072  sudo python setup.py test 
+ 1073  vim tests/test_flupan.py
+ 1074  sudo python setup.py test 
+ 1075  ls
+ 1076  vim setup.py `
+ 1077  vim setup.py 
+ 1078  ls
+ 1079  git rm flupan.pyc 
+ 1080  ls
+ 1081  rm flupan.pyc 
+ 1082  ls
+ 1083  rm flupan.out 
+ 1084  ls
+ 1085  cp flupan.py passage_interpreter.py
+ 1086  vim __init__.py
+ 1087  vim tests/test_flupan.py
+ 1088  sudo python setup.py test
+ 1089  ls
+ 1090  cd tests/
+ 1091  ls
+ 1092  cp test_flupan.py test_passage_interpreter.py
+ 1093  vim __init__.py
+ 1094  cd ../
+ 1095  vim __init__.py
+ 1096  ls
+ 1097  sudo python setup.py test
+ 1098  cd tests/
+ 1099  ls
+ 1100  mv test_flupan.py* ../old/
+ 1101  ls
+ 1102  cd ../
+ 1103  ls
+ 1104  mv flupan.* old/
+ 1105  ls
+ 1106  vim passage_interpreter.py
+ 1107  sudo python setup.py test
+ 1108  vim __init__.py
+ 1109  sudo python setup.py test
+ 1110  vim __init__.py
+ 1111  ls
+ 1112  rm __init__.pyc 
+ 1113  rm passage_interpreter.pyc 
+ 1114  git rm flupan.py 
+ 1115  cd tests/
+ 1116  ls
+ 1117  git rm test_flupan.py
+ 1118  ls
+ 1119  cd ../
+ 1120  ls
+ 1121  cd tests/
+ 1122  ls
+ 1123  rm __init__.pyc
+ 1124  ls
+ 1125  cd ../
+ 1126  ls
+ 1127  sudo python setup.py test
+ 1128  vim README.md 
+ 1129  python src/tr
+ 1130  cd src/
+ 1131  ls
+ 1132  cd ../
+ 1133  translate_passage
+ 1134  ./src/translate_passage
+ 1135  vim README.md 
+ 1136  cd src/
+ 1137  translate_passage
+ 1138  cd ../
+ 1139  translate_passage
+ 1140  translate_passage -p M1 c3 e
+ 1141  translate_passage -p 'M1 c3 e'
+ 1142  ls -la
+ 1143  sudo translate_passage -p 'M1 c3 e'
+ 1144  vim passage_interpreter.py
+ 1145  sudo translate_passage -p 'M1 c3 e'
+ 1146  vim src/translate_passage 
+ 1147  sudo translate_passage -p 'M1 c3 e'
+ 1148  git add .
+ 1149  git commit -m "change main function name, added tests"
+ 1150  git push
+ 1151  sudo python setup.py sdist upload
+ 1152  vim setup.py 
+ 1153  vim __init__.py
+ 1154  sudo python setup.py sdist upload
+ 1155  git rm .README.md.swp 
+ 1156  git rm .notes.txt.swp 
+ 1157  git rm PassageAnalyzer.py 
+ 1158  git rm __init__.pyc
+ 1159  git rm interpreted_passage.txt 
+ 1160  git rm passage_interpreter.pyc
+ 1161  ls
+ 1162  git rm tmp
+ 1163  cd tables/
+ 1164  git rm .generate_passage_table.py.swp 
+ 1165  git rm -r test
+ 1166  cd ../
+ 1167  git rm -r test
+ 1168  cd tests/
+ 1169  ls
+ 1170  git rm __init__.pyc
+ 1171  git rm test_flupan.pyc 
+ 1172  git rm test_passage_interpreter.pyc
+ 1173  ls
+ 1174  git add .
+ 1175  cd ../src/
+ 1176  ls
+ 1177  git ls
+ 1178  ls
+ 1179  git rm .PassageAnalyzer.py.swp 
+ 1180  git rm draft.py 
+ 1181  git rm formattingparser.py 
+ 1182  git rm getpassage.py 
+ 1183  git rm passageparser.py 
+ 1184  git rm translate_passage.py 
+ 1185  ls
+ 1186  cd ./
+ 1187  ls
+ 1188  cd ../
+ 1189  git add .
+ 1190  git commit -m "cleaned up git files"
+ 1191  git push
+ 1192  vim setup.py 
+ 1193  vim __init__.py 
+ 1194  sudo python setup.py sdist uploacd
+ 1195  sudo python setup.py sdist upload
+ 1196  git rm getpassage.py 
+ 1197  git commit -m "deleting files"
+ 1198  git push
+ 1199  cd flupan/
+ 1200  ls
+ 1201  sudo python setup.py test
+ 1202  ls
+ 1203  mv passage_interpreter.py src/
+ 1204  ls
+ 1205  rm passage_interpreter.pyc 
+ 1206  sudo python setup.py test
+ 1207  ls
+ 1208  vim setup.py 
+ 1209  sudo python setup.py test
+ 1210  vim __init__.py
+ 1211  cd src/
+ 1212  ls
+ 1213  cd ../
+ 1214  mv __init__.py src/
+ 1215  sudo python setup.py test
+ 1216  ls
+ 1217  vim MANIFEST.in 
+ 1218  ls
+ 1219  rm __init__.pyc 
+ 1220  ls
+ 1221  vim setup.py 
+ 1222  sudo python setup.py develo[
+ 1223  sudo python setup.py develo
+ 1224  sudo python setup.py develop
+ 1225  vim setup.py 
+ 1226  sudo python setup.py develop
+ 1227  sudo python setup.py test
+ 1228  ls
+ 1229  cd src/
+ 1230  ls
+ 1231  mv __init__.py ../
+ 1232  mv passage_interpreter.py ../
+ 1233  ls
+ 1234  rm *.pyc
+ 1235  cd ../
+ 1236  ls
+ 1237  vim setup.py 
+ 1238  ls
+ 1239  python setup.py test
+ 1240  sudo python setup.py test
+ 1241  ls
+ 1242  rm *.pyc
+ 1243  ls
+ 1244  sudo python setup.py tests/
+ 1245  sudo python setup.py test
+ 1246  ls
+ 1247  cd tests/
+ 1248  ls
+ 1249  vim test_passage_interpreter.pyc 
+ 1250  ls
+ 1251  sudo python setup.py test
+ 1252  c d../
+ 1253  sudo python setup.py test
+ 1254  cd ../
+ 1255  sudo python setup.py test
+ 1256  cd ../
+ 1257  cd flupan/
+ 1258  sudo python setup.py test
+ 1259  cd tests/
+ 1260  ls
+ 1261  vim test_passage_interpreter.py
+ 1262  less test_passageIDs2.txt
+ 1263  vim test_passageIDs1.txt
+ 1264  ls
+ 1265  cd ../
+ 1266  sudo python setup.py test
+ 1267  cd tests/
+ 1268  ls
+ 1269  vim test_passageIDs1.txt 
+ 1270  cd ../
+ 1271  sudo python setup.py test
+ 1272  vim passage_interpreter.out 
+ 1273  sudo python setup.py test
+ 1274  vim passage_interpreter.out 
+ 1275  sudo python setup.py test
+ 1276  vim passage_interpreter.py
+ 1277  sudo python setup.py test
+ 1278  ls
+ 1279  cd tables/
+ 1280  ls
+ 1281  vim passage_lookup.txt 
+ 1282  cd ../
+ 1283  sudo python setup.py tes
+ 1284  sudo python setup.py test
+ 1285  cd tables/
+ 1286  python generate_passage_table.py 
+ 1287  ls
+ 1288  vim passage_lookup.txt 
+ 1289  python generate_passage_table.py 
+ 1290  vim passage_lookup.txt 
+ 1291  python generate_passage_table.py 
+ 1292  vim passage_lookup.txt 
+ 1293  python generate_passage_table.py 
+ 1294  vim passage_lookup.txt 
+ 1295  python generate_passage_table.py 
+ 1296  python generate_passage_table.py > tmp
+ 1297  vim tmp
+ 1298  python generate_passage_table.py > tmp
+ 1299  vim tmp
+ 1300  python generate_passage_table.py > tmp
+ 1301  vim tmp/
+ 1302  vim tmp
+ 1303  ls
+ 1304  cd ../
+ 1305  cd test
+ 1306  ls
+ 1307  l
+ 1308  ls
+ 1309  cd ../
+ 1310  ls
+ 1311  git rm -r test
+ 1312  rm -r test
+ 1313  cd tests/
+ 1314  ls
+ 1315  vim test_passage_interpreter.py
+ 1316  cd ../
+ 1317  sudo python setup.py test
+ 1318  vim tests/
+ 1319  cd tests/
+ 1320  ls
+ 1321  vim test_passage_interpreter.py
+ 1322  cd ../
+ 1323  ls
+ 1324  vim passage_interpreter.py
+ 1325  sudo python setup.py test
+ 1326  vim passage_interpreter.py
+ 1327  sudo python setup.py test
+ 1328  vim passage_interpreter.py
+ 1329  sudo python setup.py test
+ 1330  cd ~/influenza_passaging_effects/
+ 1331  ls
+ 1332  cd input_data/
+ 1333  ls
+ 1334  cd ../
+ 1335  cd ../flupan/
+ 1336  sudo python setup.py test
+ 1337  cd tests/
+ 1338  ls
+ 1339  vim output_test_unformatted_passageIDs.txt 
+ 1340  cd ../
+ 1341  sudo python setup.py test
+ 1342  ls
+ 1343  cd tests/
+ 1344  ls
+ 1345  vim test_unformatted_passage_IDs.txt
+ 1346  cd ../
+ 1347  sudo python setup.py test
+ 1348  sudo python setup.py test > tmp
+ 1349  ls
+ 1350  cd tests/
+ 1351  ls
+ 1352  vim test_unformatted_passage_IDs.txt 
+ 1353  ls
+ 1354  vim output_test_unformatted_passageIDs.txt 
+ 1355  cd ../tables/
+ 1356  ls
+ 1357  vim generate_passage_table.py 
+ 1358  cd ../tests/
+ 1359  ls
+ 1360  sort -u test_unformatted_passage_IDs.txt 
+ 1361  sort -u test_unformatted_passage_IDs.txt > test_unformatted_passage_IDs.txt2
+ 1362  mv test_unformatted_passage_IDs.txt2 test_unformatted_passage_IDs.txt
+ 1363  ls
+ 1364  cd ./
+ 1365  cd ../
+ 1366  sudo python setup.py test
+ 1367  vim tests/test_passage_interpreter.py
+ 1368  sudo python setup.py test
+ 1369  vim passage_interpreter.py
+ 1370  cd tables/
+ 1371  ls
+ 1372  vim passage_lookup.txt 
+ 1373  ls
+ 1374  vim generate_passage_table.py 
+ 1375  ls
+ 1376  cd ../
+ 1377  ls
+ 1378  vim passage_interpreter.py
+ 1379  sudo python setup.py test
+ 1380  cd flupan/
+ 1381  ls
+ 1382  cd tests/
+ 1383  ls
+ 1384  vim test_passage_interpreter.py 
+ 1385  cd ../
+ 1386  ls
+ 1387  vim passage_interpreter.py
+ 1388  vim passage_interpreter.pyc 
+ 1389  vim passage_interpreter.out 
+ 1390  vim passage_interpreter.py
+ 1391  vim tests/test_passage
+ 1392  vim tests/test_passage_interpreter.py
+ 1393  ls
+ 1394  cd tables/
+ 1395  ls
+ 1396  vim generate_passage_table.py 
+ 1397  python generate_passage_table.py 
+ 1398  vim generate_passage_table.py 
+ 1399  ls
+ 1400  vim unknown_passages.txt 
+ 1401  ls
+ 1402  vim generate_passage_table.py
+ 1403  python generate_passage_table.py 
+ 1404  cd ../
+ 1405  cd t
+ 1406  cd tables/
+ 1407  ls
+ 1408  vim passage_lookup.txt 
+ 1409  python generate_passage_table.py 
+ 1410  ls
+ 1411  vim passage_lookup.txt 
+ 1412  ls
+ 1413  vim generate_passage_table.py 
+ 1414  python generate_passage_table.py 
+ 1415  vim generate_passage_table.py 
+ 1416  vim nonstandard_passages.txt 
+ 1417  python generate_passage_table.py 
+ 1418  rm tmp
+ 1419  vim passage_lookup.txt 
+ 1420  cd ../
+ 1421  sudo python setup.py test
+ 1422  vim passage_interpreter.py
+ 1423  sudo python setup.py test
+ 1424  ls
+ 1425  vim passage_interpreter.out 
+ 1426  rm passage_interpreter.out 
+ 1427  vim tests/test_passage_interpreter.py
+ 1428  sudo python setup.py test
+ 1429  vim passage_interpreter.out 
+ 1430  sudo python setup.py test
+ 1431  vim *.out
+ 1432  sudo python setup.py test
+ 1433  vim tests/test_passage_interpreter.py
+ 1434  sudo python setup.py test
+ 1435  vim tests/test_passage_interpreter.py
+ 1436  sudo python setup.py test
+ 1437  ls
+ 1438  vim notes.txt 
+ 1439  git add .
+ 1440  git commit -m "fixed various test errors"
+ 1441  git push
+ 1442  ls
+ 1443  cd tests/
+ 1444  ls
+ 1445  vim test_passage_interpreter.py
+ 1446  cd ../
+ 1447  sudo python setup.py test
+ 1448  sudo python setup.py test > tmp
+ 1449  vim tmp
+ 1450  ls
+ 1451  vim tests/test_passage_interpreter.py
+ 1452  cd tables/
+ 1453  ls
+ 1454  head unformatted_passage_IDs.txt 
+ 1455  ls
+ 1456  mv unformatted_passage_IDs.txt ../test
+ 1457  cd ../tests/
+ 1458  ls
+ 1459  cd ../
+ 1460  ls
+ 1461  mv test unformatted_passage_IDs.txt
+ 1462  mv unformatted_passage_IDs.txt tests/
+ 1463  ls
+ 1464  cd tests/
+ 1465  ls
+ 1466  mv unformatted_passage_IDs.txt test_unformatted_passage_IDs.txt 
+ 1467  vim test_passage_interpreter.py
+ 1468  cd ../tables/
+ 1469  python generate_passage_table.py 
+ 1470  ls
+ 1471  vim passage_lookup.txt 
+ 1472  cd ../
+ 1473  sudo python setup.py test
+ 1474  ls
+ 1475  cd tests/
+ 1476  ls
+ 1477  vim output_test_unformatted_passageIDs.txt 
+ 1478  cd ../tables/
+ 1479  ls
+ 1480  vim unknown_passages.txt 
+ 1481  ls
+ 1482  cd ../
+ 1483  ls
+ 1484  vim passage_interpreter.py
+ 1485  vim tests/test_passage_interpreter.py
+ 1486  cd tables/
+ 1487  ls
+ 1488  vim nonstandard_passages.txt 
+ 1489  python generate_passage_table.py 
+ 1490  ls
+ 1491  cd ../
+ 1492  ls
+ 1493  vim tests/test_passage
+ 1494  vim tests/test_passage_interpreter.py
+ 1495  sudo python setup.py test
+ 1496  vim tests/test_passage_interpreter.py
+ 1497  sudo python setup.py test
+ 1498  ls
+ 1499  vim tests/output_test_unformatted_passageIDs.txt 
+ 1500  cd tables/
+ 1501  ls
+ 1502  vim coerce_format.txt
+ 1503  cd ../
+ 1504  sudo python setup.py test
+ 1505  rm *.out
+ 1506  sudo python setup.py test
+ 1507  ls
+ 1508  vim passage_interpreter.out 
+ 1509  rm *.out
+ 1510  sudo python setup.py test
+ 1511  rm *.out
+ 1512  sudo python setup.py test
+ 1513  vim *.out
+ 1514  ls
+ 1515  vim tests/output_test_passageIDs2.txt 
+ 1516  vim tests/output_test_passageIDs1.txt 
+ 1517  rm *.out
+ 1518  sudo python setup.py test
+ 1519  vim *.out
+ 1520  sudo python setup.py test
+ 1521  vim tests/test_passage_interpreter.py
+ 1522  cd flupan/
+ 1523  ls
+ 1524  sudo python setup.py test
+ 1525  vim passage_interpreter.py
+ 1526  git add .
+ 1527  git commit -m "fixed test 6" 
+ 1528  git push
+ 1529  cd tables/
+ 1530  ls
+ 1531  cd ../tests/
+ 1532  ls
+ 1533  cd ~/influenza_passaging_effects/
+ 1534  vim README.md 
+ 1535  cd ../
+ 1536  cd flupan/
+ 1537  ls
+ 1538  cd tests/
+ 1539  ls
+ 1540  vim test_passage_interpreter.py
+ 1541  translate_passage -p 'M1/SIAT2_c'
+ 1542  cd ../
+ 1543  translate_passage -h
+ 1544  ls
+ 1545  vim cd src/
+ 1546  cd src/
+ 1547  ls
+ 1548  cd tr
+ 1549  vim translate_passage 
+ 1550  mv translate_passage ../
+ 1551  ls
+ 1552  cd ../
+ 1553  ls
+ 1554  cd src/
+ 1555  ls
+ 1556  cd ../
+ 1557  ls
+ 1558  translate_passage -h
+ 1559  mv translate_passage src/
+ 1560  ls
+ 1561  cd src/
+ 1562  ls
+ 1563  vim translate_passage 
+ 1564  cd ../
+ 1565  translate_passage -h
+ 1566  cd tests/
+ 1567  ls
+ 1568  cp __init__.py ../src/
+ 1569  cd ../src/
+ 1570  ls
+ 1571  vim __init__.py 
+ 1572  cd ../
+ 1573  ls
+ 1574  sudo python setup.py test
+ 1575  cd tests/
+ 1576  ls
+ 1577  rm __init__.pyc 
+ 1578  vim __init__.py 
+ 1579  cd ../
+ 1580  sudo python setup.py test
+ 1581  cd tests/
+ 1582  ls
+ 1583  vim __init__.py
+ 1584  cd ../src/
+ 1585  ls
+ 1586  vim translate_passage
+ 1587  cd ../
+ 1588  translate_passage -h
+ 1589  ./translate_passage
+ 1590  ls
+ 1591  cd src/
+ 1592  ls
+ 1593  mv translate_passage ../
+ 1594  cd ../
+ 1595  translate_passage 
+ 1596  translate_passage -h
+ 1597  ls
+ 1598  vim 
+ 1599  ls
+ 1600  vim __init__.py
+ 1601  cd src/
+ 1602  ls
+ 1603  cd ../
+ 1604  ls
+ 1605  translate_passage
+ 1606  vim translate_passage 
+ 1607  translate_passage
+ 1608  sudo python setup.py test
+ 1609  ls
+ 1610  vim __init__.py
+ 1611  vim translate_passage 
+ 1612  ./translate_passage
+ 1613  ls
+ 1614  mv translate_passage src/
+ 1615  cd src/
+ 1616  translate_passage
+ 1617  cd ../
+ 1618  ls
+ 1619  cd src/
+ 1620  ls
+ 1621  cd ../
+ 1622  translate_passage
+ 1623  ls
+ 1624  vim setup.py 
+ 1625  ls
+ 1626  vim __init__.py
+ 1627  translate_passage
+ 1628  ls
+ 1629  git rm passage_interpreter.out 
+ 1630  git rm -f passage_interpreter.out 
+ 1631  ls
+ 1632  git rm __init__.pyc
+ 1633  git rm -f __init__.pyc
+ 1634  ls
+ 1635  vim __init__.py 
+ 1636  ls
+ 1637  cd src/
+ 1638  ls
+ 1639  git rm -r __init__.pyc
+ 1640  ls
+ 1641  rm __init__.pyc
+ 1642  ls
+ 1643  vim translate_passage 
+ 1644  cd ../tests/
+ 1645  ls
+ 1646  vim __init__.py
+ 1647  cd ../src/
+ 1648  ls
+ 1649  vim __init__.py 
+ 1650  cd ../
+ 1651  vim setup.py 
+ 1652  translate_passage
+ 1653  python -c 'import sys; print sys.path' 
+ 1654  ls
+ 1655  cd tests/
+ 1656  python test_passage_interpreter.py
+ 1657  cd ../
+ 1658  ls
+ 1659  vim __init__.py 
+ 1660  cd ../
+ 1661  passage_interpreter.py 
+ 1662  passage_interpreter
+ 1663  translate_passage
+ 1664  ls /usr/local/bin/
+ 1665  ls
+ 1666  cd ../
+ 1667  cd /usr/local/bin/
+ 1668  ls
+ 1669  vim passage_interpreter.py
+ 1670  cd ~
+ 1671  cd flupan/
+ 1672  sudo python setup.py install
+ 1673  vim setup.py 
+ 1674  sudo python setup.py install
+ 1675  translate_passage
+ 1676  vim setup.py 
+ 1677  sudo python setup.py install
+ 1678  ls
+ 1679  sudo python setup.py test
+ 1680  cd tests/
+ 1681  python test_passage_interpreter.py
+ 1682  cd ../
+ 1683  ls
+ 1684  python -c 'import sys; print sys.path' 
+ 1685  cd /usr/local/bin/ 
+ 1686  ls
+ 1687  ls -ltr
+ 1688  vim passage_interpreter.py 
+ 1689  vim translate_passage.py 
+ 1690  vim translate_passage
+ 1691  cd ../
+ 1692  ls
+ 1693  cd ~
+ 1694  ls
+ 1695  cd flupan/
+ 1696  ls
+ 1697  cd tests/
+ 1698  ls
+ 1699  vim test_passage_interpreter.py
+ 1700  python test_passage_interpreter.py
+ 1701  export PYTHONPATH="$PYTHONPATH:/usr/local/bin/"
+ 1702  python test_passage_interpreter.py
+ 1703  cd /usr/local/bin/
+ 1704  ls
+ 1705  cd ../
+ 1706  ls
+ 1707  cd src/
+ 1708  ls
+ 1709  cd ../
+ 1710  cd ../l
+ 1711  cd ../
+ 1712  ls
+ 1713  cd lib
+ 1714  ls
+ 1715  ls -ltr
+ 1716  cd ../
+ 1717  ls
+ 1718  cd  ../
+ 1719  ls
+ 1720  cd ../
+ 1721  ls
+ 1722  cd ~
+ 1723  cd flupan/
+ 1724  ls
+ 1725  git rm passage_interpreter.pyc 
+ 1726  git rm -f passage_interpreter.pyc 
+ 1727  ls
+ 1728  git passage_interpreter.out
+ 1729  git rm passage_interpreter.out
+ 1730  rm passage_interpreter.out 
+ 1731  ls
+ 1732  rm __init__.pyc
+ 1733  ls
+ 1734  vim __init__.py 
+ 1735  cd tests/
+ 1736  ls
+ 1737  cd ../
+ 1738  ls
+ 1739  vim setup.py 
+ 1740  sudo python setup.py develop
+ 1741  sudo python setup.py test
+ 1742  ls
+ 1743  translate_passage
+ 1744  vim setup.py 
+ 1745  sudo python setup.py test
+ 1746  vim setup.py 
+ 1747  sudo python setup.py test
+ 1748  vim setup.py 
+ 1749  sudo python setup.py test
+ 1750  vim setup.py 
+ 1751  sudo python setup.py test
+ 1752  sudo python setup.py develop
+ 1753  cd tests/
+ 1754  python test_passage_interpreter.py
+ 1755  cd ../
+ 1756  vim setup.py 
+ 1757  ls
+ 1758  python
+ 1759  sudo python setup.py develop
+ 1760  sudo python setup.py test
+ 1761  python -c 'import sys; print sys.path'
+ 1762  export PYTHONPATH="$PYTHONPATH:/home/claire2"
+ 1763  translate_passage
+ 1764  cd src/
+ 1765  ls
+ 1766  cd ../
+ 1767  export PYTHONPATH="$PYTHONPATH:/home/claire2/flupan/src"
+ 1768  ls
+ 1769  cd src/
+ 1770  s
+ 1771  ls
+ 1772  vim translate_passage 
+ 1773  cd ../
+ 1774  translate_passage
+ 1775  translate_passage-h
+ 1776  translate_passage -h
+ 1777  translate_passage -p 'm 3/e-4
+ 1778  '
+ 1779  sudo translate_passage -p 'm 3/e-4
+ 1780  '
+ 1781  ls
+ 1782  rm passage_interpreter.out
+ 1783  translate_passage -p 'm 3/e-4
+ 1784  '
+ 1785  python tests/
+ 1786  python tests/test_passage_interpreter.py
+ 1787  sudo python tests/test_passage_interpreter.py
+ 1788  cd tests/
+ 1789  python test_passage_interpreter.py
+ 1790  cd ../
+ 1791  ls
+ 1792  sudo python setup.py test
+ 1793  translate_passage -h
+ 1794  cd src/
+ 1795  head translate_passage 
+ 1796  python ../tests/test_passage_interpreter.py
+ 1797  ls
+ 1798  cd ../
+ 1799  ls
+ 1800  mv passage_interpreter.py tests/
+ 1801  cd tests/
+ 1802  mv passage_interpreter.py ../src/
+ 1803  ls
+ 1804  python test_passage_interpreter.py
+ 1805  ls
+ 1806  cd ../src/
+ 1807  cd ../
+ 1808  sudo python setup.py test
+ 1809  ls
+ 1810  vim setup.py 
+ 1811  sudo python setup.py develop
+ 1812  cd src/
+ 1813  ls
+ 1814  cd ../
+ 1815  vim setup.py 
+ 1816  sudo python setup.py develop
+ 1817  sudo python setup.py test
+ 1818  ls
+ 1819  rm passage_interpreter.pyc 
+ 1820  translate_passage -h
+ 1821  vim __init__.py
+ 1822  translate_passage -h
+ 1823  vim __init__.py
+ 1824  translate_passage -h
+ 1825  vim __init__.py
+ 1826  translate_passage -h
+ 1827  vim __init__.py
+ 1828  translate_passage -h
+ 1829  vim __init__.py
+ 1830  translate_passage -h
+ 1831  vim __init__.py
+ 1832  translate_passage -h
+ 1833  vim __init__.py
+ 1834  translate_passage -h
+ 1835  vim __init__.py
+ 1836  translate_passage -h
+ 1837  vim __init__.py
+ 1838  ls
+ 1839  vim setup.py 
+ 1840  cd src/
+ 1841  ls
+ 1842  mv passage_interpreter.py ../
+ 1843  ls
+ 1844  cd ../
+ 1845  ls
+ 1846  python tests/test_passage_interpreter.py
+ 1847  cd src/
+ 1848  cd ../
+ 1849  ls
+ 1850  vim __init__.py
+ 1851  cd tests/
+ 1852  ls
+ 1853  vim __init__.py
+ 1854  python test_passage_interpreter.py
+ 1855  cd ../
+ 1856  vim __init__.py
+ 1857  cd tests/
+ 1858  vim __init__.py
+ 1859  python test_passage_interpreter.py
+ 1860  ls
+ 1861  cd ../
+ 1862  ls
+ 1863  mv passage_interpreter.py src/
+ 1864  translate_passage
+ 1865  translate_passage -h
+ 1866  cd tests/
+ 1867  python test_passage_interpreter.py
+ 1868  ls
+ 1869  cd ../
+ 1870  sudo python setup.py tests/
+ 1871  sudo python setup.py test
+ 1872  cd tests/
+ 1873  ls
+ 1874  vim __init__.py
+ 1875  cd ../
+ 1876  sudo python setup.py test
+ 1877  ls
+ 1878  rm passage_interpreter.pyc 
+ 1879  ls
+ 1880  rm passage_interpreter.out 
+ 1881  ls
+ 1882  mv __init__.py old/
+ 1883  ls
+ 1884  vim interpreted_passage.txt 
+ 1885  rm interpreted_passage.txt 
+ 1886  ls
+ 1887  mv __init__.pyc old/
+ 1888  ls
+ 1889  rm tmp 
+ 1890  ls
+ 1891  vim notes.txt 
+ 1892  git rm notes.txt 
+ 1893  ls
+ 1894  vim setup.py 
+ 1895  ls
+ 1896  vim README.md 
+ 1897  python -c 'import sys; print(sys.path)'
+ 1898  history
+ 1899  translate_passage
+ 1900  python -c 'import sys; print(sys.path)'
+ 1901  sudo python -c 'import sys; print(sys.path)'
+ 1902  sudo python setup.py test
+ 1903  ls
+ 1904  cd src/
+ 1905  ls
+ 1906  mv passage_interpreter.py ../
+ 1907  cd ../
+ 1908  sudo python setup.py test
+ 1909  python tests/test_passage_interpreter.py
+ 1910  translate_passage
+ 1911  ls
+ 1912  vim __init__.py
+ 1913  ls
+ 1914  vim README.md 
+ 1915  translate_passage
+ 1916  translate_passage -p 'm2 + 1'
+ 1917  ls
+ 1918  rm passage_interpreter.out 
+ 1919  translate_passage -p 'm2 + 1'
+ 1920  translate_passage -p 'm2 + x1'
+ 1921  translate_passage -p 'm2 + rii1'
+ 1922  translate_passage -p 'm2 + rhmk1'
+ 1923  translate_passage
+ 1924  python -c 'import sys; print(sys.path)'
+ 1925  ls
+ 1926  rm interpreted_passage.txt 
+ 1927  rm passage_interpreter.out 
+ 1928  rm passage_interpreter.pyc
+ 1929  ks
+ 1930  ls
+ 1931  rm __init__.pyc
+ 1932  ls
+ 1933  git add .
+ 1934  git commit -m "added more tests"
+ 1935  git push
+ 1936  vim README.md 
+ 1937  ls
+ 1938  vim __init__.py 
+ 1939  sudo python setup.py upload sdist
+ 1940  sudo python setup.py sdist upload
+ 1941  vim setup.py 
+ 1942  sudo python setup.py sdist upload
+ 1943  cd flupan/
+ 1944  cd tests/
+ 1945  ls
+ 1946  vim test_passage_interpreter.py
+ 1947  cd ../
+ 1948  sudo python setup.py test
+ 1949  vim test_passage_interpreter.py
+ 1950  cd tests/
+ 1951  vim test_passage_interpreter.py
+ 1952  cd ../
+ 1953  sudo python setup.py test
+ 1954  vim tests/test_passage_interpreter.py
+ 1955  sudo python setup.py test
+ 1956  vim tests/test_passage_interpreter.py
+ 1957  sudo python setup.py test
+ 1958  vim tests/test_passage_interpreter.py
+ 1959  sudo python setup.py test
+ 1960  vim README.md 
+ 1961  cd tests/
+ 1962  ls
+ 1963  vim test_passage_interpreter.py
+ 1964  cd ../
+ 1965  vim README.md 
+ 1966  cd tests/
+ 1967  ls
+ 1968  vim test_passage_interpreter.py
+ 1969  cd sr
+ 1970  cd ../src/
+ 1971  ls
+ 1972  vim translate_passage 
+ 1973  cd ../t
+ 1974  cd ../tests/
+ 1975  ls
+ 1976  vim test_passage_interpreter.py
+ 1977  translate_passage -p 'M3 + 2'
+ 1978  cd ../
+ 1979  translate_passage -p 'M3 + 2'
+ 1980  sudo translate_passage -p 'M3 + 2'
+ 1981  translate_passage
+ 1982  python -c 'import sys; sys.path'
+ 1983  python -c 'import sys; print(sys.path)'
+ 1984  ls
+ 1985  cd old/
+ 1986  ls
+ 1987  m __init__.py ../
+ 1988  ls
+ 1989  mv __init__.py ../
+ 1990  ls
+ 1991  cd ../
+ 1992  translate_passage -p 'm2 +1'
+ 1993  vim README.md 
+ 1994  translate_passage
+ 1995  python -c 'import sys; print(sys.path)'
+ 1996  ls
+ 1997  cd proteomics_summer_school_2016/
+ 1998  ls
+ 1999  less classnotes.txt 
+ 2000  mv classnotes.txt proteomics_classnotes.txt
+ 2001  ls
+ 2002  cd ../
+ 2003  ls
+ 2004  cd tests/
+ 2005  ls
+ 2006  python test_passage_interpreter.py 
+ 2007  $PATH
+ 2008  history
+ 2009  historyqsudo python -c 'import sys; print(sys.path)'
+ 2010  sudo python -c 'import sys; print(sys.path)'
+ 2011  sudo python -c 'import sys; print(sys.path.split(",")'
+ 2012  sudo python -c 'import sys; print(sys.path.split(","))'
+ 2013  sudo python -c 'import sys; print([i for i in sys.path])'
+ 2014  history
+ 2015  q!
+ 2016  history > tmp

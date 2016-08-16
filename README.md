@@ -117,7 +117,7 @@ m2 + rhmk1,M2_RHMK1,M2_R1,CANINECELL+MONKEYCELL,MDCK+RHMK,exactly,
 # Passage annotation interpretation
 
 A single number that follows a previous passage type is given the identity of the previous passage type
-Ex. Mdck3 + 2 is assumed to have gone through 5 MDCK passages
+Ex. Mdck3 + 2 is interpreted to have gone through 5 MDCK passages
 
 
 If a passage annotation hasn't been observed in the flupan database or can't be parsed, it is given "None" values. 

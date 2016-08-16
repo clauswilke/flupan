@@ -1,0 +1,14 @@
+
+Need to make summary and get_nth convenience functions
+
+Update syntax of tests to match multiple classes
+
+Check all that convenience functions and command line works
+
+Check that tests work
+
+Check that normal usage works
+
+
+
+
