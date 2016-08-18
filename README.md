@@ -6,10 +6,11 @@ Python library to parse influenza passaging annotations.
 Influenza virus is frequency passaged prior to being sequenced. These growth conditions are recorded as shorthand passaging annotations. However, these passages are often inconsistent, and not easily machine readable. This library takes individual passage annotation strings, (Ex. M1_S3), and returns an object containing its interpretation. 
 
 # To do
-Change dictionary to columns
-Parse in main function
 
-open log file in init of parse
+- Change dictionary to columns
+- Parse in main function
+- open log file in init of parse
+- move to do list into separate TODO file
 
 
 # Installation
