@@ -1,6 +1,6 @@
 Metadata-Version: 1.0
 Name: flupan
-Version: 0.0.5
+Version: 0.0.6
 Summary: Python library to parse influenza passaging annotations
 Home-page: http://github.com/clauswilke/flupan
 Author: Claire D. McWhite

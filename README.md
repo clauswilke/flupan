@@ -62,6 +62,9 @@ E_1_MDCK3
 #And common passage IDs are shortened
 E1_M3
 
+>>p.ordered_passages #Each round of passaging in a list
+["E1", "M3"]
+
 >>p.general_passages #The broad categories of the passage types
 ["EGG", "CANINECELL"]
 
