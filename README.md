@@ -49,9 +49,9 @@ There will always be passage annotations which aren't currently covered by this 
 
 ```python
 
->>from flupan import passage_interpreter
+>>import flupan
 
->> pp = passage_interpreter.PassageParser()
+>> pp = flupan.PassageParser()
 >> p = pp.parse_passage("m 1") #passage annotation to be parsed
 >> p.summary #A quick summary of the passage interpretation
 
