@@ -48,9 +48,9 @@ class PassageAnnotation:
  
 
 class PassageParser:
-    def __init__(self, nth_passage=None): 
-
-        self = self
+    def __init__(self): 
+        #Open up data structure here, lookup table, coerce
+        pass
      
     def spec_char_strip(self, ID):
         ''' 

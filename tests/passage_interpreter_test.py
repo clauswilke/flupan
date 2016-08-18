@@ -1,7 +1,7 @@
 #!/usr/bin/env python
 import __future__ 
 import sys
-import passage_interpreter
+import flupan
 import unittest
 
 
@@ -11,7 +11,7 @@ class test_flupan(unittest.TestCase):
         '''
         Test of summary
         '''
-        pp = passage_interpreter.PassageParser()
+        pp = flupan.PassageParser()
         p = pp.parse_passage("Mdcksiat2_E8")
         self.assertTrue(p.summary, list)
     
@@ -20,7 +20,7 @@ class test_flupan(unittest.TestCase):
         Test example case
         '''
 
-        pp = passage_interpreter.PassageParser()
+        pp = flupan.PassageParser()
         p = pp.parse_passage("Mdcksiat2_E3", 3)
         #print(vars(p))
         self.assertTrue(p.original == "Mdcksiat2_E3")
@@ -41,7 +41,7 @@ class test_flupan(unittest.TestCase):
         '''
         Test an empty passage annotation
         '''
-        pp = passage_interpreter.PassageParser()
+        pp = flupan.PassageParser()
         p = pp.parse_passage("")
         self.assertTrue(p.original == "")
         self.assertTrue(p.plainformat == "")
@@ -68,7 +68,7 @@ class test_flupan(unittest.TestCase):
         with open("tests/test_passageIDs1.txt", "r") as passageIDs:
             with open("tests/output_test_passageIDs1.txt", "w") as outfile:
                 for ID in passageIDs.readlines():
-                    pp = passage_interpreter.PassageParser()
+                    pp = flupan.PassageParser()
                     input_ID = ID.replace("\n", "") 
                     full_annotation = pp.parse_passage(input_ID)
                     quick_annotation = full_annotation.summary
@@ -82,7 +82,7 @@ class test_flupan(unittest.TestCase):
         with open("tests/test_passageIDs2.txt", "r") as passageIDs:
             with open("tests/output_test_passageIDs2.txt", "w") as outfile:
                 for ID in passageIDs.readlines():
-                    pp = passage_interpreter.PassageParser()
+                    pp = flupan.PassageParser()
                     quick_annotation = pp.parse_passage(ID).summary
                     outfile.write(str(",".join(quick_annotation)) + "\n")
     def test6(self):
@@ -94,7 +94,7 @@ class test_flupan(unittest.TestCase):
         with open("tests/test_unformatted_passage_IDs.txt", "r") as passageIDs:
             with open("tests/output_test_unformatted_passageIDs.txt", "w") as outfile:
                 for ID in passageIDs.readlines():
-                    pp = passage_interpreter.PassageParser()
+                    pp = flupan.PassageParser()
                     input_ID = ID.replace("\n", "") 
                     full_annotation = pp.parse_passage(input_ID)
                     outstring = full_annotation.original + "\t" + full_annotation.coerced_format+ "\n"
@@ -104,7 +104,7 @@ class test_flupan(unittest.TestCase):
         '''
         Test a nonsense passage annotation
         '''
-        pp = passage_interpreter.PassageParser()
+        pp = flupan.PassageParser()
         p = pp.parse_passage("asdk?&~EE8")
         self.assertTrue(p.original == "asdk?&~EE8")
         self.assertTrue(p.plainformat == "ASDK_EE8")
