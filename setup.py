@@ -15,6 +15,7 @@ setup(name='flupan',
       license='MIT',
       scripts=['bin/translate_passage'],
       package_dir={'':'src'},
+      include_package_data=True,
       #test_suite='nose.collector',
       #tests_require=['nose']
       test_suite='setup.my_test_suite'#,
