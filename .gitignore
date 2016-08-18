@@ -1,8 +1,11 @@
 # Compiled python modules.
 *.pyc
+*.swp
+
 
 #log file
 *.out
 
 # Python egg metadata, regenerated from source files by setuptools.
 /*.egg-info
+src/flupan.egg-info

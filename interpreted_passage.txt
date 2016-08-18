@@ -1,1 +1,0 @@
-M1,M1,M1,CANINECELL,MDCK,exactly,1
