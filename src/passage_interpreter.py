@@ -106,7 +106,7 @@ class PassageParser:
  
         coerced_format_list = []
         with open("tables/coerce_format.txt", "r") as replacements_file:
-             
+       
             replacements = replacements_file.readlines()
             for annot in annotation_list:
                  for replacement in replacements:
@@ -377,7 +377,8 @@ class PassageParser:
 
 
         with open("tables/passage_lookup.txt", "r") as lookuptable_txt:
-            
+
+       
             #Read the {passage:annotation} file as a literal dictionary
             lookuptable = eval(lookuptable_txt.read())
 

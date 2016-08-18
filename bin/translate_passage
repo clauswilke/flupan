@@ -5,12 +5,19 @@ import argparse
 
 
 def parse_file(infile):
+    '''
+    If given a file of passage IDs (one per line), cycle through each one
+    '''
+
     pp = passage_interpreter.PassageParser()
     with open(infile, "r") as passageIDs:
             for ID in passageIDs.readlines():
                  annotation = pp.parse_passage(ID) 
                  return annotation
 def parse_passage(passage):
+    '''
+    If given a single passage ID, get the summary
+    '''
     pp = passage_interpreter.PassageParser()
   
     p = pp.parse_passage(passage) 
