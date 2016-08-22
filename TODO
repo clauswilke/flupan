@@ -1,6 +1,4 @@
 # To do
 
-- Change dictionary to columns
-- Parse in main function
-- open log file in init of parse
-- make raw format test list of passages (not my reformatte)
+ - Can't find data tables when run from somewhere that is not flupan/
+ - Start new log file when object initialized.

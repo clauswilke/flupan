@@ -12,7 +12,7 @@ class test_flupan(unittest.TestCase):
         Test of summary
         '''
         pp = flupan.PassageParser()
-        p = pp.parse_passage("Mdcksiat2_E8")
+        p = pp.parse_passage("E1_E3")
         self.assertTrue(p.summary, list)
     
     def test2(self):
@@ -46,15 +46,14 @@ class test_flupan(unittest.TestCase):
         self.assertTrue(p.original == "")
         self.assertTrue(p.plainformat == "")
         self.assertTrue(p.coerced_format == "")
-        self.assertTrue(p.summary == [])
+        self.assertTrue(p.summary == ['','','','','','',''])
 
-        self.assertTrue(p.min_passages == None)
-        self.assertTrue(p.total_passages == None)
-        self.assertTrue(p.nth_passage == None)
+        self.assertTrue(p.min_passages == "")
+        self.assertTrue(p.total_passages == "")
+        self.assertTrue(p.nth_passage == "")
         self.assertTrue(p.general_passages== [])
         self.assertTrue(p.specific_passages == [])
         self.assertTrue(p.passage_series == []) 
-        self.assertTrue(p.summary == [])
              
 
 
@@ -85,22 +84,8 @@ class test_flupan(unittest.TestCase):
                     pp = flupan.PassageParser()
                     quick_annotation = pp.parse_passage(ID).summary
                     outfile.write(str(",".join(quick_annotation)) + "\n")
-    def test6(self):
-        '''
-        Check a completely unformatted list of passage IDs
-        and write an outfile of input passage and the coerced format passage
-        '''        
 
-        with open("tests/test_unformatted_passage_IDs.txt", "r") as passageIDs:
-            with open("tests/output_test_unformatted_passageIDs.txt", "w") as outfile:
-                for ID in passageIDs.readlines():
-                    pp = flupan.PassageParser()
-                    input_ID = ID.replace("\n", "") 
-                    full_annotation = pp.parse_passage(input_ID)
-                    outstring = full_annotation.original + "\t" + full_annotation.coerced_format+ "\n"
-                    outfile.write(outstring)
- 
-    def test7(self):
+    def test6(self):
         '''
         Test a nonsense passage annotation
         '''
@@ -109,11 +94,11 @@ class test_flupan(unittest.TestCase):
         self.assertTrue(p.original == "asdk?&~EE8")
         self.assertTrue(p.plainformat == "ASDK_EE8")
         self.assertTrue(p.coerced_format == "")
-        self.assertTrue(p.summary == ['asdk?&~EE8', 'ASDK_EE8', 'None', 'None', 'None', 'None', 'None'])
+        self.assertTrue(p.summary == ['asdk?&~EE8', 'ASDK_EE8', '', '', '', '', ''])
 
-        self.assertTrue(p.min_passages == None)
-        self.assertTrue(p.total_passages == None)
-        self.assertTrue(p.nth_passage == None)
+        self.assertTrue(p.min_passages == "")
+        self.assertTrue(p.total_passages == "")
+        self.assertTrue(p.nth_passage == "")
         self.assertTrue(p.general_passages== [])
         self.assertTrue(p.specific_passages == [])
         self.assertTrue(p.passage_series == []) 

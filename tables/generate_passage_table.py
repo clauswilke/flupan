@@ -1,5 +1,24 @@
 from __future__ import print_function
+'''
+Creates a file of passage chunks, ie. passage type + # of rounds
 
+
+Auto generates most, while also incorporating two custom lists of passages: 
+ 
+1. unknown_passages_input.txt
+   A single column of uninterpretable passage IDs
+
+2. nonstandard_passages_input.txt
+   A set of custom annotations for passages which can't be auto generated
+
+Usage: python generate_passage_table.py
+
+Output is a text file of:
+PassageID, General_passage, Specific_passage, # of rounds
+
+ex. RMK5,MONKEYCELL,RHMK,5
+
+'''
 
 def generate_generic():
     '''
@@ -48,8 +67,8 @@ def generate_generic():
 
                
               #annotate specific passage category
-              specific_passage = None
-              general_passage= None
+              specific_passage = ""
+              general_passage= ""
 
 
               #Change to a lookup instead of ifs
@@ -105,7 +124,7 @@ def generate_generic():
 
               passage_construct = "".join([passage,sep,num])
               if num == "" or num=="X":
-                 num_passages=None
+                 num_passages=""
               else:
                  num_passages=num
               annot =  [general_passage, specific_passage, num_passages]
@@ -144,16 +163,16 @@ def generate_nonconventional():
 
     uncon_dict = {}
  
-    with open("nonstandard_passages.txt", "r") as nonstandard:
+    with open("nonstandard_passages_input.txt", "r") as nonstandard:
         for line in nonstandard.readlines():
             i = line.rstrip("\n").split(",")
             uncon_dict[i[0]] = i[1:]
  
 
-    with open("unknown_passages.txt", "r") as completely_unknown:
-        annot = [None, None, None]
-        for passage in completely_unknown.readlines():
-            uncon_dict[passage.rstrip("\n")] = annot
+    #with open("unknown_passages_input.txt", "r") as completely_unknown:
+    #    annot = ["", "", ""]
+    #    for passage in completely_unknown.readlines():
+    #        uncon_dict[passage.rstrip("\n")] = annot
 
 
     return uncon_dict
@@ -175,15 +194,18 @@ if __name__ == "__main__":
     pass1 = generate_generic()
     unpass = generate_unpassaged()
     uncon = generate_nonconventional()
-    print(pass1)
-    print(uncon)
+    #print(pass1)
+    #print(uncon)
     full_list = merge_dicts(pass1, unpass, uncon) 
-    print(full_list)
-    for f in full_list.keys():
-       print(f, full_list[f])
-
+    #print(full_list)
     with open("passage_lookup.txt", "w") as outfile:
-         outfile.write(str(full_list))
+         #outfile.write(str(full_list))
+        for f in full_list.keys():
+           annot = ",".join(str(item) for item in full_list[f])
+
+
+           outstring = f + "," + annot
+           outfile.write(outstring+"\n")
 
 
 
