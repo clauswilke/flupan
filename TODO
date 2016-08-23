@@ -1,4 +1,6 @@
 # To do
 
- - Can't find data tables when run from somewhere that is not flupan/
  - Start new log file when object initialized.
+ - why is there an extra tables/ folder in dist-packages?
+
+
