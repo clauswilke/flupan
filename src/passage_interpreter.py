@@ -2,7 +2,6 @@ import __future__
 import re
 import sys
 import logging
-import pkg_resources
 import pkgutil
 
 class PassageAnnotation:
@@ -81,36 +80,50 @@ class PassageParser:
         self.logger.info(os.path.realpath(__file__))        
         self.logger.info(os.path.realpath(__package__))        
         self.logger.info(os.path.dirname(__package__))        
-        #replacements_file = pkgutil.get_data(__package__, 'tables/coerce_format.txt')
-        #msg = "path gotten"
- 
+
+        replacements_file = pkgutil.get_data('tables', 'coerce_format.txt')
+       
+        #pkgutil get_data mysteriously adds extra blank line 
+        self.replacements = replacements_file.split("\n")[:-1]
+        
+        self.logger.info(replacements_file)        
+        self.logger.info(str(self.replacements))
+                
+
+        #self.replacements =  
 
         #self.logger.info(__lookup__)
         #replacements_file = open("tables/coerce_format.txt", "r")       
-        self.logger.info(replacements_file)
-        self.replacements = replacements_file.readlines()
+        #self.logger.info(replacements_file.readlines())
+        #with open(replacements_file, "r")  as opened_replacements:
+        #
+        #   self.replacements = opened_replacements.readlines()       
+
+
         msg= "read"
         self.logger.info(msg)
-        replacements_file.close()
+        #replacements_file.close()
         msg="closed"
         self.logger.info(msg)
-
-        self.lookuptable_file = open("tables/passage_lookup.txt", "r")
+        replacements_file = pkgutil.get_data('tables', 'passage_lookup.txt')
         self.lookuptable = {}    
 
-        for raw_entry in self.lookuptable_file.readlines():
+        for raw_entry in replacements_file.split("\n"):
+
+            # self.lookuptable_file = open("tables/passage_lookup.txt", "r")
+            #for raw_entry in self.lookuptable_file.readlines():
             entry = raw_entry.rstrip("\n")
             entry_list = entry.split(",")
 
             self.lookuptable[entry_list[0]]=entry_list[1:4]
             
-        #self.logger.info(self.lookuptable)
+        self.logger.info(self.lookuptable['MDCK'])
 
         
         #Read the {passage:annotation} file as a literal dictionary
         #self.lookuptable = eval(self.lookuptable_txt.read())
 
-        self.lookuptable_file.close()
+        #self.lookuptable_file.close()
         #stop logging
         #sys.stdout = sys.__stdout__
         #log.close() 
@@ -171,7 +184,9 @@ class PassageParser:
         coerced_format_list = []
         for annot in annotation_list:
              for replacement in self.replacements:
+                self.logger.info(replacement)
                 rep_list = replacement.split(" ")
+                self.logger.info(str(rep_list))
                 annot = annot.replace(rep_list[0], rep_list[1].rstrip("\n"))
 
                 annot = annot.replace("_", "")                    

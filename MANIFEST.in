@@ -1,6 +1,6 @@
 include README.md
 
 recursive-include tables *.txt
-
-include tables/*.txt
+#include *.txt
+#include tables/*.txt
 
