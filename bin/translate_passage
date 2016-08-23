@@ -1,6 +1,6 @@
 #!/usr/bin/env python
-from __future__ import print_function
-import passage_interpreter
+import __future__
+import flupan
 import argparse
 
 
@@ -9,7 +9,7 @@ def parse_file(infile):
     If given a file of passage IDs (one per line), cycle through each one
     '''
 
-    pp = passage_interpreter.PassageParser()
+    pp = flupan.PassageParser()
     with open(infile, "r") as passageIDs:
             for ID in passageIDs.readlines():
                  annotation = pp.parse_passage(ID) 
@@ -18,7 +18,7 @@ def parse_passage(passage):
     '''
     If given a single passage ID, get the summary
     '''
-    pp = passage_interpreter.PassageParser()
+    pp = flupan.PassageParser()
   
     p = pp.parse_passage(passage) 
     return p.summary

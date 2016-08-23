@@ -81,7 +81,7 @@ class PassageParser:
         self.logger.info(os.path.realpath(__package__))        
         self.logger.info(os.path.dirname(__package__))        
 
-        replacements_file = pkgutil.get_data('tables', 'coerce_format.txt')
+        replacements_file = pkgutil.get_data('flupan.tables', 'coerce_format.txt')
        
         #pkgutil get_data mysteriously adds extra blank line 
         self.replacements = replacements_file.split("\n")[:-1]
@@ -105,7 +105,7 @@ class PassageParser:
         #replacements_file.close()
         msg="closed"
         self.logger.info(msg)
-        replacements_file = pkgutil.get_data('tables', 'passage_lookup.txt')
+        replacements_file = pkgutil.get_data('flupan.tables', 'passage_lookup.txt')
         self.lookuptable = {}    
 
         for raw_entry in replacements_file.split("\n"):
