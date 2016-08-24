@@ -2,4 +2,6 @@
 
  - Start new log file when object initialized.
 
-
+ - Clean up README
+ 
+ - Make a .txt for PyPi that points to the markdown README on GitHub
