@@ -1,6 +1,5 @@
 #!/usr/bin/env python
-import __future__ 
-import sys
+from __future__ import print_function
 import flupan
 import unittest
 
@@ -24,10 +23,9 @@ class test_flupan(unittest.TestCase):
         p = pp.parse_passage("Mdcksiat2_E3", 3)
         #print(vars(p))
         self.assertTrue(p.original == "Mdcksiat2_E3")
-        self.assertTrue(p.plainformat == "MDCKSIAT2_E3")
+        self.assertTrue(p.plain_format == "MDCKSIAT2_E3")
         self.assertTrue(p.coerced_format == "S2_E3")
-        self.assertTrue(p.summary == ['Mdcksiat2_E3', 'MDCKSIAT2_E3', 'S2_E3', 'CANINECELL+EGG', 'SIAT+EGG', 'exactly', '5'])
-        self.assertTrue(p.ordered_matches) == ['MDCKSIAT2', 'E3']
+        self.assertTrue(p.ordered_passages) == ['MDCKSIAT2', 'E3']
         self.assertTrue(p.min_passages == 5)
         self.assertTrue(p.total_passages == 5)
         self.assertTrue(p.nth_passage == 'EGG')
@@ -44,7 +42,7 @@ class test_flupan(unittest.TestCase):
         pp = flupan.PassageParser()
         p = pp.parse_passage("")
         self.assertTrue(p.original == "")
-        self.assertTrue(p.plainformat == "")
+        self.assertTrue(p.plain_format == "")
         self.assertTrue(p.coerced_format == "")
         self.assertTrue(p.summary == ['','','','','','',''])
 
@@ -92,7 +90,7 @@ class test_flupan(unittest.TestCase):
         pp = flupan.PassageParser()
         p = pp.parse_passage("asdk?&~EE8")
         self.assertTrue(p.original == "asdk?&~EE8")
-        self.assertTrue(p.plainformat == "ASDK_EE8")
+        self.assertTrue(p.plain_format == "ASDK_EE8")
         self.assertTrue(p.coerced_format == "")
         self.assertTrue(p.summary == ['asdk?&~EE8', 'ASDK_EE8', '', '', '', '', ''])
 

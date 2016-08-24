@@ -1,6 +1,4 @@
 include README.md
-
-recursive-include src tables/*.txt
-#include *.txt
-#include tables/*.txt
-
+recursive-include src tables/*
+recursive-include test *
+recursive-include example_scripts *

@@ -1,6 +1,5 @@
-import __future__ 
+from __future__ import print_function
 import re
-import sys
 import logging
 import pkgutil
 
@@ -10,9 +9,9 @@ class PassageAnnotation:
         self.original = ""
 
         #Input ID, capitalized, spec characters removed
-        self.plainformat = ""
+        self.plain_format = ""
  
-        #Try to get plainformat ID into consistent format
+        #Try to get plain_format ID into consistent format
         self.coerced_format = ""
  
         #Convenience list of annotations for a passage
@@ -31,7 +30,7 @@ class PassageAnnotation:
 
         #Each round of passaging, separated into a list
         #Ex. ["MDCK3", "RH3"]
-        self.ordered_matches = []
+        self.ordered_passages = []
 
         #The species/general type of the passages
         #Ex. CANINECELL, MONKEYCELL
@@ -51,6 +50,9 @@ class PassageAnnotation:
 
 class PassageParser:
     def __init__(self): 
+        '''
+        Set up logging, open reference tables
+        '''
   
         #Set up logging
         LOG_FILENAME = 'flupan.log'
@@ -67,66 +69,25 @@ class PassageParser:
 
         self.logger.setLevel(logging.INFO)
 
-       
-
-        #self.log = open("passage_interpreter.out", "w")
-        #sys.stdout = self.log
-        #replacements_file = pkg_resources.resource_string('flupan', 'tables/coerce_format.txt')
-        msg = "about to open"
-        self.logger.info(msg)
-        self.logger.info(__package__)
-
-        import os
-        self.logger.info(os.path.realpath(__file__))        
-        self.logger.info(os.path.realpath(__package__))        
-        self.logger.info(os.path.dirname(__package__))        
-
+        #Open reference table for coerce_format()
         replacements_file = pkgutil.get_data('flupan.tables', 'coerce_format.txt')
        
         #pkgutil get_data mysteriously adds extra blank line 
         self.replacements = replacements_file.split("\n")[:-1]
-        
-        self.logger.info(replacements_file)        
-        self.logger.info(str(self.replacements))
-                
-
-        #self.replacements =  
-
-        #self.logger.info(__lookup__)
-        #replacements_file = open("tables/coerce_format.txt", "r")       
-        #self.logger.info(replacements_file.readlines())
-        #with open(replacements_file, "r")  as opened_replacements:
-        #
-        #   self.replacements = opened_replacements.readlines()       
-
-
-        msg= "read"
-        self.logger.info(msg)
-        #replacements_file.close()
-        msg="closed"
-        self.logger.info(msg)
-        replacements_file = pkgutil.get_data('flupan.tables', 'passage_lookup.txt')
+       
+ 
+        #Open reference table for main passage parsing               
+        lookup_file = pkgutil.get_data('flupan.tables', 'passage_lookup.txt')
         self.lookuptable = {}    
 
-        for raw_entry in replacements_file.split("\n"):
+        for raw_entry in lookup_file.split("\n"):
 
-            # self.lookuptable_file = open("tables/passage_lookup.txt", "r")
-            #for raw_entry in self.lookuptable_file.readlines():
             entry = raw_entry.rstrip("\n")
             entry_list = entry.split(",")
 
             self.lookuptable[entry_list[0]]=entry_list[1:4]
             
-        self.logger.info(self.lookuptable['MDCK'])
 
-        
-        #Read the {passage:annotation} file as a literal dictionary
-        #self.lookuptable = eval(self.lookuptable_txt.read())
-
-        #self.lookuptable_file.close()
-        #stop logging
-        #sys.stdout = sys.__stdout__
-        #log.close() 
 
     def spec_char_strip(self, ID):
         ''' 
@@ -147,8 +108,6 @@ class PassageParser:
         while "__" in record_strip:
             record_strip = record_strip.replace("__", "_")
 
-        #01 just means 1 - Maybe put back in
-        #record_strip = re.sub('01', '1', record_strip)
         if len(record_strip) > 0:
             #Get rid of leading and trailing underscores
             if record_strip[0] == "_":
@@ -175,7 +134,7 @@ class PassageParser:
         '''
         This function coerces the most common passage IDs into a more standard format
         Removes underscores which occur inside a single annotation
-        Once a set of passaging annotation standards are released, this 
+        If a set of passaging annotation standards are released, this 
         will be the function to make old annotations consistent with them
         '''
         msg = "---Coerced into standard format---"
@@ -184,9 +143,7 @@ class PassageParser:
         coerced_format_list = []
         for annot in annotation_list:
              for replacement in self.replacements:
-                self.logger.info(replacement)
                 rep_list = replacement.split(" ")
-                self.logger.info(str(rep_list))
                 annot = annot.replace(rep_list[0], rep_list[1].rstrip("\n"))
 
                 annot = annot.replace("_", "")                    
@@ -286,13 +243,10 @@ class PassageParser:
         
             #Add up numbers of passages
             #Some annotations don't have numbers, so can't be added
-            self.logger.info(str(annot[2]))
-            self.logger.info(str(len(annot[2])))
             if str(annot[2]) == "":
          
                 qualifier  = "atleast"
 
-            self.logger.info(qualifier)
             if cumulative_num_passages == "":
                 try:
                    cumulative_num_passages = str(eval(annot[2]))
@@ -333,7 +287,8 @@ class PassageParser:
             total_passages = eval(cumulative_num_passages)
 
        summary =  [coerced_format, concat_general_passage, concat_specific_passage, qualifier, cumulative_num_passages]
-       self.logger.info(summary)
+       msg = "Summary: " + str(summary)
+       self.logger.info(msg)
 
        return summary, coerced_format, general_passages_list, specific_passages_list, min_passages, total_passages  
 
@@ -465,33 +420,28 @@ class PassageParser:
 
 
         else:
-            #Need to get ordering of matches within input ID
+            #Need to get ordering of the found matches within input ID
             self.logger.info(matches)
             match_order = []
+            msg = "---Determine order of matches--"
+            self.logger.info(msg)
+            msg = "Unordered passages: " + str(matches)
+            self.logger.info(msg)
+ 
             for match in matches:
                  match_order.append(formatted_ID.find(match))
-            #msg = "Match order: " + str(match_order)
-            #self.logger.info(msg)     
 
+            msg = "Order of matches: " + str(match_order)
+            self.logger.info(msg)
+ 
             #Get matches are in the same order as they appear in the ID    
-            ordered_matches = [x for y, x in sorted(zip(match_order, matches))]  
-            #msg = "---Determine order of matches--"
-            #self.logger.info(msg)
-            #msg = "initial match  order: " + str(match_order)
-            #self.logger.info(msg)
-            #msg = "Final match  order: " + str(match_order)
-            #self.logger.info(msg)
-            #self.logger.info("done ordering")
-            return ordered_matches    
+            
+            ordered_passages = [x for y, x in sorted(zip(match_order, matches))]  
+            msg = "Final passage  order: " + str(ordered_passages)
+            self.logger.info(msg)
+            self.logger.info("done ordering")
+            return ordered_passages    
 
-
-
-        #if len(matches) == 1:
-        #    annotation = self.lookuptable[formatted_ID]
-  
-
-       #return ordered_matches
-      
 
 
     def parse_passage(self, ID, n = ""):
@@ -524,25 +474,23 @@ class PassageParser:
         formatted_ID = self.format_ID(ID)
 
         #Store plain format
-        pa.plainformat = formatted_ID
+        pa.plain_format = formatted_ID
       
         #Match a formatted ID to its composite passage types
 
-        ordered_matches  =  self.match_known_passage(formatted_ID)
+        ordered_passages  =  self.match_known_passage(formatted_ID)
 
 
-        pa.ordered_matches = ordered_matches
-
-        msg = "ordered_matches_final" + str(ordered_matches)
-        self.logger.info(msg)
+        pa.ordered_passages = ordered_passages
 
 
-        if ordered_matches:
 
-            annot_series = self.get_series(ordered_matches)  
+        if ordered_passages:
+
+            annot_series = self.get_series(ordered_passages)  
             pa.passage_series = annot_series
 
-            annotation = self.make_annotation(ordered_matches)
+            annotation = self.make_annotation(ordered_passages)
             if annotation:
 
                 output = annotation[0]
@@ -565,9 +513,6 @@ class PassageParser:
             pa.summary = [ID, formatted_ID,'','','','','']
             msg = "Failed annotation" + str(pa.summary)
             self.logger.info(msg)
-
-
-
 
                
         return pa        
