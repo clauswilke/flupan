@@ -5,6 +5,10 @@ Python library to parse influenza passaging annotations.
 ### About
 Influenza virus is frequency passaged prior to being sequenced. These growth conditions are recorded as shorthand passaging annotations. However, these passages are often inconsistent and not easily machine readable. This library takes individual passage history strings (Ex. M1_S3) and returns an object containing its interpretation. 
 
+#### Authors
+Claire D. McWhite
+Claus O. Wilke
+
 ### Influenza passaging annotations 
 
  - Each portion of a passage history string ex. M3 refers to the type of passage and the number of rounds of passage. In the annotion M3, M refers to MDCK cells, and 3 signifies the strain was passaged 3 times. 
