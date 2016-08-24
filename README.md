@@ -7,6 +7,7 @@ Influenza virus is frequency passaged prior to being sequenced. These growth con
 
 #### Authors
 Claire D. McWhite
+
 Claus O. Wilke
 
 ### Influenza passaging annotations 
