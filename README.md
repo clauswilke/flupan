@@ -55,7 +55,8 @@ There will always be passage annotations which aren't currently covered by this 
 
 >>import flupan
 
->> p = flupan.PassageParser().parse_passage("m 1") #passage annotation to be parsed
+>> pp = flupan.PassageParser() # create PassageParser object
+>> p = pp.parse_passage("m 1") # parse annotation "m 1"
 >> p.summary #A quick summary of the passage interpretation
 
 ['m 1', 'M_1', 'M1', 'CELL', 'MDCK', 'exactly', '1']
