@@ -27,25 +27,24 @@ def generate_generic():
 
 
     siat = ["SIAT", "S", "MDCKSIAT"]
-    mdck = ["MDCK", "M", "MK"]
-    unknowncell = ["C", "X"]
-    rhmk = ["RHMK", "RMK", "R", "PRHMK", "RII"]
-    tmk = ["TMK"]
+    mdck = ["MDCK", "M", "MK", "MCDK"]
+    unknowncell = ["C", "X", "CELL", "MD", "MEK"]
+    mk = ["RHMK", "RMK", "R", "PRHMK", "RII", "TMK", "MK", "PMK"]
     vero = ["VERO", "V"]
     egg = ["AL", "ALLANTOIC", "EGG", "E", "AM", "AMNIOTIC"]
     pigcell = ["PTHYR"]
     chickcell = ["SPFCK", "CK", "PCK"]
     unknown = ["UNKNOWN", "P", "", "NC"]
     rmix = ["R_MIX", "RMIX"]
-
+    hamstercell = ["HK", "BHK"]
     minkcell = ["MV_1_LU", "MV1_LU", "MV1_LUNG"]
 
     caninecell = siat + mdck
  
-    monkeycell = rhmk + tmk + vero
-    all_cells = caninecell + monkeycell + unknowncell + chickcell + rmix + minkcell
+    monkeycell = mk + vero
+    all_cells = caninecell + monkeycell + unknowncell + chickcell + rmix + minkcell + hamstercell
 
-    all_passages = caninecell + monkeycell + egg + unknown + pigcell + unknowncell + chickcell + rmix + minkcell #only_number + minkcell
+    all_passages = caninecell + monkeycell + egg + unknown + pigcell + unknowncell + chickcell + rmix + minkcell + hamstercell #only_number + minkcell
 
 
 
@@ -54,6 +53,7 @@ def generate_generic():
     single_pass = {}
     for num in ["0","1","2","3","4","5","6","7", "8", "9", "10", "X", ""]:
        for passage in all_passages:
+          print("generating identifiers for ", passage)
           for sep in ["", "_"]:
               #forbidden combos         
               if passage =="X" and num == "X":
@@ -85,11 +85,9 @@ def generate_generic():
                   general_passage = "CANINECELL"
               elif passage in monkeycell:
 
-                  if passage in rhmk:
-                      specific_passage = "RHMK"
+                  if passage in mk:
+                      specific_passage = "MONKEYKIDNEY"
 
-                  elif passage in tmk:
-                      specific_passage = "TMK"
 
                   elif passage in vero:
                       specific_passage = "VERO"
@@ -98,6 +96,11 @@ def generate_generic():
               elif passage in minkcell:
                    specific_passage = "MV1LU"
                    general_passage = "MINKCELL"
+
+              elif passage in hamstercell:
+
+                   specific_passage = "HAMSTERCELL"
+                   general_passage = "HAMSTERKIDNEY"
 
 
               elif passage in chickcell:
@@ -129,14 +132,10 @@ def generate_generic():
                  num_passages=num
               annot =  [general_passage, specific_passage, num_passages]
 
-              if annot == "":
-                  print("WHAT")
               single_pass[passage_construct]=annot
 
               #single_pass.append({passage_construct:annot})
 
-    #print(single_pass)
-    print(len(single_pass))
     return single_pass
 
 
@@ -146,13 +145,12 @@ def generate_unpassaged():
     Create annotations for unpassaged sequences
     '''
 
-    unpassaged = ["ORIGINAL_SPECIMEN_UNCULTURED_IN_VTM","OR", "ORIGINAL", "P0", "ISOLATED_DIRECTLY_FROM_HOST_NO", "CLINICAL_SPECIMEN", "NO", "LUNG_1", "LUNG"]
+    unpassaged = ["ORIGINAL_SPECIMEN_UNCULTURED_IN_VTM","OR", "ORIGINAL", "P0", "ISOLATED_DIRECTLY_FROM_HOST_NO", "CLINICAL_SPECIMEN", "NO", "LUNG_1", "LUNG", "ORIGNAL", "ORGINAL", "THROAT", "PRIMARY", "NASO", "AUTOPSY", "BRONCHIAL", "NASAL", "NOSE", "ORIG", "SWAB"]
     unpass_dict = {}
     annot  = ["UNPASSAGED", "UNPASSAGED", "0"]
 
     for desc in unpassaged:
         unpass_dict[desc] = annot
-    #print(unpass_dict)
     return unpass_dict
 
 

@@ -14,7 +14,7 @@ def parse_file(infile):
             for ID in passageIDs.readlines():
                  annotation = pp.parse_passage(ID) 
                  return annotation
-def parse_passage(passage):
+def parsing(passage):
     '''
     If given a single passage ID, get the summary
     '''
@@ -43,7 +43,7 @@ if __name__ == "__main__":
         annotation = parse_file(args.infile)
 
     if args.passage:
-        annotation = parse_passage(args.passage)
+        annotation = parsing(args.passage)
         print(",".join(annotation))
 
     if args.outfile:

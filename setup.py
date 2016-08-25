@@ -7,7 +7,7 @@ def my_test_suite():
     return test_suite
 
 setup(name='flupan',
-      version='0.0.9',
+      version='0.1.1',
       description='Python library to parse influenza passaging annotations',
       url='http://github.com/clauswilke/flupan',
       author='Claire D. McWhite',
